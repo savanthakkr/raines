@@ -6,6 +6,7 @@ const PageBanner = ({
 	pageTitle,
 	homePageUrl,
 	homePageText,
+	middlePageText,
 	activePageText,
 	imageUrl
 }) => {
@@ -65,6 +66,13 @@ const PageBanner = ({
 									<a>{homePageText}</a>
 								</Link>
 							</li>
+							{middlePageText && (
+							<li>
+								<Link href="/courses">
+									<a>{middlePageText}</a>
+								</Link>
+							</li>
+							)}
 							<li className="active">{activePageText}</li>
 						</motion.ul>
 					</div>

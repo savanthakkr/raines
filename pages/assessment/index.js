@@ -1,51 +1,51 @@
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Navbar from "@/components/_App/Navbar";
 import PageBanner from "@/components/Common/PageBanner";
-import CoursesDetailsContent from "@/components/SingleCourses/CoursesDetailsContent";
 import Footer from "@/components/_App/Footer";
-import axios from "axios";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import baseUrl from "@/utils/baseUrl";
+import axios from "axios";
 import toast from "react-hot-toast";
+import StudentDeclaration from "@/components/Assessment/StudentDeclaration";
 
-export default function SingleCoursesPage({ user }) {
-	// const [course, setCourse] = useState({});
-	const router = useRouter();
-	const { slug } = router.query;
-
-	// useEffect(() => {
-	// 	const fetchCourse = async () => {
-	// 		try {
-	// 			const payload = {
-	// 				params: { slug: slug },
-	// 			};
-	// 			const url = `${baseUrl}/api/courses/course`;
-	// 			const response = await axios.get(url, payload);
-	// 			setCourse(response.data.course);
-	// 		} catch (err) {
-	// 			let {
-	// 				response: {
-	// 					data: { message },
-	// 				},
-	// 			} = err;
-	// 			toast.error(message, {
-	// 				style: {
-	// 					border: "1px solid #ff0033",
-	// 					padding: "16px",
-	// 					color: "#ff0033",
-	// 				},
-	// 				iconTheme: {
-	// 					primary: "#ff0033",
-	// 					secondary: "#FFFAEE",
-	// 				},
-	// 			});
-	// 		}
-	// 	};
-
-	// 	fetchCourse();
-	// }, [slug]);
-
-	const course = {
+export default function AssessmentPage({user}) {
+    // const [course, setCourse] = useState({});
+    // const router = useRouter();
+    // const { slug } = router.query;
+    
+    // useEffect(() => {
+    //     	const fetchCourse = async () => {
+    //     		try {
+    //     			const payload = {
+    //     				params: { slug: slug },
+    //     			};
+    //     			const url = `${baseUrl}/api/courses/course`;
+    //     			const response = await axios.get(url, payload);
+    //     			setCourse(response.data.course);
+    //     		} catch (err) {
+    //     			let {
+    //     				response: {
+    //     					data: { message },
+    //     				},
+    //     			} = err;
+    //     			toast.error(message, {
+    //     				style: {
+    //     					border: "1px solid #ff0033",
+    //     					padding: "16px",
+    //     					color: "#ff0033",
+    //     				},
+    //     				iconTheme: {
+    //     					primary: "#ff0033",
+    //     					secondary: "#FFFAEE",
+    //     				},
+    //     			});
+    //     		}
+    //     	};
+    
+    //     	fetchCourse();
+    //     }, [slug]);
+    
+    const course = {
 		title: 'CPCWHS1001 - Prepare to Work Safely in the Construction Industry.',
 		slug: 'slug',
 		short_desc: 'CPCWHS1001 - Prepare to Work Safely in the Construction Industry.',
@@ -77,20 +77,20 @@ export default function SingleCoursesPage({ user }) {
 
 	return (
 		<>
-			<Navbar user={user} />
+        <Navbar user={user} />
 
-			<PageBanner
-				pageTitle={course && course.title}
+          <PageBanner
+				pageTitle="RIIRIS402E"
 				homePageUrl="/"
 				homePageText="Home"
-				middlePageText="Courses"
-				activePageText={course && course.title}
-				imageUrl="/images/breadcrumb/courseDetailBreadcrumb.jpg"
+                middlePageText="Courses"
+				activePageText="RIIRIS402E"
+				imageUrl='/images/breadcrumb/coursesBreadcrumb.jpg'
 			/>
 
-			{course && <CoursesDetailsContent user={user} course={course} />}
+            <StudentDeclaration/>
 
 			<Footer />
-		</>
-	);
+        </>
+    );
 }

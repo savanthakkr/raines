@@ -54,13 +54,14 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
-  overflow-x:hidden!important;
-  position:relative;
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 img {
@@ -74,6 +75,7 @@ p {
   line-height: 1.6;
   font-size: 16px;
 }
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -127,6 +129,7 @@ h6 {
   width: 100%;
   height: 100%;
 }
+
 .d-table-cell {
   vertical-align: middle;
 }
@@ -252,6 +255,7 @@ a {
   transition: 0.5s;
   text-decoration: none;
 }
+
 a:hover {
   color: #CF0000;
   text-decoration: none;
@@ -273,6 +277,7 @@ a:hover {
   margin-right: auto;
   margin-bottom: 55px;
 }
+
 .section-title .sub-title {
   display: block;
   text-transform: uppercase;
@@ -281,6 +286,7 @@ a:hover {
   font-size: 14px;
   font-weight: 600;
 }
+
 .section-title h2 {
   max-width: 615px;
   margin-bottom: 0;
@@ -288,6 +294,7 @@ a:hover {
   margin-right: auto;
   font-size: 36px;
 }
+
 .section-title p {
   max-width: 615px;
   margin-left: auto;
@@ -313,7 +320,9 @@ a:hover {
   padding-right: 30px;
   padding-top: 11px;
   padding-bottom: 11px;
+  min-width: 170px;
 }
+
 .default-btn span {
   position: absolute;
   display: block;
@@ -326,20 +335,25 @@ a:hover {
   z-index: -1;
   border-radius: 5px;
 }
+
 .default-btn i {
   position: absolute;
   left: 30px;
   top: 10px;
 }
+
 .default-btn:disabled {
   cursor: not-allowed;
 }
+
 .default-btn:disabled span {
   display: none;
 }
+
 .default-btn:hover {
   color: #ffffff;
 }
+
 .default-btn:hover span {
   width: 225%;
   height: 562.5px;
@@ -364,11 +378,13 @@ a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .default-btn-style-two i {
   position: absolute;
   left: 35px;
   top: 14px;
 }
+
 .default-btn-style-two::before {
   content: "";
   position: absolute;
@@ -382,9 +398,11 @@ a:hover {
   margin: 4px;
   transition: 0.3s;
 }
+
 .default-btn-style-two:hover {
   color: #ffffff;
 }
+
 .default-btn-style-two:hover::before {
   margin: 0;
 }
@@ -407,6 +425,7 @@ a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .default-btn-style-3 span {
   position: absolute;
   display: block;
@@ -419,9 +438,11 @@ a:hover {
   z-index: -1;
   border-radius: 5px;
 }
+
 .default-btn-style-3:hover {
   color: #ffffff;
 }
+
 .default-btn-style-3:hover span {
   width: 225%;
   height: 562.5px;
@@ -441,24 +462,31 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
 }
-.form-control::-moz-placeholder, .form-select::-moz-placeholder {
+
+.form-control::-moz-placeholder,
+.form-select::-moz-placeholder {
   color: #7e7e7e;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .form-control::placeholder,
 .form-select::placeholder {
   color: #7e7e7e;
   transition: 0.5s;
 }
+
 .form-control:focus,
 .form-select:focus {
   border-color: #CF0000;
   background-color: transparent;
 }
-.form-control:focus::-moz-placeholder, .form-select:focus::-moz-placeholder {
+
+.form-control:focus::-moz-placeholder,
+.form-select:focus::-moz-placeholder {
   color: transparent;
 }
+
 .form-control:focus::placeholder,
 .form-select:focus::placeholder {
   color: transparent;
@@ -475,6 +503,7 @@ textarea.form-control {
   gap: 0;
   /* No space between */
 }
+
 .radio-btn .radio-group fieldset {
   padding: 0;
   margin: 0;
@@ -482,6 +511,7 @@ textarea.form-control {
   display: flex;
   align-items: center;
 }
+
 .radio-btn .radio-btn-label {
   height: 50px;
   color: #221638;
@@ -498,15 +528,18 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
 }
+
 .radio-btn .radio-btn-label:hover {
   background: #D8D8D8;
 }
+
 .radio-btn input[type=radio] {
   visibility: hidden;
   position: absolute;
   cursor: pointer;
 }
-.radio-btn input[type=radio]:checked ~ label {
+
+.radio-btn input[type=radio]:checked~label {
   background: #CF0000;
   color: white;
   position: relative;
@@ -520,6 +553,7 @@ Navbar Area CSS
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .edemy-nav .navbar {
   position: inherit;
   padding-left: 0;
@@ -527,6 +561,7 @@ Navbar Area CSS
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .edemy-nav .navbar .navbar-brand {
   font-size: inherit;
   line-height: 1;
@@ -535,17 +570,20 @@ Navbar Area CSS
   padding-left: 0;
   padding-right: 0;
 }
+
 .edemy-nav .navbar ul {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 0;
 }
+
 .edemy-nav .navbar .search-box {
   margin-left: 50px;
   position: relative;
   width: 500px;
   border-radius: 5px;
 }
+
 .edemy-nav .navbar .search-box .input-search {
   display: block;
   width: 100%;
@@ -562,24 +600,30 @@ Navbar Area CSS
   padding-bottom: 0;
   padding-right: 0;
 }
+
 .edemy-nav .navbar .search-box .input-search::-moz-placeholder {
   color: #848484;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .edemy-nav .navbar .search-box .input-search::placeholder {
   color: #848484;
   transition: 0.5s;
 }
+
 .edemy-nav .navbar .search-box .input-search:focus {
   border-color: #CF0000;
 }
+
 .edemy-nav .navbar .search-box .input-search:focus::-moz-placeholder {
   color: transparent;
 }
+
 .edemy-nav .navbar .search-box .input-search:focus::placeholder {
   color: transparent;
 }
+
 .edemy-nav .navbar .search-box button {
   position: absolute;
   right: 0;
@@ -591,12 +635,15 @@ Navbar Area CSS
   border-radius: 5px;
   padding: 0 15px;
 }
+
 .edemy-nav .navbar .navbar-nav {
   margin-left: auto;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item {
   position: relative;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item a {
   color: #221638;
   font-size: 16.5px;
@@ -608,6 +655,7 @@ Navbar Area CSS
   margin-left: 13px;
   margin-right: 13px;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item a i {
   font-size: 18px;
   position: relative;
@@ -616,18 +664,26 @@ Navbar Area CSS
   margin-left: -4px;
   margin-right: -3px;
 }
-.edemy-nav .navbar .navbar-nav .nav-item a:hover, .edemy-nav .navbar .navbar-nav .nav-item a:focus, .edemy-nav .navbar .navbar-nav .nav-item a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item:last-child a {
   margin-right: 0;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item:first-child a {
   margin-left: 0;
 }
-.edemy-nav .navbar .navbar-nav .nav-item:hover a, .edemy-nav .navbar .navbar-nav .nav-item.active a {
+
+.edemy-nav .navbar .navbar-nav .nav-item:hover a,
+.edemy-nav .navbar .navbar-nav .nav-item.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   border: none;
   top: 70px;
@@ -646,6 +702,7 @@ Navbar Area CSS
   border-top: 3px solid #CF0000;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   padding: 8px 20px;
   margin: 0;
@@ -655,6 +712,7 @@ Navbar Area CSS
   font-size: 16px;
   font-weight: 700;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a i {
   margin: 0;
   position: absolute;
@@ -663,9 +721,13 @@ Navbar Area CSS
   transform: translateY(-50%);
   right: 15px;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
   top: 0;
   opacity: 0;
@@ -673,36 +735,51 @@ Navbar Area CSS
   margin-top: 15px;
   visibility: hidden;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
   color: #221638;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
   opacity: 0;
   left: 100%;
   visibility: hidden;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #221638;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
   opacity: 0;
   left: -100%;
   visibility: hidden;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #221638;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
   opacity: 0;
@@ -710,12 +787,17 @@ Navbar Area CSS
   visibility: hidden;
   transform: scaleY(0);
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #221638;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
   opacity: 0;
@@ -723,81 +805,106 @@ Navbar Area CSS
   visibility: hidden;
   transform: scaleY(0);
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #221638;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   top: 0;
   opacity: 0;
   left: 100%;
   visibility: hidden;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #221638;
 }
-.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus,
+.edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   margin-top: 0;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   margin-top: 9px;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu {
   position: inherit;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .container {
   display: block;
   flex-wrap: unset;
   align-items: unset;
   justify-content: unset;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu {
   width: 100%;
   top: auto;
@@ -807,6 +914,7 @@ Navbar Area CSS
   position: absolute;
   transform: unset !important;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a {
   margin-top: 14px;
   color: #221638;
@@ -815,18 +923,23 @@ Navbar Area CSS
   font-size: 16px;
   font-weight: 700;
 }
-.edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a:hover, .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a.active {
+
+.edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a:hover,
+.edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li a.active {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .megamenu-submenu li:first-child a {
   margin-top: 0;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget {
   position: relative;
   border-top: 1px solid #eeeeee;
   padding-top: 30px;
   margin-top: 30px;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget .icon {
   width: 70px;
   height: 70px;
@@ -842,6 +955,7 @@ Navbar Area CSS
   border-color: #eeeeee;
   border-radius: 50%;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget .icon i {
   position: absolute;
   top: 50%;
@@ -849,10 +963,12 @@ Navbar Area CSS
   left: 0;
   right: 0;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget h3 {
   margin-bottom: 0;
   font-size: 20px;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget .sub-title {
   display: block;
   margin-top: 5px;
@@ -860,6 +976,7 @@ Navbar Area CSS
   font-weight: 600;
   font-size: 15px;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget .link-btn {
   position: absolute;
   display: block;
@@ -869,30 +986,37 @@ Navbar Area CSS
   bottom: 0;
   z-index: 2;
 }
+
 .edemy-nav .navbar .navbar-nav .nav-item.megamenu .dropdown-menu .single-category-widget:hover .icon {
   background-color: #CF0000;
   border-color: #ffffff;
   color: #ffffff;
 }
+
 .edemy-nav .navbar .others-option {
   margin-left: 25px;
 }
+
 .edemy-nav .navbar .others-option .option-item {
   margin-left: 30px;
 }
+
 .edemy-nav .navbar .others-option .option-item:first-child {
   margin-left: 0;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown {
   position: relative;
   cursor: pointer;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .img img {
   border-radius: 100px;
   width: 35px;
   height: 35px;
-  max-width:100%;
+  max-width: 100%;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu {
   right: 0;
   display: block;
@@ -903,41 +1027,50 @@ Navbar Area CSS
   width: 300px;
   border: 1px solid #eee;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu .dropdown-item {
   position: relative;
   padding: 8px 22px 8px 45px;
   font-size: 15px;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu .dropdown-item:active {
   color: var(--bs-dropdown-link-hover-color);
   background-color: var(--bs-dropdown-link-hover-bg);
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu .dropdown-item.author-dropdown-item {
   padding-left: 22px;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu .dropdown-item i {
   position: absolute;
   top: 8px;
   font-size: 18px;
   left: 20px;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu .dropdown-item i.bx-log-out {
   top: 10px;
 }
+
 .edemy-nav .navbar .others-option .option-item .profile-dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
 }
+
 .edemy-nav .navbar .others-option .cart-btn {
   font-size: 22px;
   position: relative;
   line-height: 1;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .cart-link {
   display: inline-block;
   position: relative;
   color: #221638;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .cart-link span {
   position: absolute;
   right: -13px;
@@ -952,13 +1085,16 @@ Navbar Area CSS
   font-size: 10px;
   font-weight: 600;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .cart-link:hover {
   color: #CF0000;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .dropdown {
   position: relative;
   cursor: pointer;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .dropdown .dropdown-menu {
   right: 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -969,19 +1105,23 @@ Navbar Area CSS
   transition: 0.5s;
   border: 1px solid #eee;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .dropdown .dropdown-menu .dropdown-item {
   padding: 8px 15px;
   font-size: 15px;
   white-space: initial;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .dropdown .dropdown-menu .dropdown-item:active {
   color: var(--bs-dropdown-link-hover-color);
   background-color: var(--bs-dropdown-link-hover-bg);
 }
+
 .edemy-nav .navbar .others-option .cart-btn .dropdown .empty {
   padding: 8px 22px;
   font-size: 15px;
 }
+
 .edemy-nav .navbar .others-option .cart-btn .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -994,6 +1134,7 @@ Navbar Area CSS
   padding-bottom: 5px;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
 }
+
 .navbar-area.is-sticky {
   position: sticky;
   top: 0;
@@ -1004,6 +1145,7 @@ Navbar Area CSS
   background-color: #ffffff !important;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
+
 .navbar-area.is-sticky.pb-0 {
   padding-bottom: 5px !important;
 }
@@ -1014,6 +1156,7 @@ Navbar Area CSS
   border-radius: 0;
   padding: 0;
 }
+
 .navbar-toggler .icon-bar {
   width: 35px;
   transition: all 0.3s;
@@ -1022,29 +1165,35 @@ Navbar Area CSS
   display: block;
   border-radius: 3px;
 }
+
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
   left: 4px;
   position: relative;
 }
+
 .navbar-toggler .middle-bar {
   opacity: 0;
   margin: 5px 0;
 }
+
 .navbar-toggler .bottom-bar {
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
   left: 4px;
   position: relative;
 }
+
 .navbar-toggler.collapsed .top-bar {
   transform: rotate(0);
   left: 0;
 }
+
 .navbar-toggler.collapsed .middle-bar {
   opacity: 1;
 }
+
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
   left: 0;
@@ -1056,6 +1205,7 @@ Navbar Area CSS
     padding-bottom: 20px;
   }
 }
+
 /*================================================
 Main Banner Area CSS
 =================================================*/
@@ -1067,6 +1217,7 @@ Main Banner Area CSS
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .main-banner .container-fluid {
   max-width: 1395px;
 }
@@ -1087,11 +1238,13 @@ Main Banner Area CSS
   position: relative;
   padding-right: 30px;
 }
+
 .main-banner-content h1 {
   margin-bottom: 25px;
   color: white;
   font-size: 48px;
 }
+
 .main-banner-content p {
   max-width: 450px;
   line-height: 1.8;
@@ -1099,6 +1252,7 @@ Main Banner Area CSS
   font-weight: 600;
   font-size: 17px;
 }
+
 .main-banner-content .default-btn {
   margin-top: 10px;
   border-radius: 100px;
@@ -1107,6 +1261,7 @@ Main Banner Area CSS
 .main-banner-courses-list .single-courses-box {
   margin-bottom: 0;
 }
+
 .main-banner-courses-list .single-courses-box .courses-content {
   padding: 20px;
 }
@@ -1118,6 +1273,7 @@ Main Banner Area CSS
   z-index: -1;
   text-align: center;
 }
+
 .banner-shape1 img {
   animation: moveleftbounce 4s linear infinite;
   width: 120px;
@@ -1130,6 +1286,7 @@ Main Banner Area CSS
   bottom: 0;
   right: 20px;
 }
+
 .banner-shape2 img {
   animation: movebounce 5s linear infinite;
 }
@@ -1141,6 +1298,7 @@ Main Banner Area CSS
   top: 30px;
   left: 30px;
 }
+
 .banner-shape3 img {
   animation-name: rotateme;
   animation-duration: 50s;
@@ -1158,6 +1316,7 @@ Main Banner Area CSS
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .banner-section .container-fluid {
   max-width: 1395px;
 }
@@ -1167,18 +1326,22 @@ Main Banner Area CSS
   margin-bottom: 20px;
   font-size: 48px;
 }
+
 .banner-content p {
   max-width: 450px;
   color: #d2d2d2;
   font-weight: 600;
   font-size: 17px;
 }
+
 .banner-content .default-btn {
   margin-top: 15px;
 }
+
 .banner-content .default-btn span {
   background-color: #ffffff;
 }
+
 .banner-content .default-btn:hover {
   color: #221638;
 }
@@ -1191,6 +1354,7 @@ Partner Area CSS
   padding-right: 200px;
   padding-bottom: 50px;
 }
+
 .partner-area.border-bottom {
   border-bottom-color: #efeff1 !important;
 }
@@ -1217,45 +1381,56 @@ Features Area CSS
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #D7DFE5;
 }
+
 .single-features-box:hover {
   background-color: #CF0000;
   color: white;
 }
+
 .single-features-box:hover p {
   color: white;
 }
+
 .single-features-box:hover h3 {
   color: white;
 }
+
 .single-features-box .icon {
   font-size: 50px;
   line-height: 1;
   margin-bottom: 15px;
 }
+
 .single-features-box h3 {
   margin-bottom: 15px;
   font-size: 22px;
 }
+
 .single-features-box p {
   margin-bottom: 12px;
 }
+
 .single-features-box .link-btn {
   display: inline-block;
   color: #CF0000;
   font-size: 15px;
   font-weight: 700;
 }
+
 .single-features-box .link-btn:hover {
   color: #221638;
 }
+
 .single-features-box:hover {
   transform: translateY(-10px);
 }
+
 .single-features-box.without-padding {
   text-align: left;
   padding: 0;
   background-color: transparent;
 }
+
 .single-features-box.without-padding p {
   max-width: 315px;
 }
@@ -1277,6 +1452,7 @@ About Area CSS
 .about-content {
   padding-left: 15px;
 }
+
 .about-content .sub-title {
   display: block;
   text-transform: uppercase;
@@ -1285,10 +1461,12 @@ About Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .about-content h2 {
   margin-bottom: 15px;
   font-size: 36px;
 }
+
 .about-content .features-list {
   padding-left: 0;
   list-style-type: none;
@@ -1299,6 +1477,7 @@ About Area CSS
   margin-left: -8px;
   margin-right: -8px;
 }
+
 .about-content .features-list li {
   flex: 0 0 50%;
   max-width: 50%;
@@ -1306,6 +1485,7 @@ About Area CSS
   padding-right: 8px;
   padding-top: 16px;
 }
+
 .about-content .features-list li span {
   display: block;
   position: relative;
@@ -1316,6 +1496,7 @@ About Area CSS
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .about-content .features-list li span i {
   position: absolute;
   left: 0;
@@ -1331,6 +1512,7 @@ About Area CSS
   background: #fff;
   border-radius: 30px;
 }
+
 .about-content .default-btn {
   margin-top: 30px;
   border-radius: 100px;
@@ -1340,11 +1522,13 @@ About Area CSS
   position: relative;
   z-index: 1;
 }
+
 .about-img .image {
   text-align: right;
   position: relative;
   padding-bottom: 45px;
 }
+
 .about-img .image img:nth-child(2) {
   position: absolute;
   left: 80px;
@@ -1357,6 +1541,7 @@ About Area CSS
   top: 0;
   z-index: -1;
 }
+
 .shape1 img {
   animation: moveleftbounce 4s linear infinite;
 }
@@ -1367,6 +1552,7 @@ About Area CSS
   bottom: 8%;
   z-index: -1;
 }
+
 .shape2 img {
   animation: movebounce 5s linear infinite;
 }
@@ -1377,6 +1563,7 @@ About Area CSS
   bottom: 12%;
   z-index: -1;
 }
+
 .shape3 img {
   animation-name: rotateme;
   animation-duration: 100s;
@@ -1390,6 +1577,7 @@ About Area CSS
   bottom: 40%;
   z-index: -1;
 }
+
 .shape4 img {
   animation: movescale 4s linear infinite;
 }
@@ -1398,43 +1586,54 @@ About Area CSS
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(20px);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
+
 @keyframes moveleftbounce {
   0% {
     transform: translateX(0px);
   }
+
   50% {
     transform: translateX(20px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
+
 @keyframes rotateme {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 @keyframes movescale {
   0% {
     transform: scale(0.9);
   }
+
   50% {
     transform: scale(0.8);
   }
+
   100% {
     transform: scale(0.9);
   }
 }
+
 .about-content .about-list {
   padding-left: 0;
   list-style-type: none;
@@ -1445,6 +1644,7 @@ About Area CSS
   margin-left: -8px;
   margin-right: -8px;
 }
+
 .about-content .about-list li {
   flex: 0 0 50%;
   max-width: 50%;
@@ -1452,6 +1652,7 @@ About Area CSS
   padding-right: 8px;
   padding-top: 16px;
 }
+
 .about-content .about-list li span {
   display: block;
   position: relative;
@@ -1459,6 +1660,7 @@ About Area CSS
   padding-left: 40px;
   padding-top: 3px;
 }
+
 .about-content .about-list li span i {
   position: absolute;
   left: 0;
@@ -1474,6 +1676,7 @@ About Area CSS
   font-size: 20px;
   transition: 0.5s;
 }
+
 .about-content .about-list li span i::after {
   content: "";
   position: absolute;
@@ -1487,18 +1690,21 @@ About Area CSS
   margin: 2px 1px 1px 2px;
   transition: 0.5s;
 }
+
 .about-content .about-list li span:hover i {
   background-color: #CF0000;
   color: #CF0000;
 }
+
 .about-content .about-list li span:hover i::after {
   background-color: #ffffff;
 }
+
 .about-content .default-btn-style-two {
   margin-top: 35px;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -1519,15 +1725,18 @@ Courses Area CSS
   background-color: #ffffff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
 .single-courses-box .courses-image {
   position: relative;
   z-index: 1;
 }
+
 .single-courses-box .courses-image .image img {
   max-width: 100% !important;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .single-courses-box .courses-image .fav {
   display: inline-block;
   position: absolute;
@@ -1539,9 +1748,11 @@ Courses Area CSS
   padding: 0;
   border: none;
 }
+
 .single-courses-box .courses-image .fav:hover {
   color: red;
 }
+
 .single-courses-box .courses-image .price {
   display: inline-block;
   background-color: #CF0000;
@@ -1557,35 +1768,43 @@ Courses Area CSS
   font-size: 16px;
   font-weight: 800;
 }
+
 .single-courses-box .courses-image .discount-price {
   right: 100px;
   background: red;
 }
+
 .single-courses-box .courses-content {
   border-radius: 0 0 5px 5px;
   padding: 30px;
 }
+
 .single-courses-box .courses-content .course-author {
   margin-bottom: 15px;
 }
+
 .single-courses-box .courses-content .course-author img {
   width: 35px;
   height: 35px;
   margin-right: 10px;
 }
+
 .single-courses-box .courses-content .course-author span {
   color: #CF0000;
   font-weight: 600;
   font-size: 15px;
 }
+
 .single-courses-box .courses-content h3 {
   margin-bottom: 12px;
   line-height: 1.3;
   font-size: 24px;
 }
+
 .single-courses-box .courses-content h3 a {
   display: inline-block;
 }
+
 .single-courses-box .courses-content .courses-box-footer {
   list-style-type: none;
   padding-left: 0;
@@ -1594,6 +1813,7 @@ Courses Area CSS
   margin-right: -7px;
   margin-top: 20px;
 }
+
 .single-courses-box .courses-content .courses-box-footer li {
   color: #606060;
   font-size: 15px;
@@ -1601,39 +1821,49 @@ Courses Area CSS
   padding-left: 25px;
   padding-right: 7px;
 }
+
 .single-courses-box .courses-content .courses-box-footer li i {
   color: #CF0000;
   position: absolute;
   left: 7px;
   top: 0;
 }
+
 .single-courses-box .courses-content .courses-box-footer li i.flaticon-people {
   font-size: 18px;
   left: 3px;
 }
+
 .single-courses-box.bg-color {
   background-color: #fffaf3;
   box-shadow: unset;
   transition: 0.5s;
 }
+
 .single-courses-box.bg-color .courses-content h3 {
   margin-bottom: 10px;
 }
+
 .single-courses-box.bg-color:hover {
   background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
 }
+
 .single-courses-box.without-boxshadow {
   background-color: #ffffff;
   box-shadow: unset;
   transition: 0.5s;
 }
+
 .single-courses-box.without-boxshadow .courses-content h3 {
   margin-bottom: 10px;
 }
-.single-courses-box.without-boxshadow:hover, .single-courses-box.without-boxshadow.active {
+
+.single-courses-box.without-boxshadow:hover,
+.single-courses-box.without-boxshadow.active {
   box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
 }
+
 .single-courses-box.style-2 .video_box {
   position: absolute;
   top: 0;
@@ -1645,6 +1875,7 @@ Courses Area CSS
   transform: scale(0);
   transition: 0.5s;
 }
+
 .single-courses-box.style-2 .video_box i {
   background-color: #fff;
   width: 60px;
@@ -1656,16 +1887,20 @@ Courses Area CSS
   padding-left: 5px;
   cursor: pointer;
 }
+
 .single-courses-box.style-2 .video_box i:hover {
   background-color: #CF0000;
   color: #fff;
 }
+
 .single-courses-box.style-2:hover .video_box {
   transform: scale(1);
 }
+
 .single-courses-box.style-2 .courses-content {
   padding: 20px;
 }
+
 .single-courses-box.style-2 .courses-content h3 {
   font-size: 18px;
 }
@@ -1674,9 +1909,11 @@ Courses Area CSS
   text-align: center;
   margin-top: 20px;
 }
+
 .courses-info .default-btn {
   margin-bottom: 15px;
 }
+
 .courses-info p {
   max-width: 630px;
   margin-left: auto;
@@ -1684,9 +1921,11 @@ Courses Area CSS
   margin-top: 20px;
   margin-bottom: 0;
 }
+
 .courses-info p a {
   color: #CF0000;
 }
+
 .courses-info p a:hover {
   text-decoration: underline;
   color: #221638;
@@ -1711,6 +1950,7 @@ Courses Details Area CSS
   margin-top: 10px;
   padding-right: 15px;
 }
+
 .courses-details-desc .react-tabs__tab-list {
   margin-bottom: 0;
   list-style-type: none;
@@ -1720,6 +1960,7 @@ Courses Details Area CSS
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .courses-details-desc .react-tabs__tab-list .react-tabs__tab {
   margin-bottom: 0;
   margin-right: 40px;
@@ -1734,6 +1975,7 @@ Courses Details Area CSS
   font-size: 18px;
   font-weight: 800;
 }
+
 .courses-details-desc .react-tabs__tab-list .react-tabs__tab::before {
   content: "";
   bottom: 1px;
@@ -1745,27 +1987,36 @@ Courses Details Area CSS
   width: 100%;
   transform: scaleX(0);
 }
-.courses-details-desc .react-tabs__tab-list .react-tabs__tab:hover, .courses-details-desc .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
+
+.courses-details-desc .react-tabs__tab-list .react-tabs__tab:hover,
+.courses-details-desc .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
   color: #221638;
 }
-.courses-details-desc .react-tabs__tab-list .react-tabs__tab:hover::before, .courses-details-desc .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected::before {
+
+.courses-details-desc .react-tabs__tab-list .react-tabs__tab:hover::before,
+.courses-details-desc .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected::before {
   transform: scaleX(1);
 }
+
 .courses-details-desc .react-tabs__tab-list .react-tabs__tab:last-child {
   margin-right: 0;
 }
+
 .courses-details-desc .react-tabs__tab-panel {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 40px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-overview h3 {
   margin-bottom: 12px;
   font-size: 24px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-overview h3:not(:first-child) {
   margin-top: 30px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum {
   border: 1px solid #eeeeee;
   border-radius: 5px;
@@ -1773,21 +2024,26 @@ Courses Details Area CSS
   margin-left: -30px;
   margin-right: -30px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum h3 {
   margin-bottom: 18px;
   font-size: 20px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum h3:not(:first-child) {
   margin-top: 30px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li {
   display: block;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a {
   background-color: #f8f9f8;
   color: #221638;
@@ -1799,6 +2055,7 @@ Courses Details Area CSS
   margin-left: -30px;
   margin-right: -30px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a::before {
   content: "\f104";
   position: absolute;
@@ -1808,13 +2065,16 @@ Courses Details Area CSS
   font-size: 18px;
   font-family: Flaticon;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-name {
   font-size: 14.5px;
   font-weight: 700;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-meta {
   text-align: right;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-meta .questions {
   display: inline-block;
   background: #e3f1f2;
@@ -1826,6 +2086,7 @@ Courses Details Area CSS
   font-size: 14px;
   font-weight: 700;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-meta .duration {
   display: inline-block;
   background: #f7e7e8;
@@ -1837,6 +2098,7 @@ Courses Details Area CSS
   font-weight: 600;
   text-transform: capitalize;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-meta .status {
   display: inline-block;
   background: #221638;
@@ -1848,6 +2110,7 @@ Courses Details Area CSS
   font-weight: 600;
   text-transform: capitalize;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a .courses-meta .status.locked {
   color: #221638;
   background-color: transparent;
@@ -1859,72 +2122,138 @@ Courses Details Area CSS
   font-size: 18px;
   font-weight: normal;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li a:hover {
   color: #CF0000;
 }
-.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(2) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(4) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(6) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(8) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(10) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(12) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(14) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(16) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(18) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(20) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(22) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(24) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(26) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(28) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(30) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(32) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(34) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(36) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(38) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(40) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(42) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(44) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(46) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(48) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(50) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(52) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(54) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(56) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(58) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(60) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(62) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(64) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(66) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(68) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(70) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(72) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(74) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(76) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(78) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(80) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(82) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(84) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(86) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(88) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(90) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(92) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(94) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(96) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(98) a, .courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(100) a {
+
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(2) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(4) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(6) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(8) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(10) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(12) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(14) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(16) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(18) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(20) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(22) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(24) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(26) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(28) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(30) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(32) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(34) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(36) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(38) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(40) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(42) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(44) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(46) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(48) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(50) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(52) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(54) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(56) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(58) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(60) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(62) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(64) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(66) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(68) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(70) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(72) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(74) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(76) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(78) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(80) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(82) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(84) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(86) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(88) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(90) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(92) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(94) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(96) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(98) a,
+.courses-details-desc .react-tabs__tab-panel .courses-curriculum ul li:nth-child(100) a {
   background-color: #ffffff;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-instructor .single-advisor-box {
   margin-bottom: 0;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-instructor .single-advisor-box .advisor-image {
   top: 0;
   margin-bottom: 0;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-instructor .single-advisor-box .advisor-content {
   padding: 0 0 0 20px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews h3 {
   margin-bottom: 0;
   display: inline-block;
   margin-right: 15px;
   font-size: 21px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .rating {
   display: inline-block;
   position: relative;
   top: 1px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .rating span {
   font-size: 19px;
   color: #cecfd2;
   margin-right: 2px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .rating span.checked {
   color: orange;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .rating-count {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .rating-count span {
   display: block;
   font-size: 16px;
   color: #606060;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .row {
   overflow: hidden;
   margin-left: 0;
   margin-right: 0;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .side {
   float: left;
   width: 9%;
   margin-top: 10px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .side div {
   font-size: 16px;
   font-weight: 700;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .middle {
   margin-top: 14px;
   float: left;
   width: 82%;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .right {
   text-align: right;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-container {
   width: 100%;
   background-color: #f1f1f1;
@@ -1932,12 +2261,14 @@ Courses Details Area CSS
   color: #ffffff;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-5 {
   width: 100%;
   height: 18px;
   background-color: #4CAF50;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-4 {
   width: 75%;
   height: 18px;
@@ -1945,38 +2276,45 @@ Courses Details Area CSS
   border-radius: 5px;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-3 {
   width: 50%;
   height: 18px;
   background-color: #00bcd4;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-2 {
   width: 25%;
   height: 18px;
   background-color: #ff9800;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-reviews .bar-1 {
   width: 0;
   height: 18px;
   background-color: #f44336;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments {
   margin-top: 40px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments h3 {
   border-bottom: 1px solid #f3f3f3;
   padding-bottom: 12px;
   margin-bottom: 8px;
   font-size: 21px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review {
   border-bottom: 1px solid #f3f3f3;
   padding: 20px 0 20px 110px;
   position: relative;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review img {
   position: absolute;
   left: 0;
@@ -1985,26 +2323,32 @@ Courses Details Area CSS
   height: 90px;
   border-radius: 5px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review .sub-comment {
   margin-bottom: 8px;
   font-weight: 700;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review .review-rating {
   display: block;
   margin-bottom: 8px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review .review-rating .review-stars {
   display: inline-block;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review .review-rating .review-stars i {
   color: #cecfd2;
   font-size: 18px;
   display: inline-block;
   margin-right: 2px;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review .review-rating .review-stars i.checked {
   color: orange;
 }
+
 .courses-details-desc .react-tabs__tab-panel .courses-review-comments .user-review .review-rating span {
   color: #221638;
   position: relative;
@@ -2020,10 +2364,12 @@ Courses Details Area CSS
   margin-left: 15px;
   margin-top: -248px;
 }
+
 .courses-details-info .image {
   text-align: center;
   position: relative;
 }
+
 .courses-details-info .image .link-btn {
   display: block;
   width: 100%;
@@ -2033,6 +2379,7 @@ Courses Details Area CSS
   left: 0;
   top: 0;
 }
+
 .courses-details-info .image .content {
   position: absolute;
   left: 0;
@@ -2041,6 +2388,7 @@ Courses Details Area CSS
   top: 50%;
   transform: translateY(-50%);
 }
+
 .courses-details-info .image .content i {
   display: block;
   width: 60px;
@@ -2054,6 +2402,7 @@ Courses Details Area CSS
   margin-right: auto;
   margin-bottom: 15px;
 }
+
 .courses-details-info .image .content span {
   display: inline-block;
   color: #ffffff;
@@ -2063,6 +2412,7 @@ Courses Details Area CSS
   font-size: 17px;
   font-weight: 700;
 }
+
 .courses-details-info .image::before {
   content: "";
   position: absolute;
@@ -2074,6 +2424,7 @@ Courses Details Area CSS
   background-color: #221638;
   opacity: 0.25;
 }
+
 .courses-details-info .info {
   margin-bottom: 0;
   list-style-type: none;
@@ -2081,6 +2432,7 @@ Courses Details Area CSS
   padding-right: 25px;
   padding-top: 35px;
 }
+
 .courses-details-info .info li {
   border-bottom: 1px solid #e5e5e7;
   color: #606060;
@@ -2089,12 +2441,14 @@ Courses Details Area CSS
   padding-top: 15px;
   padding-bottom: 14px;
 }
+
 .courses-details-info .info li span {
   font-weight: 800;
   color: #221638;
   position: relative;
   padding-left: 28px;
 }
+
 .courses-details-info .info li span i {
   color: #CF0000;
   position: absolute;
@@ -2103,25 +2457,30 @@ Courses Details Area CSS
   top: -2px;
   font-size: 20px;
 }
+
 .courses-details-info .info li.price {
   padding-bottom: 10px;
   color: #CF0000;
   font-size: 28px;
   font-weight: 800;
 }
+
 .courses-details-info .info li.price span {
   color: #221638;
   font-size: 17px;
   font-weight: 800;
 }
+
 .courses-details-info .info li:first-child {
   padding-top: 0;
 }
+
 .courses-details-info .btn-box {
   margin-top: 35px;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .courses-details-info .btn-box .default-btn {
   display: block;
   padding-right: 30px;
@@ -2129,6 +2488,7 @@ Courses Details Area CSS
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
 .courses-details-info .btn-box .default-btn i {
   position: relative;
   left: 0;
@@ -2138,27 +2498,32 @@ Courses Details Area CSS
   font-weight: normal;
   font-size: 20px;
 }
+
 .courses-details-info .btn-box .default-btn:not(:first-child) {
   margin-top: 15px;
   background-color: transparent;
   color: #221638;
   border: 1px solid #221638;
 }
+
 .courses-details-info .btn-box .default-btn:not(:first-child):hover {
   color: #ffffff;
   border-color: #221638;
 }
+
 .courses-details-info .courses-share {
   text-align: center;
   margin-top: 20px;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .courses-details-info .courses-share .share-info {
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
+
 .courses-details-info .courses-share .share-info span {
   display: inline-block;
   color: #CF0000;
@@ -2166,9 +2531,11 @@ Courses Details Area CSS
   font-size: 16px;
   font-weight: 700;
 }
+
 .courses-details-info .courses-share .share-info span i {
   color: #221638;
 }
+
 .courses-details-info .courses-share .share-info .social-link {
   padding-left: 0;
   list-style-type: none;
@@ -2181,13 +2548,16 @@ Courses Details Area CSS
   transition: 0.5s;
   margin-bottom: 0;
 }
+
 .courses-details-info .courses-share .share-info .social-link li {
   display: inline-block;
   margin-right: 3px;
 }
+
 .courses-details-info .courses-share .share-info .social-link li:last-child {
   margin-right: 0;
 }
+
 .courses-details-info .courses-share .share-info .social-link li a {
   width: 30px;
   height: 30px;
@@ -2198,6 +2568,7 @@ Courses Details Area CSS
   position: relative;
   border-radius: 2px;
 }
+
 .courses-details-info .courses-share .share-info .social-link li a i {
   position: absolute;
   left: 0;
@@ -2205,10 +2576,12 @@ Courses Details Area CSS
   right: 0;
   transform: translateY(-48%);
 }
+
 .courses-details-info .courses-share .share-info .social-link li a:hover {
   background-color: #CF0000;
   color: #ffffff;
 }
+
 .courses-details-info .courses-share .share-info:hover .social-link {
   opacity: 1;
   visibility: visible;
@@ -2218,17 +2591,21 @@ Courses Details Area CSS
 .courses-details-header {
   margin-bottom: 20px;
 }
+
 .courses-details-header .courses-title p {
   font-size: 17px;
 }
+
 .courses-details-header .courses-meta {
   margin-top: 20px;
 }
+
 .courses-details-header .courses-meta ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .courses-details-header .courses-meta ul li {
   margin-right: 20px;
   position: relative;
@@ -2239,6 +2616,7 @@ Courses Details Area CSS
   padding-right: 20px;
   padding-left: 40px;
 }
+
 .courses-details-header .courses-meta ul li i {
   font-size: 28px;
   color: #cfcfcf;
@@ -2247,6 +2625,7 @@ Courses Details Area CSS
   top: 50%;
   transform: translateY(-50%);
 }
+
 .courses-details-header .courses-meta ul li span {
   display: block;
   color: #CF0000;
@@ -2255,21 +2634,27 @@ Courses Details Area CSS
   font-size: 13.5px;
   font-weight: 700;
 }
+
 .courses-details-header .courses-meta ul li a {
   display: inline-block;
   color: #221638;
 }
-.courses-details-header .courses-meta ul li a:hover, .courses-details-header .courses-meta ul li a:focus {
+
+.courses-details-header .courses-meta ul li a:hover,
+.courses-details-header .courses-meta ul li a:focus {
   color: #CF0000;
 }
+
 .courses-details-header .courses-meta ul li:last-child {
   padding-right: 0;
   margin-right: 0;
   border-right: none;
 }
+
 .courses-details-header .courses-price {
   text-align: right;
 }
+
 .courses-details-header .courses-price .price {
   display: inline-block;
   margin-right: 15px;
@@ -2279,19 +2664,23 @@ Courses Details Area CSS
   font-size: 36px;
   font-weight: 800;
 }
+
 .courses-details-header .courses-price .courses-review {
   display: block;
   margin-bottom: 10px;
 }
+
 .courses-details-header .courses-price .courses-review .review-stars {
   display: inline-block;
 }
+
 .courses-details-header .courses-price .courses-review .review-stars i {
   color: #f2b827;
   font-size: 18px;
   display: inline-block;
   margin-right: 2px;
 }
+
 .courses-details-header .courses-price .courses-review .reviews-total {
   position: relative;
   color: #606060;
@@ -2308,16 +2697,20 @@ Courses Details Area CSS
 .courses-details-desc-style-two {
   margin-top: 35px;
 }
+
 .courses-details-desc-style-two h3 {
   margin-bottom: 15px;
   font-size: 24px;
 }
+
 .courses-details-desc-style-two h3:not(first-child) {
   margin-top: 30px;
 }
+
 .courses-details-desc-style-two .why-you-learn {
   margin-top: 20px;
 }
+
 .courses-details-desc-style-two .why-you-learn ul {
   display: flex;
   flex-wrap: wrap;
@@ -2327,6 +2720,7 @@ Courses Details Area CSS
   margin-right: -10px;
   margin-bottom: -12px;
 }
+
 .courses-details-desc-style-two .why-you-learn ul li {
   flex: 0 0 50%;
   max-width: 50%;
@@ -2334,6 +2728,7 @@ Courses Details Area CSS
   padding-right: 10px;
   padding-bottom: 12px;
 }
+
 .courses-details-desc-style-two .why-you-learn ul li span {
   display: block;
   color: #221638;
@@ -2342,6 +2737,7 @@ Courses Details Area CSS
   line-height: 1.7;
   font-weight: 500;
 }
+
 .courses-details-desc-style-two .why-you-learn ul li span i {
   position: absolute;
   left: 0;
@@ -2349,25 +2745,30 @@ Courses Details Area CSS
   color: #CF0000;
   font-size: 13px;
 }
+
 .courses-details-desc-style-two .courses-curriculum {
   border: 1px solid #eeeeee;
   border-radius: 5px;
   padding: 30px;
   margin-top: 20px;
 }
+
 .courses-details-desc-style-two .courses-curriculum h3 {
   margin-top: 0;
   margin-bottom: 18px;
   font-size: 18px;
 }
+
 .courses-details-desc-style-two .courses-curriculum h3:not(:first-child) {
   margin-top: 30px;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li {
   background-color: #f8f9f8;
   color: #221638;
@@ -2379,6 +2780,7 @@ Courses Details Area CSS
   margin-left: -30px;
   margin-right: -30px;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li::before {
   content: "\f104";
   position: absolute;
@@ -2388,13 +2790,16 @@ Courses Details Area CSS
   font-size: 18px;
   font-family: Flaticon;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li .courses-name {
   font-size: 14.5px;
   font-weight: 700;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li .courses-meta {
   text-align: right;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li .courses-meta .questions {
   display: inline-block;
   background: #e3f1f2;
@@ -2406,6 +2811,7 @@ Courses Details Area CSS
   font-size: 14px;
   font-weight: 700;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li .courses-meta .duration {
   display: inline-block;
   background: #f7e7e8;
@@ -2417,6 +2823,7 @@ Courses Details Area CSS
   font-weight: 600;
   text-transform: capitalize;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li .courses-meta .status {
   display: inline-block;
   background: #221638;
@@ -2429,6 +2836,7 @@ Courses Details Area CSS
   font-weight: 600;
   text-transform: capitalize;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li .courses-meta .status.locked {
   color: #221638;
   background-color: transparent;
@@ -2440,23 +2848,77 @@ Courses Details Area CSS
   font-size: 18px;
   font-weight: normal;
 }
+
 .courses-details-desc-style-two .courses-curriculum ul li:hover {
   color: #CF0000;
 }
-.courses-details-desc-style-two .courses-curriculum ul li:nth-child(2), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(4), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(6), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(8), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(10), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(12), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(14), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(16), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(18), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(20), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(22), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(24), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(26), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(28), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(30), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(32), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(34), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(36), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(38), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(40), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(42), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(44), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(46), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(48), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(50), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(52), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(54), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(56), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(58), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(60), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(62), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(64), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(66), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(68), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(70), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(72), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(74), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(76), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(78), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(80), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(82), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(84), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(86), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(88), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(90), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(92), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(94), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(96), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(98), .courses-details-desc-style-two .courses-curriculum ul li:nth-child(100) {
+
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(2),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(4),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(6),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(8),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(10),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(12),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(14),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(16),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(18),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(20),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(22),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(24),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(26),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(28),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(30),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(32),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(34),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(36),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(38),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(40),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(42),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(44),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(46),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(48),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(50),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(52),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(54),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(56),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(58),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(60),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(62),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(64),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(66),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(68),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(70),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(72),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(74),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(76),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(78),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(80),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(82),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(84),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(86),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(88),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(90),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(92),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(94),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(96),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(98),
+.courses-details-desc-style-two .courses-curriculum ul li:nth-child(100) {
   background-color: #ffffff;
 }
+
 .courses-details-desc-style-two .requirements-list {
   padding-left: 15px;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .courses-details-desc-style-two .requirements-list li {
   color: #606060;
   margin-bottom: 10px;
   position: relative;
   padding-left: 17px;
 }
+
 .courses-details-desc-style-two .requirements-list li::before {
   position: absolute;
   left: 0;
@@ -2467,17 +2929,21 @@ Courses Details Area CSS
   border-radius: 50%;
   background-color: #221638;
 }
+
 .courses-details-desc-style-two .requirements-list li:last-child {
   margin-bottom: 0;
 }
+
 .courses-details-desc-style-two p strong {
   color: #221638;
 }
+
 .courses-details-desc-style-two .description-features-list {
   padding-left: 15px;
   margin-bottom: 15px;
   list-style-type: none;
 }
+
 .courses-details-desc-style-two .description-features-list li {
   color: #606060;
   margin-bottom: 10px;
@@ -2485,6 +2951,7 @@ Courses Details Area CSS
   padding-left: 17px;
   line-height: 1.8;
 }
+
 .courses-details-desc-style-two .description-features-list li::before {
   position: absolute;
   left: 0;
@@ -2495,17 +2962,21 @@ Courses Details Area CSS
   border-radius: 50%;
   background-color: #221638;
 }
+
 .courses-details-desc-style-two .description-features-list li strong {
   color: #221638;
 }
+
 .courses-details-desc-style-two .description-features-list li:last-child {
   margin-bottom: 0;
 }
+
 .courses-details-desc-style-two .audience-list {
   padding-left: 15px;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .courses-details-desc-style-two .audience-list li {
   color: #606060;
   margin-bottom: 10px;
@@ -2513,6 +2984,7 @@ Courses Details Area CSS
   padding-left: 17px;
   line-height: 1.8;
 }
+
 .courses-details-desc-style-two .audience-list li::before {
   position: absolute;
   left: 0;
@@ -2523,38 +2995,47 @@ Courses Details Area CSS
   border-radius: 50%;
   background-color: #221638;
 }
+
 .courses-details-desc-style-two .audience-list li strong {
   color: #221638;
 }
+
 .courses-details-desc-style-two .audience-list li:last-child {
   margin-bottom: 0;
 }
+
 .courses-details-desc-style-two .courses-author {
   margin-top: 20px;
   border-radius: 5px;
   background: #f8f8f8;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share {
   text-align: end;
   margin-right: 10px;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info {
   display: inline-block;
   position: relative;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info .social-link {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 0;
   margin-top: 12px;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info .social-link li {
   display: inline-block;
   margin-right: 3px;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info .social-link li:last-child {
   margin-right: 0;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info .social-link li a {
   width: 30px;
   height: 30px;
@@ -2565,6 +3046,7 @@ Courses Details Area CSS
   position: relative;
   border-radius: 2px;
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info .social-link li a i {
   position: absolute;
   left: 0;
@@ -2572,10 +3054,12 @@ Courses Details Area CSS
   right: 0;
   transform: translateY(-48%);
 }
+
 .courses-details-desc-style-two .courses-author .courses-share .share-info .social-link li a:hover {
   background-color: #CF0000;
   color: #ffffff;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile-header {
   height: 115px;
   border-radius: 5px 5px 0 0;
@@ -2586,81 +3070,99 @@ Courses Details Area CSS
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile {
   padding: 0 25px 25px;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile .author-profile-title {
   position: relative;
   z-index: 1;
   margin-bottom: 15px;
   margin-top: -45px;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile .author-profile-title img {
   display: inline-block;
   border: 3px solid #ffffff;
   width: 100px;
   height: 100px;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile .author-profile-title .author-profile-title-details {
   margin-top: 15px;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile .author-profile-title .author-profile-title-details .author-profile-details h4 {
   margin-bottom: 5px;
   font-size: 22px;
 }
+
 .courses-details-desc-style-two .courses-author .author-profile .author-profile-title .author-profile-title-details .author-profile-details span {
   color: #606060;
 }
+
 .courses-details-desc-style-two .courses-reviews h3 {
   margin-bottom: 0;
   display: inline-block;
   margin-right: 15px;
   font-size: 24px;
 }
+
 .courses-details-desc-style-two .courses-reviews .rating {
   display: inline-block;
   position: relative;
   top: 2px;
 }
+
 .courses-details-desc-style-two .courses-reviews .rating span {
   font-size: 17px;
   color: #cecfd2;
   margin-right: 2px;
 }
+
 .courses-details-desc-style-two .courses-reviews .rating span.checked {
   color: orange;
 }
+
 .courses-details-desc-style-two .courses-reviews .rating-count {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .courses-details-desc-style-two .courses-reviews .rating-count span {
   display: block;
   font-size: 16px;
   color: #606060;
 }
+
 .courses-details-desc-style-two .courses-reviews .row {
   overflow: hidden;
   margin-left: 0;
   margin-right: 0;
 }
+
 .courses-details-desc-style-two .courses-reviews .side {
   float: left;
   width: 9%;
   margin-top: 10px;
 }
+
 .courses-details-desc-style-two .courses-reviews .side div {
   font-size: 16px;
   font-weight: 700;
 }
+
 .courses-details-desc-style-two .courses-reviews .middle {
   margin-top: 14px;
   float: left;
   width: 82%;
 }
+
 .courses-details-desc-style-two .courses-reviews .right {
   text-align: right;
 }
+
 .courses-details-desc-style-two .courses-reviews .bar-container {
   width: 100%;
   background-color: #f1f1f1;
@@ -2668,12 +3170,14 @@ Courses Details Area CSS
   color: #ffffff;
   border-radius: 5px;
 }
+
 .courses-details-desc-style-two .courses-reviews .bar-5 {
   width: 100%;
   height: 18px;
   background-color: #4CAF50;
   border-radius: 5px;
 }
+
 .courses-details-desc-style-two .courses-reviews .bar-4 {
   width: 75%;
   height: 18px;
@@ -2681,18 +3185,21 @@ Courses Details Area CSS
   border-radius: 5px;
   border-radius: 5px;
 }
+
 .courses-details-desc-style-two .courses-reviews .bar-3 {
   width: 50%;
   height: 18px;
   background-color: #00bcd4;
   border-radius: 5px;
 }
+
 .courses-details-desc-style-two .courses-reviews .bar-2 {
   width: 25%;
   height: 18px;
   background-color: #ff9800;
   border-radius: 5px;
 }
+
 .courses-details-desc-style-two .courses-reviews .bar-1 {
   width: 0;
   height: 18px;
@@ -2703,17 +3210,20 @@ Courses Details Area CSS
 .courses-review-comments {
   margin-top: 40px;
 }
+
 .courses-review-comments h3 {
   border-bottom: 1px solid #f3f3f3;
   padding-bottom: 10px;
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 .courses-review-comments .user-review {
   border-bottom: 1px solid #f3f3f3;
   padding: 20px 0 20px 110px;
   position: relative;
 }
+
 .courses-review-comments .user-review img {
   position: absolute;
   left: 0;
@@ -2722,26 +3232,32 @@ Courses Details Area CSS
   height: 90px;
   border-radius: 5px;
 }
+
 .courses-review-comments .user-review .sub-comment {
   margin-bottom: 8px;
   font-weight: 700;
 }
+
 .courses-review-comments .user-review .review-rating {
   display: block;
   margin-bottom: 8px;
 }
+
 .courses-review-comments .user-review .review-rating .review-stars {
   display: inline-block;
 }
+
 .courses-review-comments .user-review .review-rating .review-stars i {
   color: #cecfd2;
   font-size: 18px;
   display: inline-block;
   margin-right: 2px;
 }
+
 .courses-review-comments .user-review .review-rating .review-stars i.checked {
   color: orange;
 }
+
 .courses-review-comments .user-review .review-rating span {
   color: #221638;
   position: relative;
@@ -2753,6 +3269,7 @@ Courses Details Area CSS
 .related-courses {
   margin-top: 40px;
 }
+
 .related-courses h3 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -2763,11 +3280,13 @@ Courses Details Area CSS
   box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
   padding: 30px;
 }
+
 .courses-sidebar-information .info {
   margin-bottom: 0;
   list-style-type: none;
   padding-left: 0;
 }
+
 .courses-sidebar-information .info li {
   border-bottom: 1px dashed #eeeeee;
   color: #606060;
@@ -2776,12 +3295,14 @@ Courses Details Area CSS
   padding-top: 15px;
   padding-bottom: 13px;
 }
+
 .courses-sidebar-information .info li span {
   font-weight: 800;
   color: #221638;
   position: relative;
   padding-left: 28px;
 }
+
 .courses-sidebar-information .info li span i {
   color: #CF0000;
   position: absolute;
@@ -2790,23 +3311,28 @@ Courses Details Area CSS
   top: -2px;
   font-size: 20px;
 }
+
 .courses-sidebar-information .info li.price {
   padding-bottom: 10px;
   color: #CF0000;
   font-size: 28px;
   font-weight: 800;
 }
+
 .courses-sidebar-information .info li.price span {
   color: #221638;
   font-size: 17px;
   font-weight: 800;
 }
+
 .courses-sidebar-information .info li:first-child {
   padding-top: 0;
 }
+
 .courses-sidebar-information .btn-box {
   margin-top: 20px;
 }
+
 .courses-sidebar-information .btn-box .default-btn {
   display: block;
   width: 100%;
@@ -2815,6 +3341,7 @@ Courses Details Area CSS
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
 .courses-sidebar-information .btn-box .default-btn i {
   position: relative;
   left: 0;
@@ -2824,24 +3351,29 @@ Courses Details Area CSS
   font-weight: normal;
   font-size: 20px;
 }
+
 .courses-sidebar-information .btn-box .default-btn:not(:first-child) {
   margin-top: 15px;
   background-color: transparent;
   color: #221638;
   border: 1px solid #221638;
 }
+
 .courses-sidebar-information .btn-box .default-btn:not(:first-child):hover {
   color: #ffffff;
   border-color: #221638;
 }
+
 .courses-sidebar-information .courses-share {
   text-align: center;
   margin-top: 25px;
 }
+
 .courses-sidebar-information .courses-share .share-info {
   display: inline-block;
   position: relative;
 }
+
 .courses-sidebar-information .courses-share .share-info span {
   display: inline-block;
   color: #CF0000;
@@ -2849,22 +3381,27 @@ Courses Details Area CSS
   font-size: 16px;
   font-weight: 700;
 }
+
 .courses-sidebar-information .courses-share .share-info span i {
   color: #221638;
 }
+
 .courses-sidebar-information .courses-share .share-info .social-link {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 0;
   margin-top: 12px;
 }
+
 .courses-sidebar-information .courses-share .share-info .social-link li {
   display: inline-block;
   margin-right: 3px;
 }
+
 .courses-sidebar-information .courses-share .share-info .social-link li:last-child {
   margin-right: 0;
 }
+
 .courses-sidebar-information .courses-share .share-info .social-link li a {
   width: 30px;
   height: 30px;
@@ -2875,6 +3412,7 @@ Courses Details Area CSS
   position: relative;
   border-radius: 2px;
 }
+
 .courses-sidebar-information .courses-share .share-info .social-link li a i {
   position: absolute;
   left: 0;
@@ -2882,13 +3420,16 @@ Courses Details Area CSS
   right: 0;
   transform: translateY(-48%);
 }
+
 .courses-sidebar-information .courses-share .share-info .social-link li a:hover {
   background-color: #CF0000;
   color: #ffffff;
 }
+
 .courses-sidebar-information .coupon {
   margin-top: 20px;
 }
+
 .courses-sidebar-information .coupon h4 {
   font-size: 17px;
   font-weight: bold;
@@ -2896,11 +3437,13 @@ Courses Details Area CSS
   text-decoration: underline;
   text-align: center;
 }
+
 .courses-sidebar-information .coupon form {
   position: relative;
   width: 100%;
   border-radius: 5px;
 }
+
 .courses-sidebar-information .coupon form .input-search {
   display: block;
   width: 100%;
@@ -2917,24 +3460,30 @@ Courses Details Area CSS
   padding-bottom: 0;
   padding-right: 0;
 }
+
 .courses-sidebar-information .coupon form .input-search::-moz-placeholder {
   color: #848484;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .courses-sidebar-information .coupon form .input-search::placeholder {
   color: #848484;
   transition: 0.5s;
 }
+
 .courses-sidebar-information .coupon form .input-search:focus {
   border-color: #CF0000;
 }
+
 .courses-sidebar-information .coupon form .input-search:focus::-moz-placeholder {
   color: transparent;
 }
+
 .courses-sidebar-information .coupon form .input-search:focus::placeholder {
   color: transparent;
 }
+
 .courses-sidebar-information .coupon form button {
   position: absolute;
   right: 0;
@@ -2954,30 +3503,37 @@ Advisor Area CSS
   background-color: #ffffff;
   margin-bottom: 30px;
 }
+
 .single-advisor-box .row {
   margin-left: 0;
   margin-right: 0;
 }
+
 .single-advisor-box .row .col-lg-4,
 .single-advisor-box .row .col-lg-8 {
   padding-left: 0;
   padding-right: 0;
 }
+
 .single-advisor-box .advisor-image {
   text-align: center;
   border-radius: 5px;
   padding: 25px 30px 0;
 }
+
 .single-advisor-box .advisor-image img {
   border-radius: 5px;
 }
+
 .single-advisor-box .advisor-content {
   padding: 25px 30px;
 }
+
 .single-advisor-box .advisor-content h3 {
   margin-bottom: 0;
   font-size: 22px;
 }
+
 .single-advisor-box .advisor-content .sub-title {
   display: block;
   color: #CF0000;
@@ -2985,23 +3541,28 @@ Advisor Area CSS
   font-size: 15px;
   font-weight: 600;
 }
+
 .single-advisor-box .advisor-content p {
   margin-bottom: 0;
   margin-top: 13px;
 }
+
 .single-advisor-box .advisor-content .social-link {
   padding-left: 0;
   list-style-type: none;
   margin-top: 17px;
   margin-bottom: 0;
 }
+
 .single-advisor-box .advisor-content .social-link li {
   display: inline-block;
   margin-right: 5px;
 }
+
 .single-advisor-box .advisor-content .social-link li:last-child {
   margin-right: 0;
 }
+
 .single-advisor-box .advisor-content .social-link li a {
   width: 30px;
   height: 30px;
@@ -3012,6 +3573,7 @@ Advisor Area CSS
   position: relative;
   border-radius: 2px;
 }
+
 .single-advisor-box .advisor-content .social-link li a i {
   position: absolute;
   left: 0;
@@ -3019,6 +3581,7 @@ Advisor Area CSS
   right: 0;
   transform: translateY(-48%);
 }
+
 .single-advisor-box .advisor-content .social-link li a:hover {
   background-color: #CF0000;
   color: #ffffff;
@@ -3035,14 +3598,17 @@ Funfacts Area CSS
   position: relative;
   background: #F6F1ED;
 }
+
 .funfacts-and-feedback-area .shape4 {
   right: 21%;
   bottom: 41%;
 }
+
 .funfacts-and-feedback-area .shape3 {
   right: 23%;
   bottom: 22%;
 }
+
 .funfacts-and-feedback-area .shape2 {
   left: auto;
   bottom: 3%;
@@ -3070,18 +3636,22 @@ Funfacts Area CSS
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .single-funfacts-box h3 {
   margin-bottom: 0;
   color: #CF0000;
   font-size: 44px;
 }
+
 .single-funfacts-box h3 span {
   font-size: 48px;
 }
+
 .single-funfacts-box h3 .odometer {
   position: relative;
   top: -2px;
 }
+
 .single-funfacts-box p {
   text-transform: uppercase;
   color: #221638;
@@ -3090,6 +3660,7 @@ Funfacts Area CSS
   font-weight: 700;
   font-size: 15px;
 }
+
 .single-funfacts-box::before {
   content: "";
   position: absolute;
@@ -3109,6 +3680,7 @@ Funfacts Area CSS
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .single-funfacts-box:hover {
   border-color: #CF0000;
 }
@@ -3118,18 +3690,22 @@ Funfacts Area CSS
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .single-funfacts-item h3 {
   margin-bottom: 0;
   color: #CF0000;
   font-size: 44px;
 }
+
 .single-funfacts-item h3 span {
   font-size: 48px;
 }
+
 .single-funfacts-item h3 .odometer {
   position: relative;
   top: -2px;
 }
+
 .single-funfacts-item p {
   text-transform: uppercase;
   color: #221638;
@@ -3142,6 +3718,7 @@ Funfacts Area CSS
 .funfacts-area .col-lg-3 {
   border-right: 1px solid #eaecf0;
 }
+
 .funfacts-area .col-lg-3:last-child {
   border-right: none;
 }
@@ -3150,9 +3727,11 @@ Funfacts Area CSS
   border-top: 1px solid #f4f3f5;
   border-bottom: 1px solid #f4f3f5;
 }
+
 .funfacts-area-two .col-lg-3 {
   border-right: 1px solid #f4f3f5;
 }
+
 .funfacts-area-two .col-lg-3:last-child {
   border-right: none;
 }
@@ -3165,6 +3744,7 @@ Funfacts Area CSS
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .single-funfacts img {
   position: absolute;
   left: 0;
@@ -3176,18 +3756,22 @@ Funfacts Area CSS
   margin-left: auto;
   margin-right: auto;
 }
+
 .single-funfacts h3 {
   margin-bottom: 0;
   color: #CF0000;
   font-size: 44px;
 }
+
 .single-funfacts h3 span {
   font-size: 48px;
 }
+
 .single-funfacts h3 .odometer {
   position: relative;
   top: -2px;
 }
+
 .single-funfacts p {
   text-transform: uppercase;
   color: #221638;
@@ -3208,29 +3792,36 @@ Feedback Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .feedback-content h2 {
   margin-bottom: 0;
   font-size: 36px;
 }
+
 .feedback-content p {
   margin-top: 12px;
 }
+
 .feedback-content .feedback-info p {
   font-weight: 600;
   margin-bottom: 0;
 }
+
 .feedback-content .feedback-info p a {
   color: #CF0000;
   font-weight: 700;
 }
+
 .feedback-content .feedback-info p a:hover {
   text-decoration: underline;
   color: #221638;
 }
+
 .feedback-content .feedback-slides {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .feedback-content .feedback-slides .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #CF0000;
 }
@@ -3243,6 +3834,7 @@ Feedback Area CSS
   border-radius: 5px;
   overflow: hidden;
 }
+
 .single-feedback-item p {
   color: #606060;
   line-height: 1.8;
@@ -3251,28 +3843,34 @@ Feedback Area CSS
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .single-feedback-item .client-info {
   margin-top: 25px;
 }
+
 .single-feedback-item .client-info img {
   width: 55px !important;
   height: 55px;
 }
+
 .single-feedback-item .client-info .title {
   margin-left: 15px;
 }
+
 .single-feedback-item .client-info .title h3 {
   margin-bottom: 0;
   color: #CF0000;
   font-size: 17px;
   font-weight: 700;
 }
+
 .single-feedback-item .client-info .title span {
   display: block;
   color: #606060;
   font-size: 14px;
   margin-top: 4px;
 }
+
 .single-feedback-item::after {
   width: 75px;
   height: 75px;
@@ -3284,6 +3882,7 @@ Feedback Area CSS
   top: -25px;
   z-index: -1;
 }
+
 .single-feedback-item::before {
   content: "\f10a";
   font-family: Flaticon;
@@ -3308,6 +3907,7 @@ Feedback Area CSS
   z-index: 1;
   padding-left: 280px;
 }
+
 .single-testimonials-item .client-img {
   position: absolute;
   left: 0;
@@ -3319,6 +3919,7 @@ Feedback Area CSS
   display: inline-block !important;
   left: 35px;
 }
+
 .single-testimonials-item p {
   color: #221638;
   font-size: 20px;
@@ -3326,6 +3927,7 @@ Feedback Area CSS
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .single-testimonials-item h3 {
   color: #CF0000;
   margin-top: 18px;
@@ -3333,12 +3935,14 @@ Feedback Area CSS
   font-size: 20px;
   font-weight: 700;
 }
+
 .single-testimonials-item span {
   display: block;
   color: #606060;
   font-size: 15px;
   margin-top: 4px;
 }
+
 .single-testimonials-item::before {
   content: "\f10a";
   position: absolute;
@@ -3350,11 +3954,13 @@ Feedback Area CSS
   font-family: Flaticon;
   font-size: 100px;
 }
+
 .single-testimonials-item .shape-img img {
   width: auto !important;
   display: inline-block !important;
   position: absolute;
 }
+
 .single-testimonials-item .shape-img img.shape-1 {
   position: absolute;
   left: 13%;
@@ -3362,6 +3968,7 @@ Feedback Area CSS
   z-index: -1;
   animation: movescale 4s linear infinite;
 }
+
 .single-testimonials-item .shape-img img.shape-2 {
   left: 0;
   top: 8px;
@@ -3371,6 +3978,7 @@ Feedback Area CSS
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .single-testimonials-item .shape-img img.shape-3 {
   left: 20px;
   animation: moveleftbounce 4s linear infinite;
@@ -3382,9 +3990,11 @@ Feedback Area CSS
   position: relative;
   z-index: 1;
 }
+
 .feedback-area .shape2 {
   bottom: 2%;
 }
+
 .feedback-area .shape9 {
   left: 8%;
   bottom: auto;
@@ -3403,14 +4013,17 @@ Video Area CSS
   margin-right: auto;
   margin-top: 100px;
 }
+
 .video-box .image {
   overflow: hidden;
   border-radius: 5px;
 }
+
 .video-box .image img {
   border-radius: 5px;
   transition: 0.5s;
 }
+
 .video-box .video-btn {
   display: inline-block;
   width: 80px;
@@ -3426,10 +4039,13 @@ Video Area CSS
   border-radius: 50%;
   color: #ffffff;
 }
+
 .video-box .video-btn i {
   padding-left: 3px;
 }
-.video-box .video-btn::after, .video-box .video-btn::before {
+
+.video-box .video-btn::after,
+.video-box .video-btn::before {
   content: "";
   display: block;
   position: absolute;
@@ -3442,19 +4058,25 @@ Video Area CSS
   border-radius: 50%;
   border: 1px solid #CF0000;
 }
+
 .video-box .video-btn::before {
   animation: ripple 2s linear infinite;
 }
+
 .video-box .video-btn::after {
   animation: ripple 2s linear 1s infinite;
 }
+
 .video-box .video-btn:hover {
   color: #ffffff;
   background-color: #221638;
 }
-.video-box .video-btn:hover::before, .video-box .video-btn:hover::after {
+
+.video-box .video-btn:hover::before,
+.video-box .video-btn:hover::after {
   border-color: #221638;
 }
+
 .video-box:hover .image img {
   transform: scale3d(1.1, 1.1, 1.1);
 }
@@ -3463,21 +4085,25 @@ Video Area CSS
   0% {
     transform: scale(1);
   }
+
   75% {
     transform: scale(1.75);
     opacity: 1;
   }
+
   100% {
     transform: scale(2);
     opacity: 0;
   }
 }
+
 .shape10 {
   position: absolute;
   left: -11%;
   bottom: -11%;
   z-index: -1;
 }
+
 .shape10 img {
   border-radius: 0;
   animation: moveleftbounce 4s linear infinite;
@@ -3492,10 +4118,12 @@ Get Instant Courses Area CSS
   background-color: #f9f9f9;
   border-radius: 5px;
 }
+
 .get-instant-courses-inner-area .row {
   margin-left: 0;
   margin-right: 0;
 }
+
 .get-instant-courses-inner-area .row .col-lg-8,
 .get-instant-courses-inner-area .row .col-lg-4 {
   padding-left: 0;
@@ -3508,6 +4136,7 @@ Get Instant Courses Area CSS
   padding-top: 70px;
   padding-bottom: 30px;
 }
+
 .get-instant-courses-content .sub-title {
   display: block;
   text-transform: uppercase;
@@ -3516,10 +4145,12 @@ Get Instant Courses Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .get-instant-courses-content h2 {
   margin-bottom: 12px;
   font-size: 36px;
 }
+
 .get-instant-courses-content .default-btn {
   margin-top: 5px;
 }
@@ -3529,6 +4160,7 @@ Get Instant Courses Area CSS
   z-index: 1;
   border-radius: 0 5px 5px 0;
 }
+
 .get-instant-courses-image img {
   border-radius: 0 5px 5px 0;
 }
@@ -3539,6 +4171,7 @@ Get Instant Courses Area CSS
   top: 0;
   z-index: -1;
 }
+
 .shape5 img {
   animation: moveleftbounce 4s linear infinite;
 }
@@ -3548,6 +4181,7 @@ Get Instant Courses Area CSS
   left: -65px;
   bottom: 10%;
 }
+
 .shape6 img {
   animation-name: rotateme;
   animation-duration: 100s;
@@ -3560,6 +4194,7 @@ Get Instant Courses Area CSS
   left: 5%;
   bottom: 38%;
 }
+
 .shape7 img {
   animation: movescale 4s linear infinite;
 }
@@ -3573,6 +4208,7 @@ View All Courses Area CSS
   z-index: 1;
   max-width: 600px;
 }
+
 .view-all-courses-content .sub-title {
   display: block;
   text-transform: uppercase;
@@ -3581,13 +4217,16 @@ View All Courses Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .view-all-courses-content h2 {
   margin-bottom: 0;
   font-size: 36px;
 }
+
 .view-all-courses-content p {
   margin-top: 12px;
 }
+
 .view-all-courses-content .default-btn {
   margin-top: 10px;
   border-radius: 100px;
@@ -3603,6 +4242,7 @@ View All Courses Area CSS
   bottom: 20%;
   z-index: -1;
 }
+
 .shape9 img {
   animation-name: rotateme;
   animation-duration: 10s;
@@ -3616,6 +4256,7 @@ View All Courses Area CSS
   top: 18%;
   z-index: -1;
 }
+
 .shape11 img {
   animation-name: rotateme;
   animation-duration: 10s;
@@ -3629,6 +4270,7 @@ View All Courses Area CSS
   z-index: -1;
   right: 18%;
 }
+
 .shape12 img {
   animation: movescale 4s linear infinite;
 }
@@ -3649,20 +4291,24 @@ Teacher Register Area CSS
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .teacher-register-box h2 {
   margin-bottom: 0;
   color: #ffffff;
   font-size: 33px;
 }
+
 .teacher-register-box p {
   color: #ffffff;
   margin-top: 10px;
   margin-bottom: 0;
   font-size: 15px;
 }
+
 .teacher-register-box form {
   margin-top: 25px;
 }
+
 .teacher-register-box form input,
 .teacher-register-box form textarea {
   display: block;
@@ -3676,38 +4322,49 @@ Teacher Register Area CSS
   font-size: 16px;
   font-weight: 600;
 }
-.teacher-register-box form input::-moz-placeholder, .teacher-register-box form textarea::-moz-placeholder {
+
+.teacher-register-box form input::-moz-placeholder,
+.teacher-register-box form textarea::-moz-placeholder {
   color: #cdcdcd;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .teacher-register-box form input::placeholder,
 .teacher-register-box form textarea::placeholder {
   color: #cdcdcd;
   transition: 0.5s;
 }
-.teacher-register-box form input:focus::-moz-placeholder, .teacher-register-box form textarea:focus::-moz-placeholder {
+
+.teacher-register-box form input:focus::-moz-placeholder,
+.teacher-register-box form textarea:focus::-moz-placeholder {
   color: transparent;
 }
+
 .teacher-register-box form input:focus::placeholder,
 .teacher-register-box form textarea:focus::placeholder {
   color: transparent;
 }
+
 .teacher-register-box form textarea {
   height: auto !important;
   padding-top: 15px;
 }
+
 .teacher-register-box form .default-btn {
   background-color: #221638;
   margin-top: 5px;
   padding: 12px 30px;
 }
+
 .teacher-register-box form .default-btn span {
   background-color: #ffffff;
 }
+
 .teacher-register-box form .default-btn:hover {
   color: #CF0000;
 }
+
 .teacher-register-box .invalid-feedback {
   color: #fff;
 }
@@ -3719,6 +4376,7 @@ Apply Instructor Area CSS
   margin-bottom: 18px;
   font-size: 36px;
 }
+
 .apply-instructor-image img {
   border-radius: 5px;
 }
@@ -3728,11 +4386,13 @@ Apply Instructor Area CSS
   border-radius: 5px;
   padding: 30px;
 }
+
 .apply-instructor-content .react-tabs__tab-list {
   border-bottom-color: #d8d8d8;
   margin-bottom: 35px;
   border-width: 1.5px;
 }
+
 .apply-instructor-content .react-tabs__tab-list .react-tabs__tab {
   margin-right: 50px;
   margin-bottom: -1.5px;
@@ -3744,6 +4404,7 @@ Apply Instructor Area CSS
   font-size: 18px;
   font-weight: 800;
 }
+
 .apply-instructor-content .react-tabs__tab-list .react-tabs__tab::before {
   content: "";
   position: absolute;
@@ -3754,19 +4415,26 @@ Apply Instructor Area CSS
   height: 1.5px;
   background-color: #CF0000;
 }
-.apply-instructor-content .react-tabs__tab-list .react-tabs__tab:hover, .apply-instructor-content .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
+
+.apply-instructor-content .react-tabs__tab-list .react-tabs__tab:hover,
+.apply-instructor-content .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
   color: #221638;
 }
-.apply-instructor-content .react-tabs__tab-list .react-tabs__tab:hover::before, .apply-instructor-content .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected::before {
+
+.apply-instructor-content .react-tabs__tab-list .react-tabs__tab:hover::before,
+.apply-instructor-content .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected::before {
   width: 40%;
 }
+
 .apply-instructor-content .react-tabs__tab-list .react-tabs__tab:last-child {
   margin-right: 0;
 }
+
 .apply-instructor-content h3 {
   margin-bottom: 13px;
   font-size: 24px;
 }
+
 .apply-instructor-content h3:not(:first-child) {
   margin-top: 30px;
 }
@@ -3796,12 +4464,14 @@ Page Title Area CSS
 .page-title-content {
   text-align: center;
 }
+
 .page-title-content ul {
   padding-left: 0;
   margin-bottom: 0;
   margin-top: 10px;
   list-style-type: none;
 }
+
 .page-title-content ul li {
   display: inline-block;
   margin-right: 20px;
@@ -3810,6 +4480,7 @@ Page Title Area CSS
   font-size: 16px;
   font-weight: 600;
 }
+
 .page-title-content ul li::before {
   content: "";
   position: absolute;
@@ -3820,20 +4491,25 @@ Page Title Area CSS
   height: 15px;
   width: 1px;
 }
+
 .page-title-content ul li a {
   color: white;
   display: block;
   font-weight: 500;
 }
+
 .page-title-content ul li a:hover {
   color: #CF0000;
 }
+
 .page-title-content ul li:last-child {
   margin-right: 0;
 }
+
 .page-title-content ul li:last-child::before {
   display: none;
 }
+
 .page-title-content h2 {
   text-align: center;
   max-width: 800px;
@@ -3845,16 +4521,19 @@ Page Title Area CSS
   font-size: 36px;
   font-color: white;
 }
+
 .page-title-content .rating {
   text-align: center;
   font-size: 17px;
   margin-top: 20px;
 }
+
 .page-title-content .rating i {
   color: #dca416;
   display: inline-block;
   margin-right: 3px;
 }
+
 .page-title-content .rating .rating-count {
   display: inline-block;
   position: relative;
@@ -3870,6 +4549,7 @@ Subscribe Area CSS
   position: relative;
   z-index: 1;
 }
+
 .subscribe-area .shape4 {
   right: auto;
   bottom: 39%;
@@ -3882,6 +4562,7 @@ Subscribe Area CSS
   margin-left: auto;
   margin-right: auto;
 }
+
 .subscribe-content .sub-title {
   display: block;
   text-transform: uppercase;
@@ -3890,6 +4571,7 @@ Subscribe Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .subscribe-content h2 {
   max-width: 615px;
   margin-bottom: 0;
@@ -3897,12 +4579,14 @@ Subscribe Area CSS
   margin-right: auto;
   font-size: 36px;
 }
+
 .subscribe-content p {
   max-width: 615px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
 }
+
 .subscribe-content .newsletter-form {
   position: relative;
   max-width: 650px;
@@ -3910,6 +4594,7 @@ Subscribe Area CSS
   margin-left: auto;
   margin-right: auto;
 }
+
 .subscribe-content .newsletter-form .input-newsletter {
   display: block;
   width: 100%;
@@ -3922,28 +4607,35 @@ Subscribe Area CSS
   font-size: 16px;
   font-weight: 400;
 }
+
 .subscribe-content .newsletter-form .input-newsletter::-moz-placeholder {
   color: #999999;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .subscribe-content .newsletter-form .input-newsletter::placeholder {
   color: #999999;
   transition: 0.5s;
 }
+
 .subscribe-content .newsletter-form .input-newsletter:focus::-moz-placeholder {
   color: transparent;
 }
+
 .subscribe-content .newsletter-form .input-newsletter:focus::placeholder {
   color: transparent;
 }
+
 .subscribe-content .newsletter-form .validation-danger {
   color: red;
   margin-top: 15px;
 }
+
 .subscribe-content .newsletter-form .validation-success {
   margin-top: 15px;
 }
+
 .subscribe-content .newsletter-form .default-btn {
   position: absolute;
   right: 0;
@@ -3951,6 +4643,7 @@ Subscribe Area CSS
   border-radius: 0 5px 5px 0;
   height: 50px;
 }
+
 .subscribe-content .newsletter-form .default-btn i {
   top: 12px;
 }
@@ -3965,6 +4658,7 @@ Subscribe Area CSS
   bottom: 22%;
   z-index: -2;
 }
+
 .shape13 img {
   animation-name: rotateme;
   animation-duration: 50s;
@@ -3977,16 +4671,19 @@ Subscribe Area CSS
   margin-left: 0;
   margin-right: 0;
 }
+
 .subscribe-content.text-left h2 {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
+
 .subscribe-content.text-left p {
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
+
 .subscribe-content.text-left .newsletter-form {
   max-width: 100%;
   margin-left: 0;
@@ -4002,43 +4699,54 @@ Checkout Area CSS
   margin-bottom: 30px;
   padding: 20px;
 }
+
 .shopping-cart-list img {
   max-width: 100%;
   height: auto;
 }
+
 .shopping-cart-list .content h3 {
   font-size: 16px;
   font-weight: 700;
 }
+
 .shopping-cart-list .content .list {
   margin: 0;
   padding: 0;
 }
+
 .shopping-cart-list .content .list li {
   font-size: 14px;
   color: #606060;
   display: inline-block;
   margin-right: 15px;
 }
+
 .shopping-cart-list .content .list li:last-child {
   margin-right: 0;
 }
+
 .shopping-cart-list .price-amount {
   color: #CF0000;
 }
+
 .shopping-cart-list .action-button {
   text-align: end;
 }
+
 .shopping-cart-list .action-button .remove {
   font-size: 14px;
 }
+
 .shopping-cart-list .action-button .wishlist {
   color: #CF0000;
   font-size: 14px;
 }
+
 .shopping-cart-list hr {
   border-color: #cab3b3;
 }
+
 .shopping-cart-list .col-lg-12:last-child hr {
   border-color: #eeeeee;
   display: none;
@@ -4053,11 +4761,13 @@ Privacy Policy Area CSS
   width: 100%;
   margin-bottom: 30px;
 }
+
 .privacy-policy-content h3 {
   margin-bottom: 15px;
   margin-top: 25px;
   font-size: 22px;
 }
+
 .privacy-policy-content .blockquote,
 .privacy-policy-content blockquote {
   margin-bottom: 30px;
@@ -4065,6 +4775,7 @@ Privacy Policy Area CSS
   text-align: left !important;
   padding: 25px !important;
 }
+
 .privacy-policy-content .blockquote p,
 .privacy-policy-content blockquote p {
   margin-bottom: 0;
@@ -4072,18 +4783,22 @@ Privacy Policy Area CSS
   font-size: 16px !important;
   font-weight: normal;
 }
+
 .privacy-policy-content .blockquote::after,
 .privacy-policy-content blockquote::after {
   display: none;
 }
+
 .privacy-policy-content .blockquote::before,
 .privacy-policy-content blockquote::before {
   display: none;
 }
+
 .privacy-policy-content ol,
 .privacy-policy-content ul {
   margin-top: 20px;
 }
+
 .privacy-policy-content ol li,
 .privacy-policy-content ul li {
   margin-bottom: 10px;
@@ -4101,11 +4816,13 @@ Terms of Service Area CSS
   width: 100%;
   margin-bottom: 30px;
 }
+
 .terms-of-service-content h3 {
   margin-bottom: 15px;
   margin-top: 25px;
   font-size: 22px;
 }
+
 .terms-of-service-content .blockquote,
 .terms-of-service-content blockquote {
   margin-bottom: 30px;
@@ -4113,6 +4830,7 @@ Terms of Service Area CSS
   text-align: left !important;
   padding: 25px !important;
 }
+
 .terms-of-service-content .blockquote p,
 .terms-of-service-content blockquote p {
   margin-bottom: 0;
@@ -4120,18 +4838,22 @@ Terms of Service Area CSS
   font-size: 16px !important;
   font-weight: normal;
 }
+
 .terms-of-service-content .blockquote::after,
 .terms-of-service-content blockquote::after {
   display: none;
 }
+
 .terms-of-service-content .blockquote::before,
 .terms-of-service-content blockquote::before {
   display: none;
 }
+
 .terms-of-service-content ol,
 .terms-of-service-content ul {
   margin-top: 20px;
 }
+
 .terms-of-service-content ol li,
 .terms-of-service-content ul li {
   margin-bottom: 10px;
@@ -4146,6 +4868,7 @@ Pagination CSS
 .pagination-area {
   margin-top: 35px;
 }
+
 .pagination-area .page-numbers {
   width: 33px;
   height: 33px;
@@ -4161,14 +4884,18 @@ Pagination CSS
   font-size: 16px;
   font-weight: 800;
 }
-.pagination-area .page-numbers:hover, .pagination-area .page-numbers.current {
+
+.pagination-area .page-numbers:hover,
+.pagination-area .page-numbers.current {
   color: #ffffff;
   background-color: #CF0000;
 }
+
 .pagination-area .page-numbers i {
   position: relative;
   top: 1.5px;
 }
+
 .pagination-area ._3bLAO ._2INQH,
 .pagination-area ._3bLAO ._6ZFVN {
   display: none;
@@ -4185,12 +4912,14 @@ Pagination CSS
 .error-content {
   text-align: center;
 }
+
 .error-content h3 {
   color: #ffffff;
   margin-bottom: 20px;
   margin-top: 45px;
   font-size: 40px;
 }
+
 .error-content p {
   color: rgba(255, 255, 255, 0.7);
   max-width: 550px;
@@ -4198,16 +4927,20 @@ Pagination CSS
   margin-right: auto;
   margin-bottom: 0;
 }
+
 .error-content .btn-box {
   margin-top: 30px;
 }
+
 .error-content .btn-box .default-btn {
   margin-left: 7px;
   margin-right: 7px;
 }
+
 .error-content .btn-box .default-btn span {
   background-color: #ffffff;
 }
+
 .error-content .btn-box .default-btn:hover {
   color: #221638;
 }
@@ -4222,6 +4955,7 @@ FAQ Area CSS
   text-align: center;
   border: none;
 }
+
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab {
   margin-left: 10px;
   margin-right: 10px;
@@ -4234,18 +4968,22 @@ FAQ Area CSS
   font-size: 16px;
   font-weight: 800;
 }
+
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab i {
   font-size: 30px;
   font-weight: 400;
 }
+
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab span {
   display: block;
   margin-top: 8px;
 }
+
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab:hover {
   background-color: #CF0000;
   color: #ffffff;
 }
+
 .faq-accordion-tab .react-tabs__tab-list .react-tabs__tab.react-tabs__tab--selected {
   background-color: #CF0000;
   color: #ffffff;
@@ -4257,6 +4995,7 @@ FAQ Area CSS
   border: none;
   margin-bottom: 0;
 }
+
 .faq-accordion .accordion .accordion__item {
   border-radius: 5px;
   display: block;
@@ -4266,9 +5005,11 @@ FAQ Area CSS
   border: none;
   border-radius: 5px;
 }
+
 .faq-accordion .accordion .accordion__item:last-child {
   margin-bottom: 0;
 }
+
 .faq-accordion .accordion .accordion__button {
   padding: 20px 25px;
   background-color: #fff;
@@ -4280,6 +5021,7 @@ FAQ Area CSS
   font-size: 17px;
   font-weight: 800;
 }
+
 .faq-accordion .accordion .accordion__button i {
   position: absolute;
   left: 25px;
@@ -4287,9 +5029,11 @@ FAQ Area CSS
   font-size: 25px;
   transition: 0.5s;
 }
+
 .faq-accordion .accordion .accordion__button.active i {
   transform: rotate(180deg);
 }
+
 .faq-accordion .accordion .accordion__panel {
   position: relative;
   margin-top: -5px;
@@ -4298,6 +5042,7 @@ FAQ Area CSS
   padding-left: 48px;
   padding-top: 0;
 }
+
 .faq-accordion .accordion .accordion__panel p {
   line-height: 1.8;
 }
@@ -4305,6 +5050,7 @@ FAQ Area CSS
 .tab .tabs-item {
   display: none;
 }
+
 .tab .tabs-item:first-child {
   display: block;
 }
@@ -4319,28 +5065,34 @@ Profile Authentication Area CSS
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
   margin-right: 30px;
 }
+
 .login-form h2 {
   margin-bottom: 25px;
   font-size: 36px;
 }
+
 .login-form form .form-group {
   margin-bottom: 25px;
 }
+
 .login-form form .form-group label {
   display: block;
   margin-bottom: 8px;
   color: #221638;
   font-weight: 700;
 }
+
 .login-form form .remember-me-wrap {
   margin-bottom: 0;
 }
+
 .login-form form .remember-me-wrap [type=checkbox]:checked,
 .login-form form .remember-me-wrap [type=checkbox]:not(:checked) {
   display: none;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label,
-.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label {
+
+.login-form form .remember-me-wrap [type=checkbox]:checked+label,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked)+label {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
@@ -4350,8 +5102,9 @@ Profile Authentication Area CSS
   color: #606060;
   font-weight: 600;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:before,
-.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:before {
+
+.login-form form .remember-me-wrap [type=checkbox]:checked+label:before,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked)+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -4363,8 +5116,9 @@ Profile Authentication Area CSS
   border-radius: 3px;
   background: #f5f5f5;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:after,
-.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:after {
+
+.login-form form .remember-me-wrap [type=checkbox]:checked+label:after,
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked)+label:after {
   content: "";
   width: 8px;
   height: 8px;
@@ -4374,41 +5128,51 @@ Profile Authentication Area CSS
   left: 6px;
   transition: all 0.2s ease;
 }
-.login-form form .remember-me-wrap [type=checkbox]:not(:checked) + label:after {
+
+.login-form form .remember-me-wrap [type=checkbox]:not(:checked)+label:after {
   opacity: 0;
   transform: scale(0);
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:after {
+
+.login-form form .remember-me-wrap [type=checkbox]:checked+label:after {
   opacity: 1;
   transform: scale(1);
 }
-.login-form form .remember-me-wrap [type=checkbox]:hover + label:before {
+
+.login-form form .remember-me-wrap [type=checkbox]:hover+label:before {
   border-color: #CF0000;
 }
-.login-form form .remember-me-wrap [type=checkbox]:checked + label:before {
+
+.login-form form .remember-me-wrap [type=checkbox]:checked+label:before {
   border-color: #CF0000;
 }
+
 .login-form form .remember-me-wrap a {
   color: #0000cd;
 }
+
 .login-form form .remember-me-wrap .description {
   margin-top: 10px;
   text-align: center;
   font-style: italic;
 }
+
 .login-form form .remember-me-wrap .description .lost-your-password {
   color: #CF0000;
   font-weight: bold;
 }
+
 .login-form form .lost-your-password-wrap {
   text-align: right;
 }
+
 .login-form form .lost-your-password-wrap a {
   display: inline-block;
   position: relative;
   font-weight: 600;
   line-height: 1.3;
 }
+
 .login-form form .lost-your-password-wrap a::before {
   width: 100%;
   height: 1px;
@@ -4419,6 +5183,7 @@ Profile Authentication Area CSS
   transition: 0.5s;
   background-color: #eeeeee;
 }
+
 .login-form form .lost-your-password-wrap a::after {
   width: 0;
   height: 1px;
@@ -4429,12 +5194,15 @@ Profile Authentication Area CSS
   content: "";
   background-color: #CF0000;
 }
+
 .login-form form .lost-your-password-wrap a:hover::before {
   width: 0;
 }
+
 .login-form form .lost-your-password-wrap a:hover::after {
   width: 100%;
 }
+
 .login-form form button {
   margin-top: 22px;
   border: none;
@@ -4450,6 +5218,7 @@ Profile Authentication Area CSS
   font-weight: 700;
   font-size: 16px;
 }
+
 .login-form form button:hover {
   background-color: #221638;
   color: #ffffff;
@@ -4461,25 +5230,30 @@ Profile Authentication Area CSS
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
 }
+
 .register-form h2 {
   margin-bottom: 25px;
   font-size: 36px;
 }
+
 .register-form form .form-group {
   margin-bottom: 25px;
 }
+
 .register-form form .form-group label {
   display: block;
   margin-bottom: 8px;
   color: #221638;
   font-weight: 700;
 }
+
 .register-form form .description {
   font-style: italic;
   font-size: 13.5px;
   margin-top: -10px;
   margin-bottom: 0;
 }
+
 .register-form form button {
   margin-top: 22px;
   border: none;
@@ -4495,6 +5269,7 @@ Profile Authentication Area CSS
   font-weight: 700;
   font-size: 16px;
 }
+
 .register-form form button:hover {
   background-color: #221638;
   color: #ffffff;
@@ -4506,6 +5281,7 @@ Contact Area CSS
 .contact-info {
   padding-right: 15px;
 }
+
 .contact-info .sub-title {
   display: block;
   text-transform: uppercase;
@@ -4514,21 +5290,25 @@ Contact Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .contact-info h2 {
   margin-bottom: 12px;
   font-size: 36px;
 }
+
 .contact-info ul {
   padding-left: 0;
   list-style-type: none;
   margin-top: 35px;
   margin-bottom: 0;
 }
+
 .contact-info ul li {
   position: relative;
   margin-bottom: 35px;
   padding-left: 100px;
 }
+
 .contact-info ul li .icon {
   width: 75px;
   height: 85px;
@@ -4542,6 +5322,7 @@ Contact Area CSS
   transition: 0.5s;
   top: 0;
 }
+
 .contact-info ul li .icon i {
   position: absolute;
   left: 0;
@@ -4549,20 +5330,24 @@ Contact Area CSS
   top: 50%;
   transform: translateY(-50%);
 }
+
 .contact-info ul li h3 {
   margin-bottom: 8px;
   font-size: 24px;
 }
+
 .contact-info ul li p {
   font-weight: 600;
   max-width: 300px;
   margin-bottom: 0;
   margin-top: 2px;
 }
+
 .contact-info ul li:hover .icon {
   background-color: #CF0000;
   color: #ffffff;
 }
+
 .contact-info ul li:last-child {
   margin-bottom: 0;
 }
@@ -4578,19 +5363,23 @@ Contact Area CSS
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .contact-form h2 {
   margin-bottom: 0;
   color: #ffffff;
   font-size: 33px;
 }
+
 .contact-form p {
   color: #ffffff;
   margin-top: 10px;
   margin-bottom: 0;
 }
+
 .contact-form form {
   margin-top: 25px;
 }
+
 .contact-form form input,
 .contact-form form textarea {
   display: block;
@@ -4604,38 +5393,49 @@ Contact Area CSS
   font-size: 16px;
   font-weight: 600;
 }
-.contact-form form input::-moz-placeholder, .contact-form form textarea::-moz-placeholder {
+
+.contact-form form input::-moz-placeholder,
+.contact-form form textarea::-moz-placeholder {
   color: #cdcdcd;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
+
 .contact-form form input::placeholder,
 .contact-form form textarea::placeholder {
   color: #cdcdcd;
   transition: 0.5s;
 }
-.contact-form form input:focus::-moz-placeholder, .contact-form form textarea:focus::-moz-placeholder {
+
+.contact-form form input:focus::-moz-placeholder,
+.contact-form form textarea:focus::-moz-placeholder {
   color: transparent;
 }
+
 .contact-form form input:focus::placeholder,
 .contact-form form textarea:focus::placeholder {
   color: transparent;
 }
+
 .contact-form form textarea {
   height: auto !important;
   padding-top: 15px;
 }
+
 .contact-form form .default-btn {
   background-color: #221638;
   margin-top: 5px;
   padding: 12px 30px;
 }
+
 .contact-form form .default-btn span {
   background-color: #ffffff;
 }
+
 .contact-form form .default-btn:hover {
   color: #CF0000;
 }
+
 .contact-form form .invalid-feedback {
   color: #ffffff;
 }
@@ -4660,55 +5460,68 @@ Footer Area CSS
 .single-footer-widget {
   margin-bottom: 30px;
 }
+
 .single-footer-widget .logo {
   display: inline-block;
   margin-bottom: 20px;
   margin-left: -15px;
 }
+
 .single-footer-widget h3 {
   margin-bottom: 20px;
   position: relative;
   color: #ffffff;
   font-size: 24px;
 }
+
 .single-footer-widget p {
   color: #ededed;
 }
+
 .single-footer-widget .footer-links-list {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .single-footer-widget .footer-links-list li {
   margin-bottom: 12px;
   color: #ededed;
 }
+
 .single-footer-widget .footer-links-list li a {
   color: #ededed;
   display: inline-block;
 }
+
 .single-footer-widget .footer-links-list li a:hover {
   color: #CF0000;
 }
+
 .single-footer-widget .footer-links-list li:last-child {
   margin-bottom: 0;
 }
+
 .single-footer-widget .social-link {
   padding-left: 0;
   list-style-type: none;
   margin-top: 20px;
   margin-bottom: 0;
 }
+
 .single-footer-widget .social-link li {
   display: inline-block;
   margin-right: 10px;
 }
+
 .single-footer-widget .social-link li:last-child {
   margin-right: 0;
 }
+
 .single-footer-widget .social-link li:last-child {
   margin-right: 0;
 }
+
 .single-footer-widget .social-link li a {
   width: 30px;
   height: 30px;
@@ -4719,6 +5532,7 @@ Footer Area CSS
   position: relative;
   border-radius: 2px;
 }
+
 .single-footer-widget .social-link li a i {
   position: absolute;
   left: 0;
@@ -4726,36 +5540,44 @@ Footer Area CSS
   right: 0;
   transform: translateY(-48%);
 }
+
 .single-footer-widget .social-link li a:hover {
   background-color: #CF0000;
   color: #ffffff;
 }
+
 .single-footer-widget .footer-contact-info {
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .single-footer-widget .footer-contact-info li {
   margin-bottom: 13px;
   color: #ededed;
   position: relative;
   padding-left: 22px;
 }
+
 .single-footer-widget .footer-contact-info li a {
   color: #ededed;
   display: inline-block;
 }
+
 .single-footer-widget .footer-contact-info li a:hover {
   color: #CF0000;
 }
+
 .single-footer-widget .footer-contact-info li:last-child {
   margin-bottom: 0;
 }
+
 .single-footer-widget .footer-contact-info li i {
   position: absolute;
   left: 0;
   top: 4px;
 }
+
 .single-footer-widget .footer-contact-info li i.bxs-inbox {
   top: 3px;
 }
@@ -4766,38 +5588,47 @@ Footer Area CSS
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .footer-bottom-area p {
   color: #ededed;
 }
+
 .footer-bottom-area p i {
   position: relative;
   top: 1.3px;
 }
+
 .footer-bottom-area p a {
   color: #CF0000;
   font-weight: 600;
 }
+
 .footer-bottom-area p a:hover {
   color: #ffffff;
 }
+
 .footer-bottom-area ul {
   text-align: right;
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
 }
+
 .footer-bottom-area ul li {
   color: #ededed;
   position: relative;
   display: inline-block;
   margin-right: 20px;
 }
+
 .footer-bottom-area ul li:last-child {
   margin-right: 0;
 }
+
 .footer-bottom-area ul li:last-child::before {
   display: none;
 }
+
 .footer-bottom-area ul li::before {
   content: "";
   position: absolute;
@@ -4807,10 +5638,12 @@ Footer Area CSS
   height: 14px;
   background-color: #ededed;
 }
+
 .footer-bottom-area ul li a {
   display: block;
   color: #ededed;
 }
+
 .footer-bottom-area ul li a:hover {
   color: #CF0000;
 }
@@ -4825,6 +5658,7 @@ Footer Area CSS
   width: 100%;
   z-index: -1;
 }
+
 .lines .line {
   position: absolute;
   width: 1px;
@@ -4834,6 +5668,7 @@ Footer Area CSS
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
+
 .lines .line::after {
   content: "";
   display: block;
@@ -4847,15 +5682,19 @@ Footer Area CSS
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
+
 .lines .line:nth-child(1) {
   margin-left: -25%;
 }
+
 .lines .line:nth-child(1)::after {
   animation-delay: 2s;
 }
+
 .lines .line:nth-child(3) {
   margin-left: 25%;
 }
+
 .lines .line:nth-child(3)::after {
   animation-delay: 2.5s;
 }
@@ -4864,10 +5703,12 @@ Footer Area CSS
   0% {
     top: -50%;
   }
+
   100% {
     top: 110%;
   }
 }
+
 /*================================================
 Go Top CSS
 =================================================*/
@@ -4887,6 +5728,7 @@ Go Top CSS
   transition: 0.9s;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
+
 .go-top i {
   position: absolute;
   right: 0;
@@ -4897,6 +5739,7 @@ Go Top CSS
   margin-left: auto;
   margin-right: auto;
 }
+
 .go-top:hover {
   background-color: #CF0000;
   color: #ffffff;
@@ -4908,9 +5751,11 @@ Go Top CSS
   display: block;
   opacity: 1;
 }
+
 .modal .modal-dialog {
   max-width: 720px;
 }
+
 .modal .modal-content {
   display: block;
   border: none;
@@ -4919,6 +5764,7 @@ Go Top CSS
   flex-direction: unset;
   border-radius: 0;
 }
+
 .modal .btn-close {
   position: absolute;
   left: 0;
@@ -4939,7 +5785,7 @@ Go Top CSS
 .modal-backdrop {
   background: rgba(18, 18, 18, 0.7) !important;
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 @media only screen and (max-width: 767px) {
@@ -4947,24 +5793,28 @@ Go Top CSS
     max-width: 100%;
   }
 }
+
 @media only screen and (max-width: 991px) {
-  .navbar-toggler:not(.collapsed) ~ .others-option {
-    top:30px!important;
+  .navbar-toggler:not(.collapsed)~.others-option {
+    top: 30px !important;
     position: relative;
-    right:100px;
+    right: 100px;
 
   }
-  .navbar-toggler.collapsed ~ .others-option {
-    top:auto!important;
+
+  .navbar-toggler.collapsed~.others-option {
+    top: auto !important;
     position: relative;
-    right:100px;
+    right: 100px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .modal .modal-dialog {
     max-width: 700px;
   }
 }
+
 .get-certificate .content {
   position: absolute;
   left: 0;
@@ -4976,9 +5826,11 @@ Go Top CSS
   margin-right: auto;
   transform: translateY(-52%);
 }
+
 .get-certificate .certificate-img {
   position: relative;
 }
+
 .get-certificate .caption {
   text-align: right;
   margin-top: -50px;
@@ -4988,6 +5840,7 @@ Go Top CSS
   transition: 0.5s;
   z-index: 2;
 }
+
 .get-certificate .caption .download-btn {
   width: 40px;
   height: 40px;
@@ -4999,9 +5852,11 @@ Go Top CSS
   border-radius: 5px;
   color: #f44336;
 }
+
 .get-certificate .caption .download-btn:nth-child(1) {
   color: #3100f3;
 }
+
 .get-certificate .col-lg-8:hover .caption {
   opacity: 1;
 }
@@ -5017,7 +5872,9 @@ Go Top CSS
   position: relative;
   top: 4px;
 }
-.live-class-icon::after, .live-class-icon::before {
+
+.live-class-icon::after,
+.live-class-icon::before {
   content: "";
   display: block;
   position: absolute;
@@ -5030,9 +5887,11 @@ Go Top CSS
   border-radius: 50%;
   border: 1px solid red;
 }
+
 .live-class-icon::before {
   animation: ripple 2s linear infinite;
 }
+
 .live-class-icon::after {
   animation: ripple 2s linear 1s infinite;
 }
@@ -5068,6 +5927,7 @@ Testimonial Area CSS
   position: relative;
   padding-right: 30px;
 }
+
 .main-testimonial-content .sub-title {
   display: block;
   text-transform: uppercase;
@@ -5076,11 +5936,13 @@ Testimonial Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .main-testimonial-content h1 {
   margin-bottom: 25px;
   color: white;
   font-size: 34px;
 }
+
 .main-testimonial-content p {
   max-width: 450px;
   line-height: 1.8;
@@ -5092,6 +5954,7 @@ Testimonial Area CSS
 .main-testimonial-courses-list .single-courses-box {
   margin-bottom: 0;
 }
+
 .main-testimonial-courses-list .single-courses-box .courses-content {
   padding: 20px;
 }
@@ -5104,11 +5967,13 @@ Testimonial Area CSS
   font-size: 14px;
   font-weight: 600;
 }
+
 .premium-access-content h1 {
   margin-bottom: 25px;
   color: white;
   font-size: 34px;
 }
+
 .premium-access-content p {
   max-width: 750px;
   line-height: 1.8;
@@ -5129,21 +5994,25 @@ Testimonial Area CSS
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
   margin-right: 30px;
 }
+
 .payment-form label {
   display: block;
   margin-bottom: 8px;
   color: #221638;
   font-weight: 700;
 }
+
 .payment-form form .form-group label {
   display: block;
   margin-bottom: 8px;
   color: #221638;
   font-weight: 700;
 }
+
 .payment-form form .form-group label span {
   color: red;
 }
+
 .payment-form form button {
   margin-top: 22px;
   border: none;
@@ -5159,44 +6028,56 @@ Testimonial Area CSS
   font-weight: 700;
   font-size: 16px;
 }
+
 .payment-form form button:hover {
   background-color: #221638;
   color: #ffffff;
-}/*# sourceMappingURL=style.css.map */
+}
 
-.checkout-details-area{
+/*# sourceMappingURL=style.css.map */
+
+.checkout-details-area {
   box-shadow: 0px 0px 4px 0px #3333331A;
   border-radius: 5px;
   background-color: #ffffff;
-  padding:15px;
+  padding: 15px;
 }
-.checkout-details-header .image{
-  height:100%;
+
+.checkout-details-header .image {
+  height: 100%;
 }
-.checkout-details-header li{
-  min-width:19%;
+
+.checkout-details-header li {
+  min-width: 19%;
   font-size: 12px;
 }
-.checkout-details-header li:nth-child(1){
+
+.checkout-details-header li:nth-child(1) {
   list-style-type: none;
 }
-.checkout-details-header .bx-trash{
-  color:#ff0000;
+
+.checkout-details-header .bx-trash {
+  color: #ff0000;
 }
-.checkout-details-bottom-area{
+
+.checkout-details-bottom-area {
   box-shadow: 0px 0px 4px 0px #3333331A;
   border-radius: 5px;
   background-color: #ffffff;
-  padding:20px 20px 10px 20px;
-  margin-top:25px;
+  padding: 20px 20px 10px 20px;
+  margin-top: 25px;
 }
-.checkout-details-bottom-area h6,p{
-  color:#606060;
+
+.checkout-details-bottom-area h6,
+p {
+  color: #606060;
   font-size: 15px;
 }
-.checkout-details-bottom-area hr{
-  margin:0.5rem 0;
+
+.checkout-details-bottom-area hr {
+  margin: 0.5rem 0;
 }
+
 .checkout-section {
   width: 100%;
   margin: 15px 0;
@@ -5224,22 +6105,6 @@ Testimonial Area CSS
   color: #606060;
 }
 
-.checkout-section .checkout-btn {
-  background-color: #c62828;
-  color: white;
-  padding: 14px 0;
-  width: 100%;
-  border: none;
-  border-radius: 999px;
-  font-size: 14px;
-  cursor: pointer;
-  margin-top:20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top:40px;
-}
-
 .checkout-section .checkout-btn:hover {
   background-color: #b71c1c;
 }
@@ -5248,8 +6113,8 @@ Testimonial Area CSS
   position: absolute;
   top: 12px;
   right: 12px;
-  background-color: #ff0000; 
-  color: white!important; 
+  background-color: #ff0000;
+  color: white !important;
   border: none;
   border-radius: 50%;
   padding: 6px;
@@ -5264,53 +6129,207 @@ Testimonial Area CSS
   transition: transform 0.2s, background-color 0.3s;
   font-size: 18px;
 }
-.heart-btn:hover{
-    background-color: #ff0000; 
-    color: white!important; 
+
+.heart-btn:hover {
+  background-color: #ff0000;
+  color: white !important;
 }
+
 .heart-btn.active {
   background-color: #ff0000;
   color: #fff;
   border: 2px solid #c62828;
 }
 
-.single-courses-box .courses-image .fav{
-  font-size:25px;
+.single-courses-box .courses-image .fav {
+  font-size: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
-.courses-enrollment-form .table-responsive .form-control{
+.courses-enrollment-form .table-responsive .form-control {
   background-color: inherit;
-  border:none;
-  height:auto!important;
+  border: none;
+  height: auto !important;
 }
-.courses-enrollment-form  .table-responsive input.form-control {
+
+.courses-enrollment-form .table-responsive input.form-control {
   width: 100%;
   min-width: 100px;
   box-sizing: border-box;
 }
 
-.enrolment-content-area .agreement-content p{
-  color:#221638;
-  font-size:16px;
-  margin-top:20px;
-}
-.enrolment-content-area .agreement-content ul li{
-  margin:10px 0;
+.enrolment-content-area .agreement-content p {
+  color: #221638;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
-.enrolment-content-area .privacy-notice-content h6{
+.enrolment-content-area .agreement-content ul li {
+  margin: 10px 0;
+}
+
+.enrolment-content-area .privacy-notice-content h6 {
   text-decoration: underline;
   font-style: italic;
 }
-.enrolment-content-area .privacy-notice-content p{
-  color:#221638;
-  font-size:16px;
-  margin-bottom:0.3rem;
+
+.enrolment-content-area .privacy-notice-content p {
+  color: #221638;
+  font-size: 16px;
+  margin-bottom: 0.3rem;
 }
-.enrolment-content-area .privacy-notice-content ul li{
-  margin:4px 0;
+
+.enrolment-content-area .privacy-notice-content ul li {
+  margin: 4px 0;
+}
+
+.course-theory-details {
+  border: 1px solid #000000;
+  padding: 20px 60px;
+  border-radius: 5px;
+}
+
+.course-theory-details .title {
+  color: #ff0000;
+  margin: 30px 0;
+}
+
+.course-theory-details .mail-link {
+  color: #647c7a;
+  text-decoration: underline;
+}
+
+.course-theory-details p {
+  color: #000000;
+  font-size: 16px;
+}
+
+.progress-sidebar .progress-bar {
+  background-color: #1AAF5D !important;
+}
+
+.progress-sidebar .certificate-link {
+  text-decoration: underline;
+  color: #221638;
+}
+
+.progress-sidebar ul {
+  padding-left: 0;
+}
+
+.progress-sidebar .module-item {
+  margin-bottom: 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #606060;
+}
+
+.progress-sidebar .module-item.completed {
+  background-color: #D9F3E5;
+  border: 1px solid #A2EEC4;
+}
+
+.progress-sidebar .module-item.completed span {
+  color: green;
+  font-weight: 600;
+}
+
+.course-assessment-area {
+  padding: 70px 50px;
+}
+
+.course-assessment-area p {
+  color: #221638;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.course-assessment-area .course-assessment-button {
+  margin-top: 100px;
+}
+
+.course-assessment-area .course-assessment-button .back-btn {
+  border: 1px solid #CF0000;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #CF0000;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 170px;
+}
+
+.back-btn {
+  border: 1px solid #CF0000;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #CF0000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 65px;
+  min-width: 170px;
+
+}
+
+.back-btn:hover {
+  color: #fff !important;
+  border: 1px solid #221638 !important;
+}
+
+.back-btn span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #221638;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.course-assessment-area .course-assessment-button .start-exam-btn {
+  border: 1px solid #CF0000;
+  border-radius: 100px;
+  background-color: #CF0000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 30px;
+}
+
+.student-declaration-area {
+  padding: 50px 0;
+}
+
+.student-declaration-area .textbox {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  background-color: transparent;
+  width: 200px;
+}
+
+.theory-assessment-instruction {
+  padding: 50px 0;
+}
+
+.theory-assessment-instruction ol li {
+  color: #606060;
+  font-size: 15px;
+}
+
+.theory-assessment-instruction ul li {
+  color: #606060;
+  font-size: 15px;
 }

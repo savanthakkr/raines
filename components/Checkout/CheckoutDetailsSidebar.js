@@ -98,7 +98,7 @@ const CheckoutDetailsSidebar = ({ course }) => {
                         <b>By Clicking This You Are Agree To Our</b> Terms of Service and Privacy Policy
                     </label>
                 </div>
-                <a href="/course/course-enrollment" class="checkout-btn">Checkout Now</a>
+                <a href="/course/course-enrollment" class="default-btn w-100 mt-3">Checkout Now<span></span></a>
             </div>
         </>
     );
