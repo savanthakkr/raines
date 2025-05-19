@@ -20,9 +20,9 @@ const CourseProgressSidebar = ({ courseTitle, modules, progress }) => {
                 </div>
             </div>
 
-            <h5 className="course-title">{courseTitle}</h5>
+            {/* <h5 className="course-title">{courseTitle}</h5> */}
 
-            <ul className="module-list">
+            {/* <ul className="module-list">
                 {modules.map((mod, idx) => (
                     <li key={idx} className={`module-item ${mod.completed ? 'completed' : ''}`}>
                         <div>{idx + 1}. {mod.title}
@@ -47,7 +47,7 @@ const CourseProgressSidebar = ({ courseTitle, modules, progress }) => {
                         </div>
                     </li>
                 ))}
-            </ul>
+            </ul> */}
             
             <div class="checkout-section">
                 <a href="/learning/course/course-assessment" class="default-btn w-100 mt-2">Complete Assessment<span></span></a>

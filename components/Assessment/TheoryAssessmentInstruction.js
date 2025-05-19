@@ -82,7 +82,7 @@ const TheoryAssessmentInstruction = () => {
                     >
                         Back<span></span>
                     </button>
-                    <a href="/assessment/assessment-instruction" className="default-btn">Start<span></span></a>
+                    <a href="/assessment/practical-assessment" className="default-btn">Start<span></span></a>
                 </div>
                 </div>
                 

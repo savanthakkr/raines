@@ -23,7 +23,7 @@ const nextConfig = {
 			"https://api.cloudinary.com/v1_1/dev-empty/video/upload",
 		CLOUDINARY_ZIP_URL:
 			"https://api.cloudinary.com/v1_1/dev-empty/raw/upload",
-		STRIPE_SECRET_KEY: "sk_test_2DqyjEwaU0Nq0PpEMVQ3qSAw00zgrbnfPk",
+		// STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
 		STRIPE_PUBLISHABLE_KEY: "pk_test_ZaZZWZGlvdIn12yFleIqyjSI00G4e18Kf7",
 	},
 };
