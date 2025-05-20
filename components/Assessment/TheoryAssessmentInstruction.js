@@ -76,16 +76,16 @@ const TheoryAssessmentInstruction = () => {
                         <p className="mt-3">Electronic signatures are permitted when conducting the assessments online or when completing the assessment in the classroom.</p>
                     </div>
                     <div className="d-flex flex-row justify-content-between course-assessment-button mt-5">
-                    <button
-                        onClick={() => router.back()}
-                        className="default-btn back-btn"
-                    >
-                        Back<span></span>
-                    </button>
-                    <a href="/assessment/practical-assessment" className="default-btn">Start<span></span></a>
+                        <button
+                            onClick={() => router.back()}
+                            className="default-btn back-btn"
+                        >
+                            Back<span></span>
+                        </button>
+                        <a href="/assessment/practical-assessment" className="default-btn">Start<span></span></a>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
         </>
     );

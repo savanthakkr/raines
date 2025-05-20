@@ -114,7 +114,29 @@ const ProfileDropdown = ({
 								className={`dropdown-item ${currentPath == "/learning/my-courses/" && "active"}`}
 							>
 								<i className="bx bx-book"></i>
-								My Learning
+								My Courses
+							</a>
+						</Link>
+					</li>
+
+					<li>
+						<Link href="/profile/certificates/">
+							<a 
+								className={`dropdown-item ${currentPath == "/profile/certificates" && "active"}`}
+							>
+								<i className="bx bx-book"></i>
+								Certificates
+							</a>
+						</Link>
+					</li>
+
+					<li>
+						<Link href="/learning/wishlist/">
+							<a 
+								className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
+							>
+								<i className="bx bxs-heart"></i>
+								My Wishlist
 							</a>
 						</Link>
 					</li>
@@ -131,29 +153,18 @@ const ProfileDropdown = ({
 					</li>
 
 					<li>
-						<Link href="/learning/wishlist/">
-							<a 
-								className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
-							>
-								<i className="bx bxs-heart"></i>
-								Wishlist
-							</a>
-						</Link>
-					</li>
-
-					<li>
 						<Link href="/profile/basic-information/">
 							<a 
 								className={`dropdown-item ${currentPath == "/profile/basic-information/" && "active"}`}
 							>
-								<i className="bx bxs-user-account"></i> Account
-								settings
+								<i className="bx bxs-user-account"></i> 
+								Profile & settings
 							</a>
 						</Link>
 					</li>
 
 					<li>
-						<Link href="/profile/basic-information/">
+						<Link href="/learning/raise-support-request">
 							<a 
 								className={`dropdown-item ${currentPath == "/learning/raise-support-request/" && "active"}`}
 							>
@@ -163,7 +174,7 @@ const ProfileDropdown = ({
 					</li>
 
 					<li>
-						<Link href="/profile/basic-information/">
+						<Link href="/course/course-enrollment/">
 							<a 
 								className={`dropdown-item ${currentPath == "/course/course-enrollment" && "active"}`}
 							>

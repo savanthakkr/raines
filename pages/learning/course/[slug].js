@@ -7,6 +7,7 @@ import baseUrl from "@/utils/baseUrl";
 import axios from "axios";
 import CourseProgressSidebar from "./course-progrss-sidebar";
 import CourseTheory from "./course-theory";
+import StickyBox from "react-sticky-box";
 
 const course = {
 	title: 'CPCWHS1001 - Prepare to Work Safely in the Construction Industry.',
@@ -224,7 +225,7 @@ const Index = ({ user }) => {
 						</div>
 						{/* </div> */}
 
-						{/* <div className="col-lg-3 col-md-4">
+						<div className="col-lg-3 col-md-4">
 							<StickyBox offsetTop={20} offsetBottom={20}>
 								<div className="video-sidebar">
 								{user?.id && course?.id && (
@@ -258,7 +259,7 @@ const Index = ({ user }) => {
 									</div>
 								</div>
 							</StickyBox>
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>

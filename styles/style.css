@@ -314,7 +314,7 @@ a:hover {
   background-color: #CF0000;
   transition: 0.5s;
   border-radius: 100px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   padding-left: 30px;
   padding-right: 30px;
@@ -6275,7 +6275,7 @@ p {
   color: #CF0000;
   font-size: 15px;
   font-weight: 700;
-  padding: 10px 65px;
+  /* padding: 10px 65px; */
   min-width: 170px;
 
 }
@@ -6333,3 +6333,122 @@ p {
   color: #606060;
   font-size: 15px;
 }
+
+.practical-assessment-instruction{
+  padding: 30px 0 50px 0;
+}
+
+.practical-assessment-instruction ol li {
+  color: #606060;
+  font-size: 15px;
+}
+
+.practical-assessment-instruction ul li {
+  color: #606060;
+  font-size: 15px;
+}
+
+.practical-assessment-instruction .timing{
+  color:#CF0000;
+  font-size:px;
+  font-weight: 700;
+}
+
+.risk-matrix-details{
+  padding: 20px 0 50px 0;
+}
+
+.risk-matrix-details .timing{
+  color:#CF0000;
+  font-size:px;
+  font-weight: 700;
+}
+
+.risk-matrix-table th{
+  text-align: center;
+  vertical-align: middle;
+  background-color: #dae8f7!important;
+}
+.risk-matrix-table th.consequence{
+  background-color: #e8e8e8!important;
+  font-size:18px;
+}
+
+.risk-matrix-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.risk-matrix-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.risk-matrix-table th.text-start,.risk-matrix-table .main-head{
+  background-color: #d9f3d0!important;
+  font-size:18px;
+}
+.risk-matrix-table td,.risk-matrix-table th{
+  border:1px solid #000000;
+}
+.low { background-color: #ffff00!important; }        /* Yellow */
+.moderate { background-color: #ffce3d!important; }   /* Orange */
+.high { background-color:#e97032!important; }       /* Red */
+.extreme { background-color: #ff0000!important; }     /* Bright Red */
+.actionable-events-table .risk-heading {
+  background-color: #000;
+  color: #fff;
+  text-align:center;
+  font-size:18px;
+}
+.actionable-events-table td,.actionable-events-table th{
+  border:1px solid #000000;
+}
+.actionable-events-table td.fw-bold{
+  color:#000!important;
+  font-size: 18px;
+}
+.certificates-area h2{
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-bottom: 1px solid #cfcfcf;
+}
+.certificates-area .start-course{
+  border-bottom:1px solid #ff0000;
+  color:#ff0000;
+}
+
+/* Certificate box */
+.certificate-box{
+  margin-bottom: 30px;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.certificate-box .certificate-image {
+  position: relative;
+  z-index: 1;
+}
+
+.certificate-box .certificate-image .image img {
+  max-width: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.certificate-box .certificate-content{
+  padding:20px;
+}
+.certificate-box .certificate-content .title{
+  font-size: 20px;
+}
+.certificate-box .certificate-content .date{
+  color:#606060;
+  font-size:14px;
+}
+.certificate-box .certificate-content .links a{
+  color:#CF0000;
+  font-size:14px;
+  margin-top:6px;
+  margin-right:10px;
+} 

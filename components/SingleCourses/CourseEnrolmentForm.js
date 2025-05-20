@@ -815,7 +815,7 @@ const CourseEnrolmentForm = ({ user: current_user, course }) => {
                                         <div className="col-6 mt-2">
                                             <button
                                                 type="btn"
-                                                className="btn default-btn px-5"
+                                                className="btn default-btn back-btn px-5"
                                                 onClick={prevStep}
                                             >
                                                 Back <span></span>
@@ -970,7 +970,7 @@ const CourseEnrolmentForm = ({ user: current_user, course }) => {
                                             <div className="col-6 mt-2">
                                                 <button
                                                     type="btn"
-                                                    className="btn default-btn px-5"
+                                                    className="btn default-btn back-btn px-5"
                                                     onClick={prevStep}
                                                 >
                                                     Back <span></span>

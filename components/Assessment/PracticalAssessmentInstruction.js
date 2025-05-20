@@ -1,12 +1,8 @@
-import { useRouter } from 'next/router';
-
 const PracticalAssessmentInstruction = () => {
-    const router = useRouter();
-
     return (
         <>
             <div className="container">
-                <div className="theory-assessment-instruction">
+                <div className="practical-assessment-instruction">
                     <div>
                         <h4>RIIRIS402E Carry out the risk management process.</h4>
                         <h5>Practical Assessment B</h5>
@@ -74,7 +70,7 @@ const PracticalAssessmentInstruction = () => {
                         </p>
                     </div>
                     <div className="d-flex flex-row justify-content-end course-assessment-button mt-5">
-                        <a href="/assessment/assessment-instruction" className="default-btn">Next<span></span></a>
+                        <a href="/assessment/practical-activity" className="default-btn">Next<span></span></a>
                     </div>
                 </div>
 

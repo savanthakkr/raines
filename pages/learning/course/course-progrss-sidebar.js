@@ -1,5 +1,4 @@
 import React from 'react';
-import { CheckCircle } from 'react-bootstrap-icons';
 
 const CourseProgressSidebar = ({ courseTitle, modules, progress }) => {
     return (
@@ -49,9 +48,19 @@ const CourseProgressSidebar = ({ courseTitle, modules, progress }) => {
                 ))}
             </ul> */}
             
-            <div class="checkout-section">
-                <a href="/learning/course/course-assessment" class="default-btn w-100 mt-2">Complete Assessment<span></span></a>
+            <div className="checkout-section">
+                <a href="/learning/course/course-assessment" className="default-btn w-100 mt-2">Complete Assessment<span></span></a>
             </div>
+
+            {/* <div className="pending-result-section">
+                <a href="/learning/course/course-assessment" className="default-btn w-100 mt-2">Pending for Result<span></span></a>
+                <p className="text-center"><small>You will be notified through email once the result is out.</small></p>
+            </div>
+
+            <div className="passed-result-section">
+                <a href="/learning/course/course-assessment" className="default-btn w-100 mt-2">Passed<span></span></a>
+                <p className="text-center"><small>To view/download your certificate, click on <a href=""><b>View Certificate</b></a></small></p>
+            </div> */}
         </aside>
     );
 };
