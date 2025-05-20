@@ -18,13 +18,17 @@ const CertificateCard = ({
                     </Link>
                 </div>
                 <div className="certificate-content">
-                    <div className="d-flex flex-row justify-content-between align-items-start">
-                        <h3 className="title">
-                            <Link href={`/profile/certificates`}>
-                                <a title={title}>{title}</a>
-                            </Link>
-                        </h3>
-                        <img src="/images/img/certificate-arrow.png" />
+                    <div className="row d-flex flex-row justify-content-between align-items-start">
+                        <div className="col-10">
+                            <h3 className="title">
+                                <Link href={`/profile/certificates/`}>
+                                    <a title={title}>{title}</a>
+                                </Link>
+                            </h3>
+                        </div>
+                        <div className="col-2">
+                            <img src="/images/img/certificate-arrow.png" />
+                        </div>
                     </div>
                     <div className="date">Issued Date: {issued_date}</div>
                     <div className="d-flex flex-row links">
