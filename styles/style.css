@@ -5792,6 +5792,31 @@ Go Top CSS
   .modal .modal-dialog {
     max-width: 100%;
   }
+  .course-theory-details {
+    border: 1px solid #000000;
+    padding: 20px!important;
+    border-radius: 5px;
+  }
+  .course-assessment-area {
+    padding: 70px 20px!important;
+  }
+  .back-btn {
+    border: 1px solid #CF0000;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #CF0000;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 65px;
+    min-width: 170px!important;
+  }
+  .default-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    padding:10px 0!important;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -6277,7 +6302,6 @@ p {
   font-weight: 700;
   /* padding: 10px 65px; */
   min-width: 170px;
-
 }
 
 .back-btn:hover {
@@ -6383,22 +6407,31 @@ p {
   text-align: center;
   vertical-align: middle;
 }
-.risk-matrix-table th.text-start,.risk-matrix-table .main-head{
+.risk-matrix-table th.head{
+  vertical-align: top;
+  text-align: start;
+  width:15%;
+}
+.risk-matrix-table th.text-start,.risk-matrix-table th.main-head{
   background-color: #d9f3d0!important;
   font-size:18px;
+  width:15%;
 }
 .risk-matrix-table td,.risk-matrix-table th{
   border:1px solid #000000;
 }
-.low { background-color: #ffff00!important; }        /* Yellow */
-.moderate { background-color: #ffce3d!important; }   /* Orange */
-.high { background-color:#e97032!important; }       /* Red */
-.extreme { background-color: #ff0000!important; }     /* Bright Red */
+.low { background-color: #ffff00!important; }        
+.moderate { background-color: #ffce3d!important; }   
+.high { background-color:#e97032!important; }       
+.extreme { background-color: #ff0000!important; }     
 .actionable-events-table .risk-heading {
   background-color: #000;
   color: #fff;
   text-align:center;
   font-size:18px;
+}
+.actionable-events-table th.risk-level{
+  width:25%;
 }
 .actionable-events-table td,.actionable-events-table th{
   border:1px solid #000000;

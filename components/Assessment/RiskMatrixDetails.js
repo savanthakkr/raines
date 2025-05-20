@@ -24,11 +24,11 @@ const RiskMatrixDetails = ({ user }) => {
                             </tr>
                             <tr>
                                 <th className="main-head">Likelihood</th>
-                                <th>1. Insignificant</th>
-                                <th>2. Minor<br /><small>First Aid Required</small></th>
-                                <th>3. Moderate<br /><small>Medical Attention and Time Off Work</small></th>
-                                <th>4. Major<br /><small>Long Term Illness or Serious Injury</small></th>
-                                <th>5. Catastrophic<br /><small>Kill or Cause Permanent Disability or illness</small></th>
+                                <th className="head">1. Insignificant</th>
+                                <th className="head">2. Minor<br /><small>First Aid Required</small></th>
+                                <th className="head">3. Moderate<br /><small>Medical Attention and Time Off Work</small></th>
+                                <th className="head">4. Major<br /><small>Long Term Illness or Serious Injury</small></th>
+                                <th className="head">5. Catastrophic<br /><small>Kill or Cause Permanent Disability or illness</small></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -81,7 +81,7 @@ const RiskMatrixDetails = ({ user }) => {
                     <table className="table table-bordered actionable-events-table">
                         <thead>
                             <tr className="risk-heading">
-                                <th>Risk Level</th>
+                                <th className="risk-level">Risk Level</th>
                                 <th>Action</th>
                             </tr>
                         </thead>

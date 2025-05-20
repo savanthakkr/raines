@@ -225,7 +225,7 @@ const Index = ({ user }) => {
 						</div>
 						{/* </div> */}
 
-						<div className="col-lg-3 col-md-4">
+						{/* <div className="col-lg-3 col-md-4">
 							<StickyBox offsetTop={20} offsetBottom={20}>
 								<div className="video-sidebar">
 								{user?.id && course?.id && (
@@ -259,7 +259,7 @@ const Index = ({ user }) => {
 									</div>
 								</div>
 							</StickyBox>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
