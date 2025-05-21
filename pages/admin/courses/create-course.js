@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
 import Link from "next/link";
 import CourseCreateForm from "@/components/Instructor/CourseCreateForm";
 import AdminCourseCreate from "@/components/Admin/MyCourses/AdminCourseCreate";
+import AdminNav from "@/components/_App/AdminNav";
 
 const CreateCourse = ({ user }) => {
 	return (
 		<>
-			<Navbar user={user} />
+			<AdminNav />
 
 			<div className="ptb-100">
 				<div className="container">

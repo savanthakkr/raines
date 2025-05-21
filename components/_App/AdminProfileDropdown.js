@@ -70,9 +70,9 @@ const AdminProfileDropdown = ({
                     </li>
 
                     <li>
-                        <Link href="/instructor/course/create/">
+                        <Link href="/admin/courses/create-course/">
                             <a
-                                className={`dropdown-item ${currentPath == "/instructor/course/create/" && "active"}`}
+                                className={`dropdown-item ${currentPath == "/admin/courses/create-course/" && "active"}`}
                             >
                                 {/* <i className="bx bx-folder-plus"></i>  */}
                                 Create New Course
