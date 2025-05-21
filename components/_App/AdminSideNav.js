@@ -5,15 +5,15 @@ import StickyBox from "react-sticky-box";
 import { motion } from "framer-motion";
 
 const AdminSideNav = ({ user }) => {
-	const isAdmin = user.role === "admin";
+	// const isAdmin = user.role === "admin";
 	const router = useRouter();
 	const currentRoute = router.pathname;
 
-	useEffect(() => {
-		if (!isAdmin) {
-			router.replace("/");
-		}
-	}, [user]);
+	// useEffect(() => {
+	// 	if (!isAdmin) {
+	// 		router.replace("/");
+	// 	}
+	// }, [user]);
 
 	// Sidebar Nav
 	const [isActiveSidebarNav, setActiveSidebarNav] = useState("false");

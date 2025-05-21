@@ -1030,7 +1030,7 @@ Navbar Area CSS
 
 .edemy-nav .navbar .others-option .option-item .profile-dropdown .dropdown-menu .dropdown-item {
   position: relative;
-  padding: 8px 22px 8px 45px;
+  padding: 8px 22px 8px 30px;
   font-size: 15px;
 }
 
@@ -6485,3 +6485,22 @@ p {
   margin-top:6px;
   margin-right:10px;
 } 
+.jump-course-creation{
+  box-shadow: 0px 0px 4px 0px #3333331A;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 25px;
+}
+.admin-course-create .mantine-1qycoz3,.admin-course-create .mantine-bdajhj{
+  background-color: #f5f5f5;
+}
+.save-draft a{
+  color:#cf0000!important;
+  width:auto;
+  display: inline-block;
+  font-weight: 700;
+  font-size:15px;
+}

@@ -3,7 +3,7 @@ import Link from "@/utils/ActiveLink";
 import { handleLogout } from "@/utils/auth";
 import { useRouter } from "next/router";
 
-const ProfileDropdown = ({
+const InstructorProfileDropdown = ({
 	userId,
 	first_name,
 	email,
@@ -69,45 +69,6 @@ const ProfileDropdown = ({
 						<hr className="dropdown-divider" />
 					</li>
 
-					{isInstructor && (
-						<>
-							<li>
-								<Link href="/instructor/courses/">
-									<a 
-										className={`dropdown-item ${currentPath == "/instructor/courses/" && "active"}`}
-									>
-										{/* <i className="bx bx-book"></i> */}
-										My Courses
-									</a>
-								</Link>
-							</li>
-
-							<li>
-								<Link href="/instructor/course/create/">
-									<a 
-										className={`dropdown-item ${currentPath == "/instructor/course/create/" && "active"}`}
-									>
-										{/* <i className="bx bx-folder-plus"></i>  */}
-										Create New Course
-									</a>
-								</Link>
-							</li>
-						</>
-					)}
-
-					{isAdmin && (
-						<li>
-							<Link href="/admin/">
-								<a 
-									className={`dropdown-item ${currentPath == "/admin/" && "active"}`}
-								>
-									{/* <i className="bx bxs-dashboard"></i>  */}
-									My Dashboard
-								</a>
-							</Link>
-						</li>
-					)}
-
 					<li>
 						<Link href="/learning/my-courses/">
 							<a 
@@ -120,37 +81,16 @@ const ProfileDropdown = ({
 					</li>
 
 					<li>
-						<Link href="/profile/certificates/">
-							<a 
-								className={`dropdown-item ${currentPath == "/profile/certificates" && "active"}`}
-							>
-								{/* <i className="bx bx-book"></i> */}
-								Certificates
-							</a>
-						</Link>
-					</li>
-
-					<li>
 						<Link href="/learning/wishlist/">
 							<a 
 								className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
 							>
 								{/* <i className="bx bxs-heart"></i> */}
-								My Wishlist
+								Manage Employees
 							</a>
 						</Link>
 					</li>
 
-					<li>
-						<Link href="/learning/my-purchase-history/">
-							<a 
-								className={`dropdown-item ${currentPath == "/learning/my-purchase-history/" && "active"}`}
-							>
-								{/* <i className="bx bx-credit-card-front"></i> */}
-								My Purchases
-							</a>
-						</Link>
-					</li>
 
 					<li>
 						<Link href="/profile/basic-information/">
@@ -168,21 +108,11 @@ const ProfileDropdown = ({
 							<a 
 								className={`dropdown-item ${currentPath == "/learning/raise-support-request/" && "active"}`}
 							>
-								{/* <i className="bx bxs-user-account"></i>  */}
-								Raise Support Request
+								{/* <i className="bx bxs-user-account"></i> */}
+                                Raise Support Request
 							</a>
 						</Link>
 					</li>
-
-					{/* <li>
-						<Link href="/course/course-enrollment/">
-							<a 
-								className={`dropdown-item ${currentPath == "/course/course-enrollment" && "active"}`}
-							>
-								<i className="bx bxs-user-account"></i> Enrollment Form
-							</a>
-						</Link>
-					</li> */}
 
 					<li>
 						<hr className="dropdown-divider" />
@@ -194,8 +124,8 @@ const ProfileDropdown = ({
 							onClick={handleLogout}
 							className="dropdown-item"
 						>
-							{/* <i className="bx bx-log-out"></i>  */}
-							Log out
+							{/* <i className="bx bx-log-out"></i> */}
+                            Log out
 						</button>
 					</li>
 				</ul>
@@ -204,4 +134,4 @@ const ProfileDropdown = ({
 	);
 };
 
-export default ProfileDropdown;
+export default InstructorProfileDropdown;

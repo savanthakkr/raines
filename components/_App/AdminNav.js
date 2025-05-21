@@ -6,17 +6,18 @@ import Link from "@/utils/ActiveLink";
 import ProfileDropdown from "./ProfileDropdown";
 import Cart from "./Cart";
 import SearchForm from "./SearchForm";
+import AdminProfileDropdown from "./AdminProfileDropdown";
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-const Navbar = ({ user:userProp }) => {
+const AdminNav = ({ user:userProp }) => {
 	const user = userProp || {
-		first_name: 'Alan',
-		email: 'alan@gmail.com',
+		first_name: 'Admin',
+		email: 'admin@gmail.com',
 		profile_photo: '',
-		role: 'user'
+		role: 'admin'
 	  };
 	const [menu, setMenu] = React.useState(true);
 
@@ -87,7 +88,7 @@ const Navbar = ({ user:userProp }) => {
 												onClick={toggleNavbar}
 												className="nav-link"
 											>
-												Home
+												Dashboard
 											</a>
 										</Link>
 									</motion.li>
@@ -101,7 +102,7 @@ const Navbar = ({ user:userProp }) => {
 										whileTap={{ scale: 0.9 }}
 									>
 										<Link
-											href="/courses"
+											href="/admin/courses/admin-courses"
 											activeClassName="active"
 										>
 											<a
@@ -112,63 +113,13 @@ const Navbar = ({ user:userProp }) => {
 											</a>
 										</Link>
 									</motion.li>
-
-									{user ? (
-										!user.instructor_request && (
-											<motion.li
-												className="nav-item"
-												whileHover={{
-													scale: 1.1,
-													transition: {
-														duration: 0.5,
-													},
-												}}
-												whileTap={{ scale: 0.9 }}
-											>
-												<Link
-													href="/become-an-instructor"
-													activeClassName="active"
-												>
-													<a
-														onClick={toggleNavbar}
-														className="nav-link"
-													>
-														Become An Instructor
-													</a>
-												</Link>
-											</motion.li>
-										)
-									) : (
-										<motion.li
-											className="nav-item"
-											whileHover={{
-												scale: 1.1,
-												transition: { duration: 0.5 },
-											}}
-											whileTap={{ scale: 0.9 }}
-										>
-											<Link
-												href="/become-an-instructor"
-												activeClassName="active"
-											>
-												<a
-													onClick={toggleNavbar}
-													className="nav-link"
-												>
-													Register As Business
-												</a>
-											</Link>
-										</motion.li>
-									)}
 								</ul>
 							</div>
 
 							<div className="others-option d-flex align-items-center">
-								<Cart />
-
 								<div className="option-item">
 									{user ? (
-										<ProfileDropdown {...user} />
+										<AdminProfileDropdown {...user} />
 									) : ( 
 										<Link href="/authentication">
 											<a className="default-btn">
@@ -186,4 +137,4 @@ const Navbar = ({ user:userProp }) => {
 	);
 };
 
-export default Navbar;
+export default AdminNav;
