@@ -83,7 +83,7 @@ const AdminNav = ({ user:userProp }) => {
 										}}
 										whileTap={{ scale: 0.9 }}
 									>
-										<Link href="/" activeClassName="active">
+										<Link href="/admin/dashboard" activeClassName="active">
 											<a
 												onClick={toggleNavbar}
 												className="nav-link"

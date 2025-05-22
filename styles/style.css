@@ -6504,3 +6504,99 @@ p {
   font-weight: 700;
   font-size:15px;
 }
+.dashboard-area{
+  padding:10px 50px;
+}
+.dashboard-area .card{
+  background-color: #F5F5F5;
+  border:none;
+  border-radius: 8px;
+  padding:20px;
+}
+.dashboard-area .card h6{
+  color:#221638;
+  font-size:18px;
+}
+.dashboard-area .card .dropdown-toggle{
+  color:#221638;
+  font-weight: 700;
+  font-size: 16px;
+}
+.dashboard-area .card .dropdown-toggle:focus{
+  border:none;
+}
+.dashboard-area .card .dropdown-toggle::after{
+  color:#221638;
+}
+.dashboard-area .card h3.value{
+  color:#CF0000;
+}
+.dashboard-area .card img{
+  height:30px;
+}
+.course-table thead tr,tr{
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  padding:10px 0;
+}
+.course-table tbody{
+  margin-top:10px;
+}
+.course-table .course_name{
+  color:#CF0000;
+}
+.user-business-tab{
+  padding-bottom: 70px;
+}
+.user-business-tab .activeTab{
+  color:#CF0000;
+  background-color: #fff;
+  border:none;
+  border-bottom: 1px solid #Cf0000;
+  font-weight: 700;
+}
+.user-business-tab .tab{
+  color:#000;
+  border:none;
+  border-bottom:1px solid #CFCFCF;
+  background-color: #fff;
+  font-weight: 700;
+}
+.user-business-tab .action{
+  font-weight: 700;
+  color:#CF0000;
+}
+.user-business-tab .dropdown-menu{
+  border-radius: 15px;
+}
+.user-business-tab ul li button{
+  padding:10px 15px;
+}
+.user-business-tab .custom-checkbox {
+  display: none;
+}
+
+.user-business-tab .check-label {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-business-tab .custom-checkbox:checked + .check-label {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.user-business-tab .custom-checkbox:checked + .check-label::after {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}

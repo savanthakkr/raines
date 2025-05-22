@@ -7,8 +7,13 @@ import axios from "axios";
 import { parseCookies } from "nookies";
 import LoadingSpinner from "@/utils/LoadingSpinner";
 import baseUrl from "@/utils/baseUrl";
+import { useRouter } from 'next/router';
+import AdminNav from "@/components/_App/AdminNav";
 
 const BasicInformation = ({ user }) => {
+	const router = useRouter();
+	const { role } = router.query;
+
 	const { elarniv_users_token } = parseCookies();
 	const [userUpdate, setUserUpdate] = useState(user);
 	const [loading, setLoading] = React.useState(false);
@@ -65,7 +70,11 @@ const BasicInformation = ({ user }) => {
 
 	return (
 		<>
-			<Navbar user={user} />
+			{role=='instructor'?(
+				<AdminNav/>
+			):(
+				<Navbar user={user} />
+			)}
 
 			<div className="ptb-100">
 				<div className="container">
