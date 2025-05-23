@@ -81,9 +81,9 @@ const AdminProfileDropdown = ({
                     </li>
 
                     <li>
-                        <Link href="/learning/wishlist/">
+                        <Link href="/admin/manage/manage-users/">
                             <a
-                                className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
+                                className={`dropdown-item ${currentPath == "/admin/manage/manage-users/" && "active"}`}
                             >
                                 {/* <i className="bx bxs-heart"></i> */}
                                 Manage Users
@@ -93,9 +93,9 @@ const AdminProfileDropdown = ({
 
 
                     <li>
-                        <Link href="/learning/wishlist/">
+                        <Link href="/admin/manage/manage-business/">
                             <a
-                                className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
+                                className={`dropdown-item ${currentPath == "/admin/manage/manage-business/" && "active"}`}
                             >
                                 {/* <i className="bx bxs-heart"></i> */}
                                 Manage Business
@@ -104,9 +104,9 @@ const AdminProfileDropdown = ({
                     </li>
 
                     <li>
-                        <Link href="/profile/basic-information/">
+                        <Link href="/profile/basic-information/?role=admin">
                             <a
-                                className={`dropdown-item ${currentPath == "/profile/basic-information/" && "active"}`}
+                                className={`dropdown-item ${currentPath == "/profile/basic-information/?role=admin" && "active"}`}
                             >
                                 {/* <i className="bx bxs-user-account"></i>  */}
                                 Profile & settings

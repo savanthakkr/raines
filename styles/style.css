@@ -6600,3 +6600,18 @@ p {
   top: 1px;
   left: 4px;
 }
+.user-business-area{
+  padding:0px 50px;
+}
+
+@media(max-width:768px){
+  .user-business-area{
+    padding:0px 30px;
+  }
+  .admin-search-form{
+    width:100%;
+  }
+  .admin-search-form .edemy-nav{
+    width:100%;
+  }
+}

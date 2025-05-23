@@ -10,7 +10,7 @@ import baseUrl from "@/utils/baseUrl";
 import { useRouter } from 'next/router';
 import AdminNav from "@/components/_App/AdminNav";
 
-const BasicInformation = ({ user }) => {
+const AdminBasicInformation = ({ user }) => {
 	const router = useRouter();
 	const { role } = router.query;
 
@@ -425,4 +425,4 @@ const BasicInformation = ({ user }) => {
 	);
 };
 
-export default BasicInformation;
+export default AdminBasicInformation;

@@ -1,9 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import AdminSearchForm from './AdminSearchForm';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function UsersBusinessesTabs() {
+  const router = useRouter();
+
   const [activeTab, setActiveTab] = useState('Businesses');
+
+  useEffect(() => {
+    if (router.pathname === '/admin/manage/manage-users') {
+      setActiveTab('Users');
+    } else {
+      setActiveTab('Businesses');
+    }
+  }, [router.pathname]);
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    if (tab === 'Users') {
+      router.push('/admin/manage/manage-users');
+    } else {
+      router.push('/admin/manage/manage-businesses');
+    }
+  };
   const users = [
     {
       id: 1,
@@ -80,7 +100,7 @@ export default function UsersBusinessesTabs() {
   return (
     <div className="mt-4 user-business-tab">
       <h4 className="font-semibold text-lg mb-4">Manage Users/Businesses</h4>
-      <div className="d-flex flex-lg-row justify-content-between align-items-center mb-2">
+      <div className="d-flex flex-wrap justify-content-between align-items-center mb-2">
         <div className="mb-4 border-b border-gray-300 flex space-x-4">
           <button
             onClick={() => setActiveTab('Businesses')}
@@ -101,18 +121,20 @@ export default function UsersBusinessesTabs() {
             Users
           </button>
         </div>
-        <div className="d-flex flex-row">
+        <div className="d-flex flex-row admin-search-form">
           <AdminSearchForm />
+          {activeTab === 'Users' && (
           <Link href="/">
             <a className="default-btn back-btn rounded-0 ms-3">
               Download Report <span></span>
             </a>
           </Link>
+          )}
         </div>
       </div>
 
 
-      <div className="overflow-x-auto">
+      <div className="table-responsive overflow-x-auto">
         {activeTab === 'Businesses' ? (
           <table className="w-100 border">
             <thead className="bg-gray-100">
