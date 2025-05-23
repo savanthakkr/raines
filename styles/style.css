@@ -64,6 +64,10 @@ body {
   position: relative;
 }
 
+button,a{
+  cursor: pointer;
+}
+
 img {
   max-width: 70%;
   height: auto;
@@ -6236,6 +6240,10 @@ p {
   background-color: #1AAF5D !important;
 }
 
+.progress-bar {
+  background-color: #1AAF5D !important;
+}
+
 .progress-sidebar .certificate-link {
   text-decoration: underline;
   color: #221638;
@@ -6570,7 +6578,7 @@ p {
 .user-business-tab .dropdown-menu{
   border-radius: 15px;
 }
-.user-business-tab ul li button{
+.user-business-tab ul li button,.user-business-tab ul li a{
   padding:10px 15px;
 }
 .user-business-tab .custom-checkbox {
@@ -6603,7 +6611,27 @@ p {
 .user-business-area{
   padding:0px 50px;
 }
-
+.progress-status{
+  color:#CF0000;
+  font-size:15px;
+  font-weight: 700;
+}
+.course-report-table .download-certificate:hover{
+  color:#CF0000;
+  cursor:pointer;
+}
+.course-report-table ul li a,.course-report-table ul li button{
+  padding:10px 15px;
+}
+.action-bar-btn{
+  color:#CF0000;
+}
+.course-report-table .dropdown-menu{
+  min-width:210px;
+}
+.dropdown-menu.left-shift {
+  left: -50px !important;
+}
 @media(max-width:768px){
   .user-business-area{
     padding:0px 30px;
@@ -6613,5 +6641,15 @@ p {
   }
   .admin-search-form .edemy-nav{
     width:100%;
+  }
+  .dropdown-menu.left-shift {
+    left: -130px !important;
+  }
+  .dashboard-area{
+    padding:0 30px;
+  }
+  .jump-course-creation{
+    display: flex;
+    flex-direction: column;
   }
 }

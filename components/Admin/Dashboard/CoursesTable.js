@@ -10,18 +10,18 @@ export default function CoursesTable() {
   
     return (
       <div className="mb-6 course-table">
-        <div className="d-flex flex-lg-row justify-content-between align-items-center mb-3">
+        <div className="d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between align-items-lg-center mb-3">
           <h4 className="font-semibold text-lg mb-0">Courses</h4>
-          <div className="d-flex flex-row">
+          <div className="d-flex flex-column flex-lg-row mt-2">
             <AdminSearchForm/>
             <Link href="/admin/courses/create-course">
-							<a className="default-btn rounded-0 ms-3">
+							<a className="default-btn rounded-0 ms-lg-3">
 								Create Your Course <span></span>
 							</a>
 						</Link>
           </div>
         </div>
-        <div className="overflow-x-auto">
+        <div className="table-responsive overflow-x-auto">
           <table className="min-w-100 w-100 border">
             <thead className="bg-gray-100">
               <tr>

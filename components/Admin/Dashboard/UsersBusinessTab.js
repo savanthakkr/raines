@@ -4,6 +4,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function UsersBusinessesTabs() {
+  useEffect(() => {
+    // Dynamically import bootstrap JS only in the browser
+    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+  }, []);
   const router = useRouter();
 
   const [activeTab, setActiveTab] = useState('Businesses');
@@ -21,7 +25,15 @@ export default function UsersBusinessesTabs() {
     if (tab === 'Users') {
       router.push('/admin/manage/manage-users');
     } else {
-      router.push('/admin/manage/manage-businesses');
+      router.push('/admin/manage/manage-business');
+    }
+  };
+
+  const handleClick = (tab) => {
+    if (router.pathname === '/admin/dashboard') {
+      setActiveTab(tab); // only change the tab UI
+    } else {
+      handleTabChange(tab); // could include API call, data load, etc.
     }
   };
   const users = [
@@ -96,14 +108,14 @@ export default function UsersBusinessesTabs() {
       status: "Deactivated"
     }
   ];
-  
+
   return (
     <div className="mt-4 user-business-tab">
       <h4 className="font-semibold text-lg mb-4">Manage Users/Businesses</h4>
       <div className="d-flex flex-wrap justify-content-between align-items-center mb-2">
         <div className="mb-4 border-b border-gray-300 flex space-x-4">
           <button
-            onClick={() => setActiveTab('Businesses')}
+            onClick={() => handleClick('Businesses')}
             className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Businesses'
               ? 'activeTab font-semibold'
               : 'tab text-gray-600'
@@ -112,7 +124,7 @@ export default function UsersBusinessesTabs() {
             Businesses
           </button>
           <button
-            onClick={() => setActiveTab('Users')}
+            onClick={() => handleClick('Users')}
             className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Users'
               ? 'activeTab font-semibold'
               : 'tab text-gray-600'
@@ -121,14 +133,14 @@ export default function UsersBusinessesTabs() {
             Users
           </button>
         </div>
-        <div className="d-flex flex-row admin-search-form">
+        <div className="d-flex flex-column flex-lg-row admin-search-form">
           <AdminSearchForm />
           {activeTab === 'Users' && (
-          <Link href="/">
-            <a className="default-btn back-btn rounded-0 ms-3">
-              Download Report <span></span>
-            </a>
-          </Link>
+            <Link href="/">
+              <a className="default-btn back-btn rounded-0 ms-lg-3">
+                Download Report <span></span>
+              </a>
+            </Link>
           )}
         </div>
       </div>
@@ -159,7 +171,7 @@ export default function UsersBusinessesTabs() {
                   <td className="p-3">Jhon Doe</td>
                   <td className="p-3 text-center action position-relative dropdown">
                     <button
-                      className="btn p-0 border-0 bg-transparent"
+                      className="btn p-0 border-0 bg-transparent action-bar-btn fw-bold"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -209,7 +221,7 @@ export default function UsersBusinessesTabs() {
                   <td className="p-3">{user.status}</td>
                   <td className="p-3 text-center action position-relative dropdown">
                     <button
-                      className="btn p-0 border-0 bg-transparent"
+                      className="btn p-0 border-0 bg-transparent action-bar-btn fw-bold"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -217,19 +229,34 @@ export default function UsersBusinessesTabs() {
                     </button>
                     <ul className="dropdown-menu">
                       <li>
-                        <button className="dropdown-item d-flex flex-row align-items-center" type="button"><i className="bx bx-edit me-2"></i>Edit/View Profile</button>
+                        <Link href="/admin/user/user-profile">
+                          <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Edit/View Profile<span></span>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <button className="dropdown-item d-flex flex-row align-items-center" type="button"><i className="bx bx-download me-2"></i>Download Report</button>
+                        <Link href="/admin/user/user-profile">
+                          <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Download Report<span></span>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <button className="dropdown-item d-flex flex-row align-items-center" type="button"><i className="bx bx-book-open me-2"></i>View Ongoing Courses</button>
+                        <Link href="/admin/user/user-profile">
+                          <a className="dropdown-item"><i className="bx bx-edit me-2"></i>View Ongoing Courses<span></span>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <button className="dropdown-item d-flex flex-row align-items-center" type="button"><i className="bx bx-block me-2"></i>Deactivate Account</button>
+                        <Link href="/admin/user/user-profile">
+                          <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Deactivate Account<span></span>
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <button className="dropdown-item d-flex flex-row align-items-center" type="button"><i className="bx bx-trash me-2"></i>Delete Account</button>
+                        <Link href="/admin/user/user-profile">
+                          <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Delete Account<span></span>
+                          </a>
+                        </Link>
                       </li>
                     </ul>
                   </td>

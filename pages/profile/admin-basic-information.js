@@ -212,23 +212,7 @@ const AdminBasicInformation = ({ user }) => {
 										/>
 									</div>
 
-									<div className="form-group">
-										<label className="form-label fw-semibold">
-											Facebook
-										</label>
-										<input
-											type="text"
-											className="form-control"
-											name="facebook"
-											placeholder="http://www.example.com"
-											// value={userUpdate.last_name}
-											onChange={handleChange}
-										/>
-									</div>
-								</div>
-
-								<div className="col-sm-12 col-md-6">
-									<div className="form-group">
+                                    <div className="form-group">
 										<label className="form-label fw-semibold">
 											Twitter
 										</label>
@@ -238,6 +222,22 @@ const AdminBasicInformation = ({ user }) => {
 											name="twitter"
 											placeholder="http://www.example.com"
 											// value={userUpdate.first_name}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+
+								<div className="col-sm-12 col-md-6">
+                                    <div className="form-group">
+										<label className="form-label fw-semibold">
+											Facebook
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											name="facebook"
+											placeholder="http://www.example.com"
+											// value={userUpdate.last_name}
 											onChange={handleChange}
 										/>
 									</div>

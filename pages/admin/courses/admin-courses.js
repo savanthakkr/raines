@@ -13,7 +13,7 @@ const AdminCourses = ({ user }) => {
 					<div className="jump-course-creation">
 						<h3 className="mb-0">Jump Into Course Creation</h3>
 						<Link href="/admin/courses/create-course">
-							<a className="default-btn">
+							<a className="default-btn mt-3 mt-lg-0">
 								Create Your Course <span></span>
 							</a>
 						</Link>
