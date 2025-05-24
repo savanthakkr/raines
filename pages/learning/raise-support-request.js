@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
-import Link from "next/link";
 import axios from "axios";
 import { parseCookies } from "nookies";
 import LoadingSpinner from "@/utils/LoadingSpinner";
 import baseUrl from "@/utils/baseUrl";
+import InstructorNav from "@/components/_App/InstructorNav";
+import { useRouter } from "next/router";
 
 const RaiseSupportRequest = ({ user }) => {
+	const router = useRouter();
+	const { role } = router.query;
 	const { elarniv_users_token } = parseCookies();
 	const [userUpdate, setUserUpdate] = useState(user);
 	const [loading, setLoading] = React.useState(false);
@@ -65,7 +68,11 @@ const RaiseSupportRequest = ({ user }) => {
 
 	return (
 		<>
-			<Navbar user={user} />
+			{role=='instructor'?(
+				<InstructorNav/>
+			):(
+				<Navbar user={user} />
+			)}
 
 			<div className="pt-70 pb-70">
 				<div className="container">

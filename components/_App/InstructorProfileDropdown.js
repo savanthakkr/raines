@@ -15,12 +15,12 @@ const InstructorProfileDropdown = ({
 	const isStudent = role === "student";
 
 	const [currentPath, setCurrentPath] = useState("");
-  const router = useRouter();
-  // console.log(router.asPath)
+	const router = useRouter();
+	// console.log(router.asPath)
 
-  useEffect(() => {
-    setCurrentPath(router.asPath);
-  }, [router]);
+	useEffect(() => {
+		setCurrentPath(router.asPath);
+	}, [router]);
 
 	return (
 		<>
@@ -70,9 +70,9 @@ const InstructorProfileDropdown = ({
 					</li>
 
 					<li>
-						<Link href="/learning/my-courses/">
-							<a 
-								className={`dropdown-item ${currentPath == "/learning/my-courses/" && "active"}`}
+						<Link href="/instructor/courses/instructor-my-course/">
+							<a
+								className={`dropdown-item ${currentPath == "/instructor/courses/instructor-my-course/" && "active"}`}
 							>
 								{/* <i className="bx bx-book"></i> */}
 								My Courses
@@ -82,7 +82,7 @@ const InstructorProfileDropdown = ({
 
 					<li>
 						<Link href="/learning/wishlist/">
-							<a 
+							<a
 								className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
 							>
 								{/* <i className="bx bxs-heart"></i> */}
@@ -93,9 +93,9 @@ const InstructorProfileDropdown = ({
 
 
 					<li>
-						<Link href="/profile/basic-information/">
-							<a 
-								className={`dropdown-item ${currentPath == "/profile/basic-information/" && "active"}`}
+						<Link href="/instructor/profile/instructor-profile/">
+							<a
+								className={`dropdown-item ${currentPath == "/instructor/profile/instructor-profile/" && "active"}`}
 							>
 								{/* <i className="bx bxs-user-account"></i>  */}
 								Profile & settings
@@ -104,12 +104,12 @@ const InstructorProfileDropdown = ({
 					</li>
 
 					<li>
-						<Link href="/learning/raise-support-request">
-							<a 
-								className={`dropdown-item ${currentPath == "/learning/raise-support-request/" && "active"}`}
+						<Link href="/learning/raise-support-request/?role=instructor">
+							<a
+								className={`dropdown-item ${currentPath == "/learning/raise-support-request//?role=instructor" && "active"}`}
 							>
 								{/* <i className="bx bxs-user-account"></i> */}
-                                Raise Support Request
+								Raise Support Request
 							</a>
 						</Link>
 					</li>
@@ -125,7 +125,7 @@ const InstructorProfileDropdown = ({
 							className="dropdown-item"
 						>
 							{/* <i className="bx bx-log-out"></i> */}
-                            Log out
+							Log out
 						</button>
 					</li>
 				</ul>

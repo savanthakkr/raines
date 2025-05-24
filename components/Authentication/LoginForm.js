@@ -17,7 +17,16 @@ const LoginForm = () => {
 	const [user, setUser] = React.useState(INITIAL_USER);
 	const [disabled, setDisabled] = React.useState(true);
 	const [loading, setLoading] = React.useState(false);
+	const [role, setRole] = React.useState("user");
 	const router = useRouter();
+
+	React.useEffect(() => {
+		if (router.pathname.includes("instructor-login")) {
+			setRole("instructor");
+		} else {
+			setRole("user");
+		}
+	}, [router.pathname]);
 
 	React.useEffect(() => {
 		const isUser = Object.values(user).every((el) => Boolean(el));
@@ -112,14 +121,17 @@ const LoginForm = () => {
 					<div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
 						<p className="description">
 							Can't remember your password,{' '}
-							<Link href="/send-confirmation-email">
+							<Link href={
+								role === "instructor"
+									? "/instructor-forgot-password"
+									: "/send-confirmation-email"
+							}>
 								<a className="lost-your-password">
 									Forget Password?
 								</a>
 							</Link>
 						</p>
 					</div>
-
 				</form>
 			</div>
 		</>
