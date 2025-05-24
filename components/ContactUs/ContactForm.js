@@ -106,7 +106,7 @@ const ContactForm = () => {
 						<div className="col-lg-12 col-md-6">
 							<div className="form-group">
 								<input
-									type="text"
+									type="number"
 									placeholder="Your phone number"
 									name="phone"
 									value={contact.phone}

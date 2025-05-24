@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
 import axios from "axios";
 import { parseCookies } from "nookies";
 import LoadingSpinner from "@/utils/LoadingSpinner";
 import baseUrl from "@/utils/baseUrl";
 import { useRouter } from 'next/router';
-import AdminNav from "@/components/_App/AdminNav";
+import InstructorNav from "@/components/_App/InstructorNav";
 
-const BasicInformation = ({ user }) => {
+const InstructorProfile = ({ user }) => {
 	const router = useRouter();
 	const { role } = router.query;
 
@@ -69,188 +68,191 @@ const BasicInformation = ({ user }) => {
 
 	return (
 		<>
-			{role=='admin'?(
-				<AdminNav/>
-			):(
-				<Navbar user={user} />
-			)}
+			<InstructorNav/>
 
 			<div className="ptb-100">
 				<div className="container">
 					<h2 className="fw-bold mb-4">Profile & Settings</h2>
-
-					{/* <ul className="nav-style1">
-						<li>
-							<Link href="/profile/basic-information">
-								<a className="active">Profile</a>
-							</Link>
-						</li>
-						<li>
-							<Link href="/profile/photo">
-								<a>Profile Picture</a>
-							</Link>
-						</li>
-					</ul> */}
 
 					<div className="basic-profile-information-form">
 						<form onSubmit={handleSubmit}>
 							<div className="row">
 								<div className="col-sm-12 col-md-6">
 									<div className="form-group">
-										{profilePreview ? (
-											<img
-												src={profilePreview}
-												className="img-thumbnail mw-200px"
-											/>
-										) : (
-											<img
-												src="/images/avatar.jpg"
-												alt="image"
-												className="img-thumbnail mw-200px"
-											/>
-										)}
-									</div>
-
-									<div className="form-group">
 										<label className="form-label fw-semibold">
-											Photo ID (must have DOB and current address) Ideally A Current Australian Drivers License
-										</label>
-										<input
-											type="file"
-											className="form-control"
-											name="photo_id"
-											// value={userUpdate.first_name}
-											onChange={handleChange}
-										/>
-										<p className="description">
-											Upload image size 200x200 pixels!
-										</p>
-									</div>
-								</div>
-
-								<div className="col-sm-12 col-md-6">
-									<div className="form-group">
-										<label className="form-label fw-semibold">
-											First Name
+											Company Name
 										</label>
 										<input
 											type="text"
 											className="form-control"
-											name="first_name"
-											placeholder="First Name"
+											name="company_name"
+											placeholder="Company Name"
 											// value={userUpdate.first_name}
 											onChange={handleChange}
 										/>
 									</div>
-
+                                </div>
+                                <div className="col-sm-12 col-md-6">
 									<div className="form-group">
 										<label className="form-label fw-semibold">
-											Last Name
+                                            Entity Type
 										</label>
 										<input
 											type="text"
 											className="form-control"
-											name="last_name"
-											placeholder="Last Name"
+											name="entity_type"
+											placeholder="Choose your type of company"
 											// value={userUpdate.last_name}
 											onChange={handleChange}
 										/>
 									</div>
-
+                                </div>
+                                <div className="col-sm-12 col-md-6">
 									<div className="form-group">
 										<label className="form-label fw-semibold">
-											Gender
-										</label>
-										<select
-											className="form-select"
-											name="short"
-										// value={short}
-										// onChange={(e) => setShort(e.target.value)}
-										>
-											<option value="">Choose gender</option>
-											<option value="male">Male</option>
-											<option value="female">Female</option>
-										</select>
-									</div>
-								</div>
-
-								<div className="col-12">
-									<div className="form-group">
-										<label className="form-label fw-semibold">
-											Biography
-										</label> <br />
-										<textarea
-											className="form-control"
-											name="biography"
-											cols="30"
-											rows="5"
-											placeholder="Write your message..."
-										// value={
-										// 	instructor.instructor_description
-										// }
-										// onChange={handleChange}
-										/>
-										<p className="description">
-											Your biography should have at least 50 characters, links and coupon codes are not permitted.
-										</p>
-									</div>
-								</div>
-
-								<div className="col-sm-12 col-md-6">
-									<div className="form-group">
-										<label className="form-label fw-semibold">
-											Website URL
+											ACN
 										</label>
 										<input
 											type="text"
 											className="form-control"
-											placeholder="http://www.example.com"
-											name="website_url"
-											// value={userUpdate.first_name}
-											onChange={handleChange}
-										/>
-									</div>
-
-									<div className="form-group">
-										<label className="form-label fw-semibold">
-											Facebook
-										</label>
-										<input
-											type="text"
-											className="form-control"
-											name="facebook"
-											placeholder="http://www.example.com"
-											// value={userUpdate.last_name}
+											name="acn"
+											placeholder="Australian Company Number"
+											// value={userUpdate.acn}
 											onChange={handleChange}
 										/>
 									</div>
 								</div>
-
-								<div className="col-sm-12 col-md-6">
+                                <div className="col-sm-12 col-md-6">
 									<div className="form-group">
 										<label className="form-label fw-semibold">
-											Twitter
+                                            Registered Address
 										</label>
 										<input
 											type="text"
 											className="form-control"
-											name="twitter"
-											placeholder="http://www.example.com"
-											// value={userUpdate.first_name}
+											name="registered_address"
+											placeholder="Enter your company’s registered address"
+											// value={userUpdate.registered_address}
 											onChange={handleChange}
 										/>
 									</div>
-
+								</div>
+                                <div className="col-sm-12 col-md-6">
 									<div className="form-group">
 										<label className="form-label fw-semibold">
-											LinkedIn
+                                            ABN
 										</label>
 										<input
 											type="text"
 											className="form-control"
-											name="linkedin"
+											name="abn"
+											placeholder="Australian Business Number"
+											// value={userUpdate.abn}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            Operating Address
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											name="operating_address"
+											placeholder="Enter your company’s operating address"
+											// value={userUpdate.operating_address}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            Phone Number
+										</label>
+										<input
+											type="number"
+											className="form-control"
+											name="phone_number"
+											placeholder="Enter your phone number"
+											// value={userUpdate.phone_number}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            Linkdln
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											name="linkdln"
 											placeholder="http://www.example.com"
-											// value={userUpdate.last_name}
+											// value={userUpdate.operating_address}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            Email Address
+										</label>
+										<input
+											type="email"
+											className="form-control"
+											name="email"
+											placeholder="Enter your email address"
+											// value={userUpdate.operating_address}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            YouTube
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											name="youtube"
+											placeholder="http://www.example.com"
+											// value={userUpdate.operating_address}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            Department Manager's Name
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											name="managers_name"
+											placeholder="Enter your Department Manager's Name"
+											// value={userUpdate.operating_address}
+											onChange={handleChange}
+										/>
+									</div>
+								</div>
+                                <div className="col-sm-12 col-md-6">
+									<div className="form-group">
+										<label className="form-label fw-semibold">
+                                            Accounts Payable Contact
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											name="payable_contact"
+											placeholder="Enter your Accounts Payable Contact"
+											// value={userUpdate.operating_address}
 											onChange={handleChange}
 										/>
 									</div>
@@ -424,4 +426,4 @@ const BasicInformation = ({ user }) => {
 	);
 };
 
-export default BasicInformation;
+export default InstructorProfile;

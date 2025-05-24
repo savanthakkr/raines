@@ -166,7 +166,7 @@ const ProfileDropdown = ({
 					<li>
 						<Link href="/learning/raise-support-request">
 							<a 
-								className={`dropdown-item ${currentPath == "/learning/raise-support-request/" && "active"}`}
+								className={`dropdown-item ${currentPath == "/learning/raise-support-request" && "active"}`}
 							>
 								{/* <i className="bx bxs-user-account"></i>  */}
 								Raise Support Request

@@ -5,9 +5,9 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/router";
 import Pagination from "@etchteam/next-pagination";
 import CourseSkeletonLoader from "@/utils/CourseSkeletonLoader";
-import AdminCourseCard from "./AdminCourseCard";
+import InstructorCourseCard from "./InstructorCourseCard";
 
-const AdminCourseList = ({ user }) => {
+const InstructorCourseList = ({ user }) => {
 	const [courses, setCourses] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [pages, setPages] = useState(0);
@@ -204,7 +204,7 @@ const AdminCourseList = ({ user }) => {
 							<>
 								{courseDetails &&
 									courseDetails.map((course) => (
-										<AdminCourseCard
+										<InstructorCourseCard
 											key={course.id}
 											{...course}
 											onFav={() =>
@@ -234,4 +234,4 @@ const AdminCourseList = ({ user }) => {
 	);
 };
 
-export default AdminCourseList;
+export default InstructorCourseList;
