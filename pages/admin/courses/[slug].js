@@ -4,9 +4,9 @@ import Navbar from "@/components/_App/Navbar";
 import PageBanner from "@/components/Common/PageBanner";
 import CoursesDetailsContent from "@/components/SingleCourses/CoursesDetailsContent";
 import Footer from "@/components/_App/Footer";
-import InstructorNav from "@/components/_App/InstructorNav";
+import AdminNav from "@/components/_App/AdminNav";
 
-export default function SingleInstructorCoursesPage({ user }) {
+export default function AdminCoursesPage({ user }) {
 	// const [course, setCourse] = useState({});
 	const router = useRouter();
 	const { slug } = router.query;
@@ -75,7 +75,7 @@ export default function SingleInstructorCoursesPage({ user }) {
 
 	return (
 		<>
-			<InstructorNavgit user={user} />
+			<AdminNav user={user} />
 
 			<PageBanner
 				pageTitle={course && course.title}
