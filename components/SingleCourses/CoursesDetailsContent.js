@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import CoursesDetailsSidebar from "./CoursesDetailsSidebar";
 import CourseOverview from "../Learning/CourseOverview";
@@ -12,6 +13,8 @@ import BuyCourseBtn from "./BuyCourseBtn";
 import { useSelector } from "react-redux";
 
 const CoursesDetailsContent = ({ user: current_user, course }) => {
+	const router = useRouter();
+	const { pathname } = router;
 	const {
 		slug,
 		short_desc,
@@ -87,10 +90,23 @@ const CoursesDetailsContent = ({ user: current_user, course }) => {
 										{discount > 0 ? discount : latest_price}
 									</div> */}
 
-									<BuyCourseBtn
-										current_user={current_user}
-										course={course}
-									/>
+
+
+									{pathname.startsWith("/admin") ? (
+										<button
+											className="default-btn"
+											onClick={() => router.push("/admin/courses/create-course/")}
+										>
+											{/* <i className="flaticon-shopping-cart"></i>  */}
+											Edit Course
+											<span></span>
+										</button>
+									) : (
+										<BuyCourseBtn
+											current_user={current_user}
+											course={course}
+										/>
+									)}
 								</div>
 							</div>
 						</div>

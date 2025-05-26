@@ -222,20 +222,20 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
 							</div>
 						</div>
 						{pathname.startsWith("/instructor/courses/") && (
-						<div className="course-type-dropdown align-items-center mb-4 mt-4">
-							<span>
-								Course Seat Size
-							</span>
-							<div className="form-group">
-								<input
-									type="text"
-									className="form-control"
-									name="number_of_seats"
-									placeholder="Write the number of seats"
-								// value={userUpdate.number_of_seats}
-								/>
+							<div className="course-type-dropdown align-items-center mb-4 mt-4">
+								<span>
+									Course Seat Size
+								</span>
+								<div className="form-group">
+									<input
+										type="text"
+										className="form-control"
+										name="number_of_seats"
+										placeholder="Write the number of seats"
+									// value={userUpdate.number_of_seats}
+									/>
+								</div>
 							</div>
-						</div>
 						)}
 
 						{/* <div className="coupon">
@@ -261,44 +261,48 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
 							)}
 						</div> */}
 
-						<div className="btn-box">
-							{alreadyBuy ? (
-								<button
-									onClick={() =>
-										router.push("/learning/my-courses")
-									}
-									className="default-btn"
-								>
-									<i className="flaticon-shopping-cart"></i>{" "}
-									View My Courses
-									<span></span>
-								</button>
-							) : (
-								<>
-									{add ? (
-										<Link href="/checkout">
-											<a className="default-btn">
-												<i className="flaticon-right-arrow"></i>{" "}
-												View Cart
-											</a>
-										</Link>
-									) : (
-										<button
-											onClick={() => addToCart(course)}
-											className="default-btn"
-											disabled={add}
-										>
-											{/* {" "}
+						{!pathname.startsWith("/admin") && (
+							<div className="btn-box">
+								{alreadyBuy ? (
+									<button
+										onClick={() =>
+											router.push("/learning/my-courses")
+										}
+										className="default-btn"
+									>
+										<i className="flaticon-shopping-cart"></i>{" "}
+										View My Courses
+										<span></span>
+									</button>
+								) : (
+									<>
+										{add ? (
+											<Link href="/checkout">
+												<a className="default-btn">
+													<i className="flaticon-right-arrow"></i>{" "}
+													View Cart
+												</a>
+											</Link>
+										) : (
+											<button
+												onClick={() => addToCart(course)}
+												className="default-btn"
+												disabled={add}
+											>
+												{/* {" "}
 											<i className="flaticon-shopping-cart"></i>{" "} */}
-											Add to cart
-											<span></span>
-										</button>
-									)}
-								</>
-							)}
-						</div>
+												Add to cart
+												<span></span>
+											</button>
+										)}
+									</>
+								)}
+							</div>
+						)}
 
-						<SocialShareBtns />
+						{!pathname.startsWith("/admin") && (
+							<SocialShareBtns />
+						)}
 					</div>
 				</div>
 			</StickyBox>
