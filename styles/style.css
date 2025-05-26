@@ -1203,6 +1203,27 @@ Navbar Area CSS
   left: 0;
 }
 
+.assign-course-btn{
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px!important;
+  color:#CF0000;
+  font-size: 15px;
+}
+
+.assign-course-btn span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 5px!important;
+  background-color: #221638;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 1199px) {
   .navbar-area {
     padding-top: 20px;

@@ -64,97 +64,175 @@ export default function ManageEmployeesTab() {
 
 
     useEffect(() => {
-        if (router.pathname === '/instructor/employees/manage-employees/') {
+        if (router.pathname === '/instructor/employees/manage-employees') {
             setActiveTab('Users');
-        } else if(router.pathname === '/instructor/employees/manage-users/') {
+        } else if (router.pathname === '/instructor/employees/manage-users') {
             setActiveTab('Manage');
-        } else if(router.pathname === '/instructor/employees/reports/') {
+        } else if (router.pathname === '/instructor/employees/reports') {
             setActiveTab('Reports');
         }
     }, [router.pathname]);
 
     const handleTabChange = (tab) => {
-        console.log('Tab',tab);
         setActiveTab(tab);
         if (tab === 'Users') {
-            router.push('/instructor/employees/manage-employees/');
+            router.push('/instructor/employees/manage-employees');
         } else if (tab === 'Manage') {
-            router.push('/instructor/employees/manage-users/');
+            router.push('/instructor/employees/manage-users');
+        } else if (tab === 'Reports') {
+            router.push('/instructor/employees/reports');
         }
-        //  else if (tab === 'Reports') {
-        //     router.push('/instructor/employees/reports/');
-        // }
     };
 
     const users = [
         {
             id: 1,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 2,
-            completedCourses: 3,
-            inProgress: 0,
-            certificates: 1,
+            courseName: 'CPCWHS1001',
+            designation: 'Associate Developer',
+            department: 'Development',
             status: "Active"
         },
         {
             id: 2,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 1,
-            completedCourses: 2,
-            inProgress: 2,
-            certificates: 3,
+            courseName: 'BSBWHS411',
+            designation: 'Associate Developer',
+            department: 'Development',
             status: "Deactivated"
         },
         {
             id: 3,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 1,
-            completedCourses: 1,
-            inProgress: 2,
-            certificates: 3,
+            courseName: 'RIIRES402E',
+            designation: 'Associate Developer',
+            department: 'Development',
             status: "Active"
         },
         {
             id: 4,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 1,
-            completedCourses: 1,
-            inProgress: 2,
-            certificates: 3,
+            courseName: 'RIIRIS501E',
+            designation: 'Associate Developer',
+            department: 'Development',
             status: "Active"
         },
         {
             id: 5,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 1,
-            completedCourses: 1,
-            inProgress: 2,
-            certificates: 3,
+            courseName: 'CPCWHS1001',
+            designation: 'Associate Developer',
+            department: 'Development',
             status: "Active"
         },
         {
             id: 6,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 1,
-            completedCourses: 1,
-            inProgress: 2,
-            certificates: 3,
+            courseName: 'RIIRES402E',
+            designation: 'Associate Developer',
+            department: 'Development',
             status: "Active"
         },
         {
             id: 7,
+            empId: '#2431',
             name: "Jhon Doe",
             email: "jhon@acme.inc",
-            assignedCourses: 1,
-            completedCourses: 1,
-            inProgress: 2,
-            certificates: 3,
+            courseName: 'BSBWHS411',
+            designation: 'Associate Developer',
+            department: 'Development',
+            status: "Deactivated"
+        }
+    ];
+
+    const reports = [
+        {
+            id: 1,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:2,
+            completedCourses:3,
+            inProgress:0,
+            certificatesEarned:1,
+            status: "Active"
+        },
+        {
+            id: 2,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:1,
+            completedCourses:1,
+            inProgress:2,
+            certificatesEarned:3,
+            status: "Deactivated"
+        },
+        {
+            id: 3,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:3,
+            completedCourses:0,
+            inProgress:3,
+            certificatesEarned:4,
+            status: "Active"
+        },
+        {
+            id: 4,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:0,
+            completedCourses:2,
+            inProgress:4,
+            certificatesEarned:0,
+            status: "Active"
+        },
+        {
+            id: 5,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:4,
+            completedCourses:4,
+            inProgress:0,
+            certificatesEarned:1,
+            status: "Active"
+        },
+        {
+            id: 6,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:1,
+            completedCourses:1,
+            inProgress:1,
+            certificatesEarned:2,
+            status: "Active"
+        },
+        {
+            id: 7,
+            empId: '#2431',
+            name: "Jhon Doe",
+            email: "jhon@acme.inc",
+            assignedCourses:3,
+            completedCourses:3,
+            inProgress:2,
+            certificatesEarned:3,
             status: "Deactivated"
         }
     ];
@@ -182,7 +260,7 @@ export default function ManageEmployeesTab() {
                     >
                         Manage
                     </button>
-                    {/* <button
+                    <button
                         onClick={() => handleTabChange('Reports')}
                         className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Reports'
                             ? 'activeTab font-semibold'
@@ -190,18 +268,30 @@ export default function ManageEmployeesTab() {
                             }`}
                     >
                         Reports
-                    </button> */}
+                    </button>
                 </div>
-                <div className="d-flex flex-column flex-lg-row admin-search-form">
-                    <AdminSearchForm />
-                    {activeTab === 'Users' && (
+                {activeTab === 'Manage' && (
+                    <div className="d-flex flex-column flex-lg-row admin-search-form">
+                        <AdminSearchForm />
+
                         <Link href="/">
-                            <a className="default-btn back-btn rounded-0 ms-lg-3">
+                            <a className="default-btn assign-course-btn rounded-0 ms-lg-3">
+                                Assign Course<span></span>
+                            </a>
+                        </Link>
+                    </div>
+                )}
+                 {activeTab === 'Reports' && (
+                    <div className="d-flex flex-column flex-lg-row admin-search-form">
+                        <AdminSearchForm />
+
+                        <Link href="/">
+                            <a className="default-btn assign-course-btn rounded-0 ms-lg-3">
                                 Download Report <span></span>
                             </a>
                         </Link>
-                    )}
-                </div>
+                    </div>
+                )}
             </div>
 
             {activeTab === 'Users' && (
@@ -449,18 +539,18 @@ export default function ManageEmployeesTab() {
                         </div>
                     </form>
                 </div>
-            )} 
+            )}
             {activeTab === 'Manage' && (
                 <table className="w-100 border">
                     <thead className="bg-gray-100">
                         <tr>
                             <th className="p-3 text-center">Select</th>
+                            <th className="p-3">ID</th>
                             <th className="p-3">Name</th>
                             <th className="p-3">Email</th>
-                            <th className="p-3">Assigned Courses</th>
-                            <th className="p-3">Completed Courses</th>
-                            <th className="p-3">In Progress</th>
-                            <th className="p-3">Certificates Earned</th>
+                            <th className="p-3">Course Name</th>
+                            <th className="p-3">Designation</th>
+                            <th className="p-3">Department</th>
                             <th className="p-3">Status</th>
                             <th className="p-3">Action</th>
                         </tr>
@@ -472,12 +562,12 @@ export default function ManageEmployeesTab() {
                                     <input type="checkbox" className="custom-checkbox" id={`cb-${user.id}`} />
                                     <label htmlFor={`cb-${user.id}`} className="check-label"></label>
                                 </td>
+                                <td className="p-3">{user.empId}</td>
                                 <td className="p-3">{user.name}</td>
                                 <td className="p-3">{user.email}</td>
-                                <td className="p-3">{user.assignedCourses}</td>
-                                <td className="p-3">{user.completedCourses}</td>
-                                <td className="p-3">{user.inProgress}</td>
-                                <td className="p-3">{user.certificates}</td>
+                                <td className="p-3">{user.courseName}</td>
+                                <td className="p-3">{user.designation}</td>
+                                <td className="p-3">{user.department}</td>
                                 <td className="p-3">{user.status}</td>
                                 <td className="p-3 text-center action position-relative dropdown">
                                     <button
@@ -496,13 +586,19 @@ export default function ManageEmployeesTab() {
                                         </li>
                                         <li>
                                             <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Download Report<span></span>
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Assign Course<span></span>
                                                 </a>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="/admin/user/user-profile">
                                                 <a className="dropdown-item"><i className="bx bx-edit me-2"></i>View Ongoing Courses<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Send Reminder<span></span>
                                                 </a>
                                             </Link>
                                         </li>
@@ -527,80 +623,85 @@ export default function ManageEmployeesTab() {
             )}
             {activeTab === 'Reports' && (
                 <table className="w-100 border">
-                <thead className="bg-gray-100">
-                    <tr>
-                        <th className="p-3 text-center">Select</th>
-                        <th className="p-3">Name</th>
-                        <th className="p-3">Email</th>
-                        <th className="p-3">Assigned Courses</th>
-                        <th className="p-3">Completed Courses</th>
-                        <th className="p-3">In Progress</th>
-                        <th className="p-3">Certificates Earned</th>
-                        <th className="p-3">Status</th>
-                        <th className="p-3">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {users.map((user, idx) => (
-                        <tr key={idx} className="border-t">
-                            <td className="p-3 text-center">
-                                <input type="checkbox" className="custom-checkbox" id={`cb-${user.id}`} />
-                                <label htmlFor={`cb-${user.id}`} className="check-label"></label>
-                            </td>
-                            <td className="p-3">{user.name}</td>
-                            <td className="p-3">{user.email}</td>
-                            <td className="p-3">{user.assignedCourses}</td>
-                            <td className="p-3">{user.completedCourses}</td>
-                            <td className="p-3">{user.inProgress}</td>
-                            <td className="p-3">{user.certificates}</td>
-                            <td className="p-3">{user.status}</td>
-                            <td className="p-3 text-center action position-relative dropdown">
-                                <button
-                                    className="btn p-0 border-0 bg-transparent action-bar-btn fw-bold"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    ⋮
-                                </button>
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <Link href="/admin/user/user-profile">
-                                            <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Edit/View Profile<span></span>
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/admin/user/user-profile">
-                                            <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Download Report<span></span>
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/admin/user/user-profile">
-                                            <a className="dropdown-item"><i className="bx bx-edit me-2"></i>View Ongoing Courses<span></span>
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/admin/user/user-profile">
-                                            <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Deactivate Account<span></span>
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/admin/user/user-profile">
-                                            <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Delete Account<span></span>
-                                            </a>
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </td>
+                    <thead className="bg-gray-100">
+                        <tr>
+                            <th className="p-3 text-center">Select</th>
+                            <th className="p-3">ID</th>
+                            <th className="p-3">Name</th>
+                            <th className="p-3">Email</th>
+                            <th className="p-3 text-center">Assigned Course</th>
+                            <th className="p-3 text-center">Completed Course</th>
+                            <th className="p-3 text-center">In Progress</th>
+                            <th className="p-3 text-center">Certificates Earned</th>
+                            <th className="p-3">Action</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {reports.map((user, idx) => (
+                            <tr key={idx} className="border-t">
+                                <td className="p-3 text-center">
+                                    <input type="checkbox" className="custom-checkbox" id={`cb-${user.id}`} />
+                                    <label htmlFor={`cb-${user.id}`} className="check-label"></label>
+                                </td>
+                                <td className="p-3">{user.empId}</td>
+                                <td className="p-3">{user.name}</td>
+                                <td className="p-3">{user.email}</td>
+                                <td className="p-3 text-center">{user.assignedCourses}</td>
+                                <td className="p-3 text-center">{user.completedCourses}</td>
+                                <td className="p-3 text-center">{user.inProgress}</td>
+                                <td className="p-3 text-center">{user.certificatesEarned}</td>
+                                <td className="p-3 text-center action position-relative dropdown">
+                                    <button
+                                        className="btn p-0 border-0 bg-transparent action-bar-btn fw-bold"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        ⋮
+                                    </button>
+                                    <ul className="dropdown-menu">
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Edit/View Profile<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Assign Course<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>View Ongoing Courses<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Send Reminder<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Deactivate Account<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="/admin/user/user-profile">
+                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Delete Account<span></span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             )}
-
         </div>
     );
 }

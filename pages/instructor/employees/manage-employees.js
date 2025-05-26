@@ -25,31 +25,6 @@ const ManageEmployees = ({ user }) => {
             <div className="container">
                 <ManageEmployeesTab/>
             </div>
-            <div className="ptb-100">
-                <div className="container">
-                    {/* <h2 className="fw-bold mb-4">Manage Employees</h2> */}
-
-                    {/* <ul className="nav-style1">
-                        <li>
-                            <Link href="/profile/basic-information">
-                                <a className="active">Add Users</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/profile/photo">
-                                <a>Manage</a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/profile/photo">
-                                <a>Reports</a>
-                            </Link>
-                        </li>
-                    </ul> */}
-
-                  
-                </div>
-            </div>
 
             <Footer />
         </>
