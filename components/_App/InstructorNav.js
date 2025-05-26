@@ -3,19 +3,20 @@ import Router from "next/router";
 import NProgress from "nprogress";
 import { motion } from "framer-motion";
 import Link from "@/utils/ActiveLink";
+import Cart from "./Cart";
 import SearchForm from "./SearchForm";
-import AdminProfileDropdown from "./AdminProfileDropdown";
+import InstructorProfileDropdown from "./InstructorProfileDropdown";
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-const AdminNav = ({ user:userProp }) => {
+const InstructorNav = ({ user:userProp }) => {
 	const user = userProp || {
-		first_name: 'Admin',
-		email: 'admin@gmail.com',
+		first_name: 'Instructor',
+		email: 'instructor@gmail.com',
 		profile_photo: '',
-		role: 'admin'
+		role: 'Instructor'
 	  };
 	const [menu, setMenu] = React.useState(true);
 
@@ -81,26 +82,8 @@ const AdminNav = ({ user:userProp }) => {
 										}}
 										whileTap={{ scale: 0.9 }}
 									>
-										<Link href="/admin/dashboard" activeClassName="active">
-											<a
-												onClick={toggleNavbar}
-												className="nav-link"
-											>
-												Dashboard
-											</a>
-										</Link>
-									</motion.li>
-
-									<motion.li
-										className="nav-item"
-										whileHover={{
-											scale: 1.1,
-											transition: { duration: 0.5 },
-										}}
-										whileTap={{ scale: 0.9 }}
-									>
 										<Link
-											href="/admin/courses/admin-courses"
+											href="/instructor/courses/instructor-courses"
 											activeClassName="active"
 										>
 											<a
@@ -115,9 +98,11 @@ const AdminNav = ({ user:userProp }) => {
 							</div>
 
 							<div className="others-option d-flex align-items-center">
+                                <Cart />
+
 								<div className="option-item">
 									{user ? (
-										<AdminProfileDropdown {...user} />
+										<InstructorProfileDropdown {...user} />
 									) : ( 
 										<Link href="/authentication">
 											<a className="default-btn">
@@ -135,4 +120,4 @@ const AdminNav = ({ user:userProp }) => {
 	);
 };
 
-export default AdminNav;
+export default InstructorNav;

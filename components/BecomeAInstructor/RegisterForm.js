@@ -160,7 +160,7 @@ const RegisterForm = ({
 											<div className="form-group">
 												<input
 													type="text"
-													name="phone"
+													name="number"
 													placeholder="Your phone number"
 													value={instructor.phone}
 													onChange={handleChange}

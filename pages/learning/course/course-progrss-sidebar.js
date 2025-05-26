@@ -4,7 +4,7 @@ const CourseProgressSidebar = ({ courseTitle, modules, progress }) => {
     return (
         <aside className="progress-sidebar">
             <div className="top-info">
-                <p>Your Progress 2 of 4 Complete. <a href="" class="certificate-link">Get Certificate</a></p>
+                <p>Your Progress 2 of 4 Complete. <a href="" className="certificate-link">Get Certificate</a></p>
                 <div className="progress mb-3">
                     <div
                         className="progress-bar"
