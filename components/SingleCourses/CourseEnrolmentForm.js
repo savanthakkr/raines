@@ -837,7 +837,7 @@ const CourseEnrolmentForm = ({ user: current_user, course }) => {
                         {
                             step === 3 && (
                                 <>
-                                    <div class="enrolment-content-area">
+                                    <div className="enrolment-content-area">
                                         <div className="row">
                                             <div className="col-12">
                                                 <div className="agreement-content">
@@ -959,7 +959,7 @@ const CourseEnrolmentForm = ({ user: current_user, course }) => {
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-sm-12">
+                                                        <div className="col-sm-12">
                                                             <p className="mt-0 mb-4">*Parental/guardian consent is required for all students under the age of 18.</p>
                                                         </div>
                                                     </div>

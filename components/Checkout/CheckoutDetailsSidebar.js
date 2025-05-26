@@ -77,28 +77,28 @@ const CheckoutDetailsSidebar = ({ course }) => {
                 </div>
             </div>
             <div className="checkout-details-bottom-area">
-                <div class="d-flex flex-row justify-content-between mb-1">
+                <div className="d-flex flex-row justify-content-between mb-1">
                     <h6>Price</h6>
                     <p>${latest_price}</p>
                 </div>
-                <div class="d-flex flex-row justify-content-between mb-0">
+                <div className="d-flex flex-row justify-content-between mb-0">
                     <h6>GST</h6>
                     <p>10%</p>
                 </div>
                 <hr />
-                <div class="d-flex flex-row justify-content-between mb-1">
+                <div className="d-flex flex-row justify-content-between mb-1">
                     <h6 className="mb-0">Total</h6>
                     <p>${latest_price}</p>
                 </div>
             </div>
-            <div class="checkout-section">
-                <div class="checkbox-wrapper">
+            <div className="checkout-section">
+                <div className="checkbox-wrapper">
                     <input type="checkbox" id="terms" required />
                     <label for="terms">
                         <b>By Clicking This You Are Agree To Our</b> Terms of Service and Privacy Policy
                     </label>
                 </div>
-                <a href="/course/course-enrollment" class="default-btn w-100 mt-3">Checkout Now<span></span></a>
+                <a href="/course/course-enrollment" className="default-btn w-100 mt-3">Checkout Now<span></span></a>
             </div>
         </>
     );

@@ -40,7 +40,7 @@ const InstructorCourseCard = ({
         <div className="col-lg-3 col-md-6 d-flex">
             <div className="single-courses-box h-80">
                 <div className="courses-image">
-                    <Link href={`/course/${slug}`}>
+                    <Link href={`/instructor/courses/${slug}`}>
                         <a className="d-block image">
                             <img src={image} alt={title} />
                         </a>
@@ -70,7 +70,7 @@ const InstructorCourseCard = ({
                     </div>
 
                     <h3 className="text-start">
-                        <Link href={`/course/${slug}`}>
+                        <Link href={`/instructor/courses/${slug}`}>
                             <a title={title}>{title.slice(0, 40)}...</a>
                         </Link>
                     </h3>

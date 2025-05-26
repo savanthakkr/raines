@@ -19,6 +19,7 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
 	const router = useRouter();
 	const [apply, setApplyCoupon] = useState(false);
 	const [coupon, setCoupon] = useState({ coupon: "" });
+	const { pathname } = router;
 
 	useEffect(() => {
 		const courseExist = cartItems.find((cart) => {
@@ -220,6 +221,22 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
 								</select>
 							</div>
 						</div>
+						{pathname.startsWith("/instructor/courses/") && (
+						<div className="course-type-dropdown align-items-center mb-4 mt-4">
+							<span>
+								Course Seat Size
+							</span>
+							<div className="form-group">
+								<input
+									type="text"
+									className="form-control"
+									name="number_of_seats"
+									placeholder="Write the number of seats"
+								// value={userUpdate.number_of_seats}
+								/>
+							</div>
+						</div>
+						)}
 
 						{/* <div className="coupon">
 							<h4 onClick={() => setApplyCoupon(!apply)}>

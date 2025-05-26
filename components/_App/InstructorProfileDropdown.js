@@ -81,9 +81,9 @@ const InstructorProfileDropdown = ({
 					</li>
 
 					<li>
-						<Link href="/learning/wishlist/">
+						<Link href="/instructor/employees/manage-employees/">
 							<a
-								className={`dropdown-item ${currentPath == "/learning/wishlist/" && "active"}`}
+								className={`dropdown-item ${currentPath == "/instructor/employees/manage-employees/" && "active"}`}
 							>
 								{/* <i className="bx bxs-heart"></i> */}
 								Manage Employees
