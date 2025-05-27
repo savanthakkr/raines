@@ -68,7 +68,7 @@ export default function ManageEmployeesTab() {
             setActiveTab('Users');
         } else if (router.pathname === '/instructor/employees/manage-users') {
             setActiveTab('Manage');
-        } else if (router.pathname === '/instructor/employees/reports') {
+        } else if (router.pathname === '/instructor/employees/report') {
             setActiveTab('Reports');
         }
     }, [router.pathname]);
@@ -80,7 +80,7 @@ export default function ManageEmployeesTab() {
         } else if (tab === 'Manage') {
             router.push('/instructor/employees/manage-users');
         } else if (tab === 'Reports') {
-            router.push('/instructor/employees/reports');
+            router.push('/instructor/employees/report');
         }
     };
 
@@ -660,7 +660,7 @@ export default function ManageEmployeesTab() {
                                     </button>
                                     <ul className="dropdown-menu">
                                         <li>
-                                            <Link href="/admin/user/user-profile">
+                                            <Link href="/instructor/employees/course-report/">
                                                 <a className="dropdown-item"><img src="/images/img/edit_view_report.svg" className="me-2"/>Edit/View Full Report<span></span>
                                                 </a>
                                             </Link>

@@ -68,7 +68,7 @@ export default function EmployeeProfileTab() {
             setActiveTab('Details');
         } else if (router.pathname === '/instructor/employees/employees-course') {
             setActiveTab('Course');
-        } else if (router.pathname === '/instructor/employees/report') {
+        } else if (router.pathname === '/instructor/employees/course-report') {
             setActiveTab('Report');
         }
     }, [router.pathname]);
@@ -80,7 +80,7 @@ export default function EmployeeProfileTab() {
         } else if (tab === 'Course') {
             router.push('/instructor/employees/employees-course');
         } else if (tab === 'Report') {
-            router.push('/instructor/employees/report');
+            router.push('/instructor/employees/course-report');
         }
     };
 

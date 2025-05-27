@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "@/components/_App/Footer";
 import InstructorNav from "@/components/_App/InstructorNav";
-import ManageEmployeesTab from "@/components/Instructor/Employees/ManageEmployeesTab";
+import EmployeeProfileTab from "@/components/Instructor/Employees/EmployeeProfileTab";
 
 const Report = () => {
     return (
@@ -9,7 +9,7 @@ const Report = () => {
             <InstructorNav />
 
             <div className="container">
-                <ManageEmployeesTab/>
+                <EmployeeProfileTab/>
             </div>
 
             <Footer />
