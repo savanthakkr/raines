@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import AdminSearchForm from '@/components/Admin/Dashboard/AdminSearchForm';
+import UserCourseList from '@/components/Admin/UserProfile/UserCoursesList';
 
-export default function ManageEmployeesTab() {
-    const [activeTab, setActiveTab] = useState('Users');
+export default function EmployeeProfileTab() {
+    const [activeTab, setActiveTab] = useState('Details');
     const [profilePreview, setProfilePreview] = React.useState("");
     const [loading, setLoading] = React.useState(false);
 
@@ -65,22 +65,22 @@ export default function ManageEmployeesTab() {
 
     useEffect(() => {
         if (router.pathname === '/instructor/employees/manage-employees') {
-            setActiveTab('Users');
-        } else if (router.pathname === '/instructor/employees/manage-users') {
-            setActiveTab('Manage');
-        } else if (router.pathname === '/instructor/employees/reports') {
-            setActiveTab('Reports');
+            setActiveTab('Details');
+        } else if (router.pathname === '/instructor/employees/employees-course') {
+            setActiveTab('Course');
+        } else if (router.pathname === '/instructor/employees/report') {
+            setActiveTab('Report');
         }
     }, [router.pathname]);
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);
-        if (tab === 'Users') {
-            router.push('/instructor/employees/manage-employees');
-        } else if (tab === 'Manage') {
-            router.push('/instructor/employees/manage-users');
-        } else if (tab === 'Reports') {
-            router.push('/instructor/employees/reports');
+        if (tab === 'Details') {
+            router.push('/instructor/employees/personal-details');
+        } else if (tab === 'Course') {
+            router.push('/instructor/employees/employees-course');
+        } else if (tab === 'Report') {
+            router.push('/instructor/employees/report');
         }
     };
 
@@ -157,144 +157,77 @@ export default function ManageEmployeesTab() {
         }
     ];
 
-    const reports = [
+    const courses = [
         {
             id: 1,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:2,
-            completedCourses:3,
-            inProgress:0,
-            certificatesEarned:1,
-            status: "Active"
+            courseName: 'CPCWHS1001',
+            date_allocated: "25-04-2025",
+            completed_date: "25-04-2025",
+            completion: '100%',
+            status: 'C',
         },
         {
             id: 2,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:1,
-            completedCourses:1,
-            inProgress:2,
-            certificatesEarned:3,
-            status: "Deactivated"
+            courseName: 'BSBWHS411',
+            date_allocated: "25-04-2025",
+            completed_date: "25-04-2025",
+            completion: '80%',
+            status: 'NYC',
         },
         {
             id: 3,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:3,
-            completedCourses:0,
-            inProgress:3,
-            certificatesEarned:4,
-            status: "Active"
+            courseName: 'RIIRES402E',
+            date_allocated: "25-04-2025",
+            completed_date: "-",
+            completion: '0%',
+            status: 'C',
         },
         {
             id: 4,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:0,
-            completedCourses:2,
-            inProgress:4,
-            certificatesEarned:0,
-            status: "Active"
-        },
-        {
-            id: 5,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:4,
-            completedCourses:4,
-            inProgress:0,
-            certificatesEarned:1,
-            status: "Active"
-        },
-        {
-            id: 6,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:1,
-            completedCourses:1,
-            inProgress:1,
-            certificatesEarned:2,
-            status: "Active"
-        },
-        {
-            id: 7,
-            empId: '#2431',
-            name: "Jhon Doe",
-            email: "jhon@acme.inc",
-            assignedCourses:3,
-            completedCourses:3,
-            inProgress:2,
-            certificatesEarned:3,
-            status: "Deactivated"
+            courseName: 'RIIRIS501E',
+            date_allocated: "25-04-2025",
+            completed_date: "25-04-2025",
+            completion: '100%',
+            status: 'NYC',
         }
     ];
 
     return (
         <div className="mt-4 user-business-tab">
-            <h4 className="font-semibold text-lg mb-4">Manage Employees</h4>
+            <h4 className="font-semibold text-lg mb-4">Employee Profile</h4>
             <div className="d-flex flex-wrap justify-content-between align-items-center mb-2">
                 <div className="mb-4 border-b border-gray-300 flex space-x-4">
                     <button
-                        onClick={() => handleTabChange('Users')}
-                        className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Users'
+                        onClick={() => handleTabChange('Details')}
+                        className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Details'
                             ? 'activeTab font-semibold'
                             : 'tab text-gray-600'
                             }`}
                     >
-                        Add Users
+                        Personal Details
                     </button>
                     <button
-                        onClick={() => handleTabChange('Manage')}
-                        className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Manage'
+                        onClick={() => handleTabChange('Course')}
+                        className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Course'
                             ? 'activeTab font-semibold'
                             : 'tab text-gray-600'
                             }`}
                     >
-                        Manage
+                        Employee's Course
                     </button>
                     <button
-                        onClick={() => handleTabChange('Reports')}
-                        className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Reports'
+                        onClick={() => handleTabChange('Report')}
+                        className={`px-3 py-2 border-b-4 transition-all duration-200 ${activeTab === 'Report'
                             ? 'activeTab font-semibold'
                             : 'tab text-gray-600'
                             }`}
                     >
-                        Reports
+                        Course Report
                     </button>
                 </div>
-                {activeTab === 'Manage' && (
-                    <div className="d-flex flex-column flex-lg-row admin-search-form">
-                        <AdminSearchForm />
-
-                        <Link href="/">
-                            <a className="default-btn assign-course-btn rounded-0 ms-lg-3">
-                                Assign Course<span></span>
-                            </a>
-                        </Link>
-                    </div>
-                )}
-                 {activeTab === 'Reports' && (
-                    <div className="d-flex flex-column flex-lg-row admin-search-form">
-                        <AdminSearchForm />
-
-                        <Link href="/">
-                            <a className="default-btn assign-course-btn rounded-0 ms-lg-3">
-                                Download Report <span></span>
-                            </a>
-                        </Link>
-                    </div>
-                )}
             </div>
 
-            {activeTab === 'Users' && (
+            {activeTab === 'Details' && (
                 <div className="basic-profile-information-form">
                     <form onSubmit={handleSubmit}>
                         <div className="row">
@@ -540,116 +473,41 @@ export default function ManageEmployeesTab() {
                     </form>
                 </div>
             )}
-            {activeTab === 'Manage' && (
-                <table className="w-100 border">
-                    <thead className="bg-gray-100">
-                        <tr>
-                            <th className="p-3 text-center">Select</th>
-                            <th className="p-3">ID</th>
-                            <th className="p-3">Name</th>
-                            <th className="p-3">Email</th>
-                            <th className="p-3">Course Name</th>
-                            <th className="p-3">Designation</th>
-                            <th className="p-3">Department</th>
-                            <th className="p-3">Status</th>
-                            <th className="p-3">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {users.map((user, idx) => (
-                            <tr key={idx} className="border-t">
-                                <td className="p-3 text-center">
-                                    <input type="checkbox" className="custom-checkbox" id={`cb-${user.id}`} />
-                                    <label htmlFor={`cb-${user.id}`} className="check-label"></label>
-                                </td>
-                                <td className="p-3">{user.empId}</td>
-                                <td className="p-3">{user.name}</td>
-                                <td className="p-3">{user.email}</td>
-                                <td className="p-3">{user.courseName}</td>
-                                <td className="p-3">{user.designation}</td>
-                                <td className="p-3">{user.department}</td>
-                                <td className="p-3">{user.status}</td>
-                                <td className="p-3 text-center action position-relative dropdown">
-                                    <button
-                                        className="btn p-0 border-0 bg-transparent action-bar-btn fw-bold"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                    >
-                                        ⋮
-                                    </button>
-                                    <ul className="dropdown-menu">
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Edit/View Profile<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Assign Course<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>View Ongoing Courses<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Send Reminder<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Deactivate Account<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Delete Account<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+            {activeTab === 'Course' && (
+                <>
+                    <UserCourseList />
+                </>
             )}
-            {activeTab === 'Reports' && (
+            {activeTab === 'Report' && (
                 <table className="w-100 border">
                     <thead className="bg-gray-100">
                         <tr>
-                            <th className="p-3 text-center">Select</th>
-                            <th className="p-3">ID</th>
-                            <th className="p-3">Name</th>
-                            <th className="p-3">Email</th>
-                            <th className="p-3 text-center">Assigned Course</th>
-                            <th className="p-3 text-center">Completed Course</th>
-                            <th className="p-3 text-center">In Progress</th>
-                            <th className="p-3 text-center">Certificates Earned</th>
+                            <th className="p-3">Course Name</th>
+                            <th className="p-3">Date Allocated</th>
+                            <th className="p-3 text-center">Completed Date</th>
+                            <th className="p-3 text-center">Completion</th>
+                            <th className="p-3 text-center">Status</th>
+                            <th className="p-3 text-center">Result</th>
+                            <th className="p-3 text-center">Certificate</th>
                             <th className="p-3">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {reports.map((user, idx) => (
+                        {courses.map((user, idx) => (
                             <tr key={idx} className="border-t">
+                                <td className="p-3">{user.courseName}</td>
+                                <td className="p-3">{user.date_allocated}</td>
+                                <td className="p-3 text-center">{user.completed_date}</td>
+                                <td className="p-3 text-center">{user.completion}</td>
+                                <td className="p-3 text-center">{user.status}</td>
                                 <td className="p-3 text-center">
-                                    <input type="checkbox" className="custom-checkbox" id={`cb-${user.id}`} />
-                                    <label htmlFor={`cb-${user.id}`} className="check-label"></label>
+                                    <select id="result" name="result" className="result_dropdown">
+                                        <option value="">Select</option>
+                                        <option value="passed">Passed</option>
+                                        <option value="failed">Failed</option>
+                                    </select>
                                 </td>
-                                <td className="p-3">{user.empId}</td>
-                                <td className="p-3">{user.name}</td>
-                                <td className="p-3">{user.email}</td>
-                                <td className="p-3 text-center">{user.assignedCourses}</td>
-                                <td className="p-3 text-center">{user.completedCourses}</td>
-                                <td className="p-3 text-center">{user.inProgress}</td>
-                                <td className="p-3 text-center">{user.certificatesEarned}</td>
+                                <td className="p-3 text-center download-certificate">Download</td>
                                 <td className="p-3 text-center action position-relative dropdown">
                                     <button
                                         className="btn p-0 border-0 bg-transparent action-bar-btn fw-bold"
@@ -661,37 +519,13 @@ export default function ManageEmployeesTab() {
                                     <ul className="dropdown-menu">
                                         <li>
                                             <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Edit/View Profile<span></span>
+                                                <a className="dropdown-item"><img src="/images/img/download_report.svg" className="me-2" />Download Report<span></span>
                                                 </a>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Assign Course<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>View Ongoing Courses<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Send Reminder<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Deactivate Account<span></span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/admin/user/user-profile">
-                                                <a className="dropdown-item"><i className="bx bx-edit me-2"></i>Delete Account<span></span>
+                                                <a className="dropdown-item"><img src="/images/img/assign_course.svg" className="me-2" />Assign Course Again<span></span>
                                                 </a>
                                             </Link>
                                         </li>

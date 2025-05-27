@@ -1224,6 +1224,10 @@ Navbar Area CSS
   border-radius: 5px;
 }
 
+.result_dropdown{
+  border:none;
+  background: none;
+}
 @media only screen and (max-width: 1199px) {
   .navbar-area {
     padding-top: 20px;

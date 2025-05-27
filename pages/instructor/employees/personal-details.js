@@ -1,15 +1,15 @@
 import React from "react";
 import Footer from "@/components/_App/Footer";
 import InstructorNav from "@/components/_App/InstructorNav";
-import ManageEmployeesTab from "@/components/Instructor/Employees/ManageEmployeesTab";
+import EmployeeProfileTab from "@/components/Instructor/Employees/EmployeeProfileTab";
 
-const ManageEmployees = () => {
+const EmployeePersonalDetails = () => {
     return (
         <>
             <InstructorNav />
 
             <div className="container">
-                <ManageEmployeesTab/>
+                <EmployeeProfileTab/>
             </div>
 
             <Footer />
@@ -17,7 +17,7 @@ const ManageEmployees = () => {
     );
 };
 
-export default ManageEmployees;
+export default EmployeePersonalDetails;
 
 
 

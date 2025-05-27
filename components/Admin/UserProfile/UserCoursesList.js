@@ -5,8 +5,6 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/router";
 import Pagination from "@etchteam/next-pagination";
 import CourseSkeletonLoader from "@/utils/CourseSkeletonLoader";
-import CourseCard from "@/components/Courses/CourseCard";
-import AdminCourseCard from "../MyCourses/AdminCourseCard";
 import UserCourseCard from "./UserCoursesCard";
 
 const UserCourseList = ({ user }) => {
@@ -202,7 +200,7 @@ const UserCourseList = ({ user }) => {
 					<div className="row">
 						{loading ? (
 							<CourseSkeletonLoader />
-						) : ( 
+						) : (
 							<>
 								{courseDetails &&
 									courseDetails.map((course) => (
@@ -222,7 +220,7 @@ const UserCourseList = ({ user }) => {
 									</div>
 								)}
 							</>
-						 	)} 
+						)}
 					</div>
 				</div>
 			</div>
