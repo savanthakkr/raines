@@ -489,7 +489,7 @@ export default function EmployeeProfileTab() {
                             <th className="p-3 text-center">Status</th>
                             <th className="p-3 text-center">Result</th>
                             <th className="p-3 text-center">Certificate</th>
-                            <th className="p-3">Action</th>
+                            <th className="p-3 text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
