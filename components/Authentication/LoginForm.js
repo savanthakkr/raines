@@ -19,6 +19,8 @@ const LoginForm = () => {
 	const [loading, setLoading] = React.useState(false);
 	const [role, setRole] = React.useState("user");
 	const router = useRouter();
+	const [showModal, setShowModal] = React.useState(false);
+	const [resetModal, setResetModal] = React.useState(false);
 
 	React.useEffect(() => {
 		if (router.pathname.includes("instructor-login")) {
@@ -121,18 +123,78 @@ const LoginForm = () => {
 					<div className="col-lg-12 col-md-12 col-sm-12 remember-me-wrap">
 						<p className="description">
 							Can't remember your password,{' '}
-							<Link href={
-								role === "instructor"
-									? "/instructor-forgot-password"
-									: "/send-confirmation-email"
-							}>
+							<button className="btn-as-link" onClick={() => setShowModal(true)}>
 								<a className="lost-your-password">
 									Forget Password?
 								</a>
-							</Link>
+							</button>
 						</p>
 					</div>
 				</form>
+				{showModal && (
+					<div className="modal-overlay">
+						<div className="modal-content">
+							<div className="forget-pwd-form">
+								<h2 className="mb-3">Forget Your Password?</h2>
+								<p>That’s okay, it happens. Click the button below to reset your password. We will send you a link to your registered email for resetting your password.</p>
+								<p>Please check your spam folder if you don’t receive your link.</p>
+								<form>
+									<motion.button
+										type="submit" onClick={() => { setShowModal(false); setResetModal(true);}}
+										whileTap={{ scale: 0.9 }}
+									>
+										Send me the Reset Link
+									</motion.button>
+									<p className="text-center mt-3 fst-italic">Send reset link again after 00:30 Seconds</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				)}
+				{resetModal && (
+					<div className="modal-overlay">
+						<div className="modal-content">
+							<div className="forget-pwd-form">
+								<h2 className="mb-3">Reset Password</h2>
+								<div className="form-group">
+										<label>Email</label>
+										<input
+											type="email"
+											className="form-control"
+											placeholder="Email"
+										/>
+									</div>
+									<div className="form-group">
+										<label>Password</label>
+										<input
+											type="password"
+											className="form-control"
+											placeholder="Password"
+										/>
+									</div>
+									<p className="fst-italic">The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ? $ % ^ & )</p>
+									<div className="form-group">
+										<label>Confirm Password</label>
+										<input
+											type="password"
+											className="form-control"
+											placeholder="Re-enter Password"
+										/>
+									</div>
+									<p className="fst-italic">The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ? $ % ^ & )</p>
+								<form>
+									<motion.button
+										type="submit" onClick={() => setResetModal(true)}
+										whileTap={{ scale: 0.9 }}
+									>
+										Reset and Login
+									</motion.button>
+									<p className="text-center mt-3 fst-italic">Send reset link again after 00:30 Seconds</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				)}
 			</div>
 		</>
 	);

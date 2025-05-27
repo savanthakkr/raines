@@ -1228,6 +1228,50 @@ Navbar Area CSS
   border:none;
   background: none;
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.login-form p.description{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.login-form .modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  display: inline-block;
+}
+.login-form .btn-as-link{
+  background: none;
+		border: none;
+		padding: 0;
+		color: #007bff;
+		cursor: pointer;
+    width:auto!important;
+    margin-top: 0;
+    margin-left:5px;
+}
+.login-form .btn-as-link:hover{
+  text-decoration: none;
+  background-color: #fff!important;
+  color:inherit!important;
+}
+.login-form .lost-your-password:hover{
+  text-decoration: none;
+}
 @media only screen and (max-width: 1199px) {
   .navbar-area {
     padding-top: 20px;
@@ -5816,6 +5860,14 @@ Go Top CSS
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
+
+.forget-pwd-form {
+  padding: 40px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
+}
+
 
 @media only screen and (max-width: 767px) {
   .modal .modal-dialog {
