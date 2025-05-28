@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "@/components/_App/Navbar";
 import PageBanner from "@/components/Common/PageBanner";
 import LoginForm from "@/components/Authentication/LoginForm";
 import Footer from "@/components/_App/Footer";
 import InstructorRegisterForm from "@/components/BecomeAInstructor/InstructorRegisterForm";
+import InstructorNav from "@/components/_App/InstructorNav";
 
 export default function InstructorLoginPage({ user }) {
 	return (
 		<>
-			<Navbar user={user} />
+			<InstructorNav/>
 
 			<PageBanner
 				pageTitle="Authentication"

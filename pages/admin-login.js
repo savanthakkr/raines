@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "@/components/_App/Navbar";
 import PageBanner from "@/components/Common/PageBanner";
 import LoginForm from "@/components/Authentication/LoginForm";
-import RegisterForm from "@/components/Authentication/RegisterForm";
 import Footer from "@/components/_App/Footer";
+import AdminNav from "@/components/_App/AdminNav";
 
 export default function AdminLoginPage({ user }) {
 	return (
 		<>
-			<Navbar user={user} />
+			<AdminNav/>
 
 			<PageBanner
 				pageTitle="Authentication"
