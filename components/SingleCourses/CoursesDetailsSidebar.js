@@ -221,7 +221,7 @@ const CoursesDetailsSidebar = ({ current_user, course, onCoupon }) => {
 								</select>
 							</div>
 						</div>
-						{pathname.startsWith("/instructor/courses/") && (
+						{pathname.startsWith("/business/courses/") && (
 							<div className="course-type-dropdown align-items-center mb-4 mt-4">
 								<span>
 									Course Seat Size

@@ -11,7 +11,7 @@ const ProfileDropdown = ({
 	profile_photo,
 }) => {
 	const isAdmin = role === "admin";
-	const isInstructor = role === "instructor";
+	const isBusiness = role === "business";
 	const isStudent = role === "student";
 
 	const [currentPath, setCurrentPath] = useState("");
@@ -69,12 +69,12 @@ const ProfileDropdown = ({
 						<hr className="dropdown-divider" />
 					</li>
 
-					{isInstructor && (
+					{isBusiness && (
 						<>
 							<li>
-								<Link href="/instructor/courses/">
+								<Link href="/business/courses/">
 									<a 
-										className={`dropdown-item ${currentPath == "/instructor/courses/" && "active"}`}
+										className={`dropdown-item ${currentPath == "/business/courses/" && "active"}`}
 									>
 										{/* <i className="bx bx-book"></i> */}
 										My Courses
@@ -83,9 +83,9 @@ const ProfileDropdown = ({
 							</li>
 
 							<li>
-								<Link href="/instructor/course/create/">
+								<Link href="/business/course/create/">
 									<a 
-										className={`dropdown-item ${currentPath == "/instructor/course/create/" && "active"}`}
+										className={`dropdown-item ${currentPath == "/business/course/create/" && "active"}`}
 									>
 										{/* <i className="bx bx-folder-plus"></i>  */}
 										Create New Course
@@ -122,7 +122,7 @@ const ProfileDropdown = ({
 					<li>
 						<Link href="/profile/certificates/">
 							<a 
-								className={`dropdown-item ${currentPath == "/profile/certificates" && "active"}`}
+								className={`dropdown-item ${currentPath == "/profile/certificates/" && "active"}`}
 							>
 								{/* <i className="bx bx-book"></i> */}
 								Certificates

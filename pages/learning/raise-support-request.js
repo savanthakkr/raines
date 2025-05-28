@@ -6,8 +6,8 @@ import axios from "axios";
 import { parseCookies } from "nookies";
 import LoadingSpinner from "@/utils/LoadingSpinner";
 import baseUrl from "@/utils/baseUrl";
-import InstructorNav from "@/components/_App/InstructorNav";
 import { useRouter } from "next/router";
+import BusinessNav from "@/components/_App/BusinessNav";
 
 const RaiseSupportRequest = ({ user }) => {
 	const router = useRouter();
@@ -68,8 +68,8 @@ const RaiseSupportRequest = ({ user }) => {
 
 	return (
 		<>
-			{role=='instructor'?(
-				<InstructorNav/>
+			{role=='business'?(
+				<BusinessNav/>
 			):(
 				<Navbar user={user} />
 			)}

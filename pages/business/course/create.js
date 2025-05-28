@@ -1,18 +1,19 @@
 import React from "react";
+import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
-import AdminCourseCreate from "@/components/Admin/MyCourses/AdminCourseCreate";
-import AdminNav from "@/components/_App/AdminNav";
+import Link from "next/link";
+import CourseCreateForm from "@/components/Business/CourseCreateForm";
 
-const CreateCourse = ({ user }) => {
+const Create = ({ user }) => {
 	return (
 		<>
-			<AdminNav />
+			<Navbar user={user} />
 
 			<div className="ptb-100">
 				<div className="container">
 					<h2 className="fw-bold mb-4">Create the Course</h2>
 
-					{/* <ul className="nav-style1">
+					<ul className="nav-style1">
 						<li>
 							<Link href="/business/courses/">
 								<a>Courses</a>
@@ -28,10 +29,10 @@ const CreateCourse = ({ user }) => {
 								<a>Create Class Room</a>
 							</Link>
 						</li>
-					</ul> */}
+					</ul>
 
 					<div className="create-course-form">
-						<AdminCourseCreate/>
+						<CourseCreateForm />
 					</div>
 				</div>
 			</div>
@@ -41,4 +42,4 @@ const CreateCourse = ({ user }) => {
 	);
 };
 
-export default CreateCourse;
+export default Create;

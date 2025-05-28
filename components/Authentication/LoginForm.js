@@ -22,8 +22,8 @@ const LoginForm = () => {
 	const [resetModal, setResetModal] = React.useState(false);
 
 	React.useEffect(() => {
-		if (router.pathname.includes("instructor-login")) {
-			setRole("instructor");
+		if (router.pathname.includes("business-login")) {
+			setRole("business");
 		} else {
 			setRole("user");
 		}

@@ -70,8 +70,8 @@ const BuyCourseBtn = ({ current_user, course }) => {
 			) : (
 				<button
 					className="default-btn"
-					onClick={() => router.pathname.startsWith("/instructor")
-						? router.push("/instructor/checkout/instructor-checkout/")
+					onClick={() => router.pathname.startsWith("/business")
+						? router.push("/business/checkout/business-checkout/")
 						: buyCourse(course)}
 				>
 					{/* <i className="flaticon-shopping-cart"></i>  */}
