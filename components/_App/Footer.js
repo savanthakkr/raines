@@ -81,7 +81,7 @@ const Footer = () => {
                     <a href="tel:+0419655525">0419 655 525</a>
                   </li>
                   <li>
-                    <i class='bx bx-time-five'></i>
+                    <i className='bx bx-time-five'></i>
                     Mon - Sun: 7:00 am - 9:00 pm
                   </li>
                 </ul>

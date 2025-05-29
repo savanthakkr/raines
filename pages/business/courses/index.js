@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { confirmAlert } from "react-confirm-alert";
 import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
-import InstructorHeader from "@/components/Business/InstructorHeader";
+import InstructorHeader from "@/components/Business/BusinessHeader";
 import CoursesCard from "@/components/Business/CoursesCard";
 import axios from "axios";
 import { parseCookies } from "nookies";
