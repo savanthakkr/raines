@@ -1203,6 +1203,93 @@ Navbar Area CSS
   left: 0;
 }
 
+.assign-course-btn{
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px!important;
+  color:#CF0000;
+  font-size: 15px;
+}
+
+.assign-course-btn span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 5px!important;
+  background-color: #221638;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.result_dropdown{
+  border:none;
+  background: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.login-form p.description{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.login-form .modal-content {
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  display: inline-block;
+}
+.login-form .btn-as-link{
+  background: none;
+		border: none;
+		padding: 0;
+		color: #007bff;
+		cursor: pointer;
+    width:auto!important;
+    margin-top: 0;
+    margin-left:5px;
+}
+.login-form .btn-as-link:hover{
+  text-decoration: none;
+  background-color: #fff!important;
+  color:inherit!important;
+}
+.login-form .lost-your-password:hover{
+  text-decoration: none;
+}
+.question-buttons{
+  background-color: #f5f5f5;
+  padding:10px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+}
+.question-buttons .btn{
+  background-color: #f5f5f5;
+  color:#221638;
+  padding:5px 7px;
+  border-radius: 5px;
+  border: 1px solid #E3E3E3
+}
+.expand-table-btn{
+  border: 1px solid #E3E3E3;
+  padding:1px 10px;
+  border-radius: 2px;
+}
 @media only screen and (max-width: 1199px) {
   .navbar-area {
     padding-top: 20px;
@@ -5791,6 +5878,14 @@ Go Top CSS
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
+
+.forget-pwd-form {
+  padding: 40px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(51, 51, 51, 0.1);
+}
+
 
 @media only screen and (max-width: 767px) {
   .modal .modal-dialog {

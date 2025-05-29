@@ -555,7 +555,9 @@ const AdminCourseCreate = ({ btnText, is_class }) => {
                             </div>
                         </div>
                         <div className="mt-3 mt-md-0">
-                            <button className="default-btn back-btn">+ Add Assessment<span></span></button>
+                            <Link href="/admin/assessment/create-assessment/">
+                                <button className="default-btn back-btn">+ Add Assessment<span></span></button>
+                            </Link>
                         </div>
                     </div>
                 </div>

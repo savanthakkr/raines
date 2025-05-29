@@ -5,9 +5,9 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/router";
 import Pagination from "@etchteam/next-pagination";
 import CourseSkeletonLoader from "@/utils/CourseSkeletonLoader";
-import UserCourseCard from "./UserCoursesCard";
+import InstructorCourseCard from "./BusinessCourseCard";
 
-const UserCourseList = ({ user }) => {
+const BusinessCourseList = ({ user }) => {
 	const [courses, setCourses] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [pages, setPages] = useState(0);
@@ -200,13 +200,19 @@ const UserCourseList = ({ user }) => {
 					<div className="row">
 						{loading ? (
 							<CourseSkeletonLoader />
-						) : (
+						) : ( 
 							<>
 								{courseDetails &&
 									courseDetails.map((course) => (
-										<UserCourseCard
+										<InstructorCourseCard
 											key={course.id}
 											{...course}
+											onFav={() =>
+												handleFav(course.id, true)
+											}
+											onUnFav={() =>
+												handleFav(course.id, false)
+											}
 										/>
 									))}
 								{courseDetails.length > 9 && (
@@ -220,7 +226,7 @@ const UserCourseList = ({ user }) => {
 									</div>
 								)}
 							</>
-						)}
+						 	)} 
 					</div>
 				</div>
 			</div>
@@ -228,4 +234,4 @@ const UserCourseList = ({ user }) => {
 	);
 };
 
-export default UserCourseList;
+export default BusinessCourseList;

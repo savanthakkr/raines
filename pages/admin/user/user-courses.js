@@ -30,11 +30,11 @@ const UserCourses = () => {
                         </li>
                     </ul>
 
-                    <UserCourseList/>
+                    <UserCourseList />
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
