@@ -183,6 +183,7 @@ const handleSubmit = async (e) => {
 const AdminCreateAssessment = () => {
     const [course, setCourse] = useState(INITIAL_VALUE);
     const router = useRouter();
+    const [isAddingPage, setIsAddingPage] = useState(false); 
 
     useEffect(() => {
         // Dynamically import bootstrap JS only in the browser
@@ -190,8 +191,14 @@ const AdminCreateAssessment = () => {
     }, []);
 
     const [questions, setQuestions] = useState([]);
+    let currentPage = 1;
 
     const addQuestion = (type) => {
+        // if (type === 'page') {
+        //     const nextPage = currentPage + 1;
+        //     router.push(`/admin/assessment/page-${nextPage}`);
+        //     return;
+        // }
         const newQuestion = {
             id: uuidv4(),
             type,
@@ -1242,6 +1249,7 @@ const AdminCreateAssessment = () => {
                     ))}
                 </div>
             </div>
+            {isAddingPage && (
             <div className="d-flex flex-row align-items-center justify-content-between mt-4">
                 <div>
                     <button className="default-btn back-btn" onClick={() => router.back()}>Back<span></span></button>
@@ -1258,6 +1266,9 @@ const AdminCreateAssessment = () => {
                     </button>
                 </div>
             </div>
+            )}
+
+            {!isAddingPage && (
             <div className="d-flex flex-row align-items-center justify-content-between mt-4">
                 <div>
                     <Link href="">
@@ -1275,10 +1286,9 @@ const AdminCreateAssessment = () => {
                             </button>
                         </Link>
                     </div>
-
-
                 </div>
             </div>
+            )}
         </>
     )
 }
