@@ -12,6 +12,7 @@ const INITIAL_USER = {
 	last_name: "",
 	email: "",
 	password: "",
+	confirm_password:""
 };
 
 const RegisterForm = () => {
@@ -34,11 +35,22 @@ const RegisterForm = () => {
 		e.preventDefault();
 		try {
 			setLoading(true);
-			const url = `${baseUrl}/api/users/signup`;
-			const payload = { ...user };
+			const url = `${baseUrl}user/register`;
+			console.log("Submitting to:", url);
+
+			const payload = {
+				inputdata: {
+				  user_first_Name: user.first_name,
+				  user_last_Name: user.last_name,
+				  user_Email: user.email,
+				  user_Password: user.password,
+				  confirm_Password: user.confirm_password,
+				},
+			  };
 			const response = await axios.post(url, payload);
-			handleLogin(response.data.elarniv_users_token, router);
-			toast.success(response.data.message, {
+			console.log('response',response);
+			// handleLogin(response.data.elarniv_users_token, router);
+			toast.success(response.data.msg, {
 				style: {
 					border: "1px solid #4BB543",
 					padding: "16px",
@@ -49,6 +61,8 @@ const RegisterForm = () => {
 					secondary: "#FFFAEE",
 				},
 			});
+			setUser(INITIAL_USER);
+			router.push('/');
 		} catch (err) {
 			let {
 				response: {
@@ -137,7 +151,7 @@ const RegisterForm = () => {
 							className="form-control"
 							placeholder="Re-enter Password"
 							name="confirm_password"
-							value={user.password}
+							value={user.confirm_password}
 							onChange={handleChange}
 						/>
 					</div>

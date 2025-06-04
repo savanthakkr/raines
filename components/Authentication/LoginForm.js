@@ -43,11 +43,17 @@ const LoginForm = () => {
 		e.preventDefault();
 		try {
 			setLoading(true);
-			const url = `${baseUrl}/api/users/signin`;
-			const payload = { ...user };
+			const url = `${baseUrl}user/login`;
+			const payload = {
+				inputdata: {
+				  user_Email: user.email,
+				  user_Password: user.password,
+				},
+			  };
 			const response = await axios.post(url, payload);
-			handleLogin(response.data.elarniv_users_token, router);
-			toast.success(response.data.message, {
+			console.log(response);
+			// handleLogin(response.data.elarniv_users_token, router);
+			toast.success(response.data.msg, {
 				style: {
 					border: "1px solid #4BB543",
 					padding: "16px",
@@ -58,6 +64,7 @@ const LoginForm = () => {
 					secondary: "#FFFAEE",
 				},
 			});
+			router.push('/');
 		} catch (err) {
 			let {
 				response: {
